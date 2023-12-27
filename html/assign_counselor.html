@@ -116,7 +116,7 @@
                         <ul class="menu-sub">
 
                             <li class="menu-item ">
-                                <a href="assign_counselor.html" class="menu-link">
+                                <a href="users-list.html" class="menu-link">
                                     <div data-i18n="Text Divider">Users</div>
                                 </a>
                             </li>
@@ -237,9 +237,9 @@
 
                         <div class="tab mb-3">
                             <div class="tab-scroll">
-                                <button class="tablinks" data-tab="AC" id="defaultOpen">Assign Counselor   </button>
-                                <button class="tablinks" data-tab="ANC" >Assigned Counselor</button>
-                                
+                                <button class="tablinks" data-tab="AC" id="defaultOpen">Assign Counselor </button>
+                                <button class="tablinks" data-tab="ANC">Assigned Counselor</button>
+
                             </div>
 
                         </div>
@@ -249,266 +249,99 @@
                             <!-- Striped Rows -->
                             <div class="card  pb-4 px-lg-4 px-2">
                                 <h5 class="card-header px-0 bg-white border-bottom-0  py-3 mb-2">Assign Counselor</h5>
-                                <div class="d-flex align-items-center flex-md-row flex-column">
-                                    <select class="form-select session-select" required="" style="width: fit-content;">
-                                        <option>Select Session </option>
-                                        <option value="9">
-                                            SEPTEMBER 2021 </option>
-                                        <option value="10">
-                                            JANUARY- MARCH 2022 </option>
-                                        <option value="11">
-                                            SEPTEMBER 2022 </option>
-                                        <option value="12">
-                                            JANUARY- MARCH 2023 </option>
-                                        <option value="13">
-                                            SEPTEMBER 2023 </option>
-                                        <option value="15">
-                                            JANUARY- MARCH 2024 </option>
-                                        <option value="16">
-                                            SEPTEMBER 2024 </option>
-                                        <option value="17">
-                                        </option>
-                                    </select>
-
-                                    <div class="d-flex">
-                                        <button class="btn btn-primary mx-2 mt-md-0 mt-3">Apply Filter</button>
-                                        <button class="btn btn-secondary mt-md-0 mt-3">Clear Filter</button>
+                                <div class="row filter-div">
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center flex-md-row flex-column ">
+                                            <select class="form-select ">
+                                                <option value=""> -- Select Coun --</option>
+                                                <option value="4">
+                                                    UZAIR SOOBASHAH </option>
+                                                <option value="5">
+                                                    ALI BAIG </option>
+                                                <option value="6">
+                                                    Ali Mama </option>
+                                                <option value="7">
+                                                    Fariha Aziz </option>
+                                            </select>
+                                            <button class="btn btn-primary mx-2 mt-md-0 mt-3">Submit</button>
+                                        </div>
                                     </div>
                                 </div>
-                                <table id="example" class="table  nowrap border-0" style="width:100%">
+                                <table id="assign" class="table  nowrap border-0 " style="width:100%">
                                     <thead>
                                         <tr class="dt-head">
-                                            <th class="no-sort"></th>
+                                            <th></th>
+                                            <th>Check</th>
                                             <th>#</th>
 
-                                            <th> Name </th>
-
+                                            <th style="text-align:center; "> Name </th>
+                                            <th style="text-align:center; "> Assign Std </th>
+                                            <th style="text-align:center; "> Email </th>
                                             <th style="text-align:center; "> Contact# </th>
 
                                             <th style="text-align:center; "> Session Month </th>
 
 
+                                            <th style="text-align:center; "> Education Country </th>
                                             <th style="text-align:center; "> Interested Country </th>
-
                                             <th style="text-align:center; "> Reference </th>
                                             <th style="text-align:center; "> Status </th>
-                                            <th style="text-align:center; "> Counselor </th>
-                                            <th style="text-align:center; "> Uni List </th>
-                                            <th style="text-align:center; "> Actions </th>
-                                            <th style="text-align:center; "> FollowUp </th>
-                                            <th style="text-align:center; "> Del </th>
 
+
+                                            <th style="text-align:center; "> Actions </th>
                                         </tr>
+
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td></td>
+                                            <td><input type="checkbox" name="check[]" value="done"></td>
                                             <td class="text-center">1</td>
 
 
-                                            <td class="text-center"> Daniyal Adnan</td>
+                                            <td class="text-center"> MUHAMMAD ASHIR ADNAN (612024)</td>
+                                            <td>
 
 
-                                            <td class="text-center"> 03208242965</td>
-
-
-                                            <td class="text-center"> JANUARY- MARCH 2022</td>
-
-                                            <td class="text-center"> CANADA- </td>
+                                                <input type="hidden" class="form-control name">
 
 
 
 
-                                            <td class="text-center"> </td>
+                                            </td>
+                                            <td class="text-center"> N/A</td>
+                                            <td class="text-center"> 92 336 4359259</td>
 
 
+                                            <td class="text-center"> SEPTEMBER 2024</td>
+
+
+
+
+                                            <td class="text-center"> PAKISTAN </td>
+
+                                            <td class="text-center"> UK<br> </td>
+
+                                            <td class="text-center"> ALPHA COLLEGE</td>
                                             <!--#progres =1-->
                                             <!--#potential = 2-->
                                             <!--#deferred = 3-->
                                             <!--#wasted = 4-->
 
-                                            <td>Wasted</td>
+                                            <td>In Progess</td>
 
-                                            <td class="text-center"> </td>
 
-                                            <td class="text-center">
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#view-unit"
-                                                    class="btn btn-info btn-xs me-2 view-btn" title="View"
-                                                    data-toggle="tooltip">
-                                                    View
-                                                </button>
-                                            </td>
-
-                                            <td class="text-center">
+                                            <td class="text-center"> 
                                                 <button type="button" data-bs-toggle="modal" data-bs-target="#view"
                                                     class="btn btn-info btn-xs me-2 view-btn" title="View"
                                                     data-toggle="tooltip">
                                                     View
                                                 </button>
 
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#edit"
-                                                    class="btn btn-info btn-xs edit-btn" title="Edit"
-                                                    data-toggle="tooltip">
-                                                    Edit
-                                                </button>
-
-                                            </td>
-                                            <td class="text-center"> <button type="button"
-                                                    class="btn btn-info btn-xs edit-btn" data-bs-toggle="modal"
-                                                    data-bs-target="#followUp" title="FollowUp" data-toggle="tooltip">
-                                                    FollowUp
-                                                </button>
-
-
-                                            </td>
-                                            <td>
-
-                                                <button type="button" class="btn btn-danger btn-xs edit-btn"
-                                                    data-bs-toggle="modal" data-bs-target="#delete">
-                                                    Delete
-                                                </button>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td class="text-center">2</td>
 
 
-                                            <td class="text-center"> Daniyal Adnan</td>
-
-
-                                            <td class="text-center"> 03208242965</td>
-
-
-                                            <td class="text-center"> JANUARY- MARCH 2022</td>
-
-                                            <td class="text-center"> CANADA- </td>
-
-
-
-
-                                            <td class="text-center"> </td>
-
-
-                                            <!--#progres =1-->
-                                            <!--#potential = 2-->
-                                            <!--#deferred = 3-->
-                                            <!--#wasted = 4-->
-
-                                            <td>Wasted</td>
-
-                                            <td class="text-center"> </td>
-
-                                            <td class="text-center">
-
-                                                <button type="button" data-bs-toggle="modal"
-                                                    data-bs-target="#action-uni"
-                                                    class="btn btn-info btn-xs me-2 view-btn" title="View"
-                                                    data-toggle="tooltip">
-                                                    Action
-                                                </button>
-
-
-                                            </td>
-
-                                            <td class="text-center">
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#view"
-                                                    class="btn btn-info btn-xs me-2 view-btn" title="View"
-                                                    data-toggle="tooltip">
-                                                    View
-                                                    </butt>
-
-                                                    <button type="button" data-bs-toggle="modal" data-bs-target="#edit"
-                                                        class="btn btn-info btn-xs edit-btn" title="Edit"
-                                                        data-toggle="tooltip">
-                                                        Edit
-                                                    </button>
-
-                                            </td>
-                                            <td class="text-center"><button type="button"
-                                                    class="btn btn-info btn-xs edit-btn" data-bs-toggle="modal"
-                                                    data-bs-target="#followUp" title="FollowUp" data-toggle="tooltip">
-                                                    FollowUp
-                                                </button>
-
-
-                                            </td>
-                                            <td>
-
-                                                <button type="button" class="btn btn-danger btn-xs edit-btn"
-                                                    data-bs-toggle="modal" data-bs-target="#delete">
-                                                    Delete
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td class="text-center">3</td>
-
-
-                                            <td class="text-center"> MUHAMMAD BILAL</td>
-
-
-                                            <td class="text-center"> 923338138363</td>
-
-
-                                            <td class="text-center"> JANUARY- MARCH 2022</td>
-
-                                            <td class="text-center"> UK- </td>
-
-
-
-
-                                            <td class="text-center"> </td>
-
-
-                                            <!--#progres =1-->
-                                            <!--#potential = 2-->
-                                            <!--#deferred = 3-->
-                                            <!--#wasted = 4-->
-
-                                            <td>Wasted</td>
-
-                                            <td class="text-center"> </td>
-
-                                            <td class="text-center">
-                                                <button type="button" data-bs-toggle="modal"
-                                                    data-bs-target="#action-uni"
-                                                    class="btn btn-info btn-xs me-2 view-btn" title="View"
-                                                    data-toggle="tooltip">
-                                                    Action
-                                                </button>
-
-                                            </td>
-
-                                            <td class="text-center">
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#view"
-                                                    class="btn btn-info btn-xs me-2 view-btn" title="View"
-                                                    data-toggle="tooltip">
-                                                    View
-                                                    </butt>
-
-                                                    <button type="button" data-bs-toggle="modal" data-bs-target="#edit"
-                                                        class="btn btn-info btn-xs edit-btn edit-btn" title="Edit"
-                                                        data-toggle="tooltip">
-                                                        Edit
-                                                    </button>
-                                            </td>
-                                            <td class="text-center">
-                                                <button type="button" class="btn btn-info btn-xs edit-btn"
-                                                    data-bs-toggle="modal" data-bs-target="#followUp" title="FollowUp"
-                                                    data-toggle="tooltip">
-                                                    FollowUp
-                                                </button>
-                                            </td>
-                                            <td>
-                                                <button type="button" class="btn btn-danger btn-xs edit-btn"
-                                                    data-bs-toggle="modal" data-bs-target="#delete">
-                                                    Delete
-                                                </button>
-
-                                            </td>
-                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -521,103 +354,30 @@
                             <!-- Striped Rows -->
                             <div class="card  pb-4 px-lg-4 px-2">
                                 <h5 class="card-header px-0 bg-white border-bottom-0  py-3 mb-2">Assigned Counselor</h5>
-                                <div class="row ">
-                                    <div class="col-lg-3 mb-3">
-
-                                        <select class="form-select session-select" required=""
-                                            style="width: fit-content;">
-                                            <option>Select Session </option>
-                                            <option value="9">
-                                                SEPTEMBER 2021 </option>
-                                            <option value="10">
-                                                JANUARY- MARCH 2022 </option>
-                                            <option value="11">
-                                                SEPTEMBER 2022 </option>
-                                            <option value="12">
-                                                JANUARY- MARCH 2023 </option>
-                                            <option value="13">
-                                                SEPTEMBER 2023 </option>
-                                            <option value="15">
-                                                JANUARY- MARCH 2024 </option>
-                                            <option value="16">
-                                                SEPTEMBER 2024 </option>
-                                            <option value="17">
-                                            </option>
-                                        </select>
-
-                                    </div>
-
-
-                                    <div class="col-lg-3 mb-3">
-
-                                        <select class="form-select" name="coun">
-                                            <option>Select Counselor </option>
-                                            <option value="4">
-                                                UZAIR SOOBASHAH </option>
-                                            <option value="5">
-                                                ALI BAIG </option>
-                                            <option value="6">
-                                                Ali Mama </option>
-                                            <option value="7">
-                                                Fariha Aziz </option>
-                                        </select>
-
-                                    </div>
-
-                                    <div class="col-lg-3 mb-3">
-                                        <select class="form-select" name="ref">
-                                            <option>Select Ref </option>
-                                            <option value="3">
-                                                ALPHA COLLEGE </option>
-                                            <option value="4">
-                                                INDEX </option>
-                                            <option value="5">
-                                                RANA </option>
-                                            <option value="6">
-                                                ERN </option>
-                                            <option value="7">
-                                                OMER ALTAF </option>
-                                            <option value="8">
-                                                KASHAN IQBAL </option>
-                                            <option value="9">
-                                                ALI RAZA GRAVITY </option>
-                                            <option value="10">
-                                                SALMAN MUSTAFA </option>
-                                            <option value="11">
-                                                ZARAK MUSTAFA </option>
-                                            <option value="12">
-                                                ICC </option>
-                                            <option value="13">
-                                                STALLION </option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-3 mb-3">
-                                        <div class="d-flex">
-                                            <button class="btn btn-primary mx-2 mt-md-0 mt-3">Apply</button>
-                                            <button class="btn btn-secondary mt-md-0 mt-3">Clear</button>
-                                        </div>
-                                    </div>
-                                </div>
+                              
                                 <table id="inquiry" class="table  nowrap border-0 " style="width:100%">
                                     <thead>
+
                                         <tr class="dt-head">
                                             <th></th>
                                             <th>#</th>
 
                                             <th style=" text-align:center; "> Name </th>
-                                            <th style=" text-align:center; "> Contact # </th>
+                                            <th style=" text-align:center; "> Status </th>
+                                            <th style=" text-align:center; "> Email </th>
+                                            <th style=" text-align:center; "> Contact# </th>
 
-                                            <th style=" text-align:center; "> Intst Country </th>
+                                            <th style=" text-align:center; "> Session Month </th>
+
+
+
+                                            <th style=" text-align:center; "> Interested Country </th>
                                             <th style=" text-align:center; "> Reference </th>
-                                            <th style=" text-align:center; "> Session </th>
-                                            <th style=" text-align:center; "> Counselor </th>
-                                            
-                                            <th style=" text-align:center; "> Actions </th>
-                                            <th style="text-align:center; "> Uni View </th>
-                                            <th style=" text-align:center; "> Details </th>
-                                            <th style=" text-align:center; "> FollowUP </th>
-                                        </tr>
 
+                                            <th style=" text-align:center; "> Assign Std </th>
+
+                                            <th style=" text-align:center; "> Actions </th>
+                                        </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
@@ -625,85 +385,65 @@
                                             <td class="text-center">1</td>
 
 
-                                            <td class="text-center"> Obaid Jalal (Titan College)</td>
+                                            <td class="text-center"> AUKASHA JAWAID</td>
+                                            <td>
+                                                <form method="post" >
 
-                                            <td class="text-center"> 03342149286</td>
-
-                                            <td class="text-center"> UK- </td>
-                                            <td class="text-center"> </td>
-
-                                            <td class="text-center"> SEPTEMBER 2024</td>
-
-                                            <td class="text-center"> </td>
-
-                                            
-
-                                            <td class="text-center">
-
-                                                <div class="btn-group btn-group2">
-                                                    <button class="btn mb-lg-0 mb-3 btn-primary btn-sm"
-                                                        style="background-color: #8d8d8d;" type="submit"
-                                                        name="potential" value="2428  "> Potential</button>
-                                                    
-                                                    <button class="btn mb-lg-0 mb-3 btn-primary btn-sm" type="submit" name="progress"
-                                                        value="2428  "> In Progress</button>
-                                                    
-                                                    <button class="btn mb-lg-0 mb-3 btn-danger btn-sm" type="submit" name="wasted"
-                                                        value="2428  "> Wasted</button>
-                                                    
-                                                    <button class="btn mb-lg-0 mb-3 text-white btn-sm" type="submit"
-                                                        name="visa_accepted" style="background-color: #193765;"
-                                                        value="2428  "> Visa Acptd</button>
-                                                    
-                                                    <button class="btn mb-lg-0 mb-3 text-white btn-sm" type="submit" name="refused"
-                                                        style="background-color: #196545;" value="2428  "> Visa
-                                                        Rfsd</button>
-
-                                                    
-                                                    <button class="btn mb-lg-0 mb-3 text-white btn-sm" type="submit"
-                                                        name="visa_refused" style="background-color: #17a2b8;"
-                                                        value="2428  "> Paid Student </button>
-                                                    
-                                                    <button class="btn mb-lg-0 mb-3 btn-primary btn-sm" type="submit" name="closed"
-                                                        style="background-color: #28a745;" value="2428  ">
-                                                        Closed</button>
-                                                </div>
-
-
+                                                  <div class="d-flex">
+                                                    <input type="hidden" class="form-control name" name="std_id"
+                                                    value="1541" placeholder="Enter address" required="">
+                                                <select class="form-select " 
+                                                    required="required" style="width: 100%;">
+                                                    <!--<option  disabled></option>-->
+                                                    <option value=""> -- Select Coun --</option>
+                                                    <option value="4">
+                                                        UZAIR SOOBASHAH </option>
+                                                    <option value="5" selected="">
+                                                        ALI BAIG </option>
+                                                    <option value="6">
+                                                        Ali Mama </option>
+                                                    <option value="7">
+                                                        Fariha Aziz </option>
+                                                </select>
+                                                
+                                                <button class="btn btn-primary btn-sm ms-2" type="submit" name="wasted"
+                                                    value="1541  "> Submit</button>
+                                                  </div>
+                                                </form>
                                             </td>
-                                            
-                                            <td class="text-center">
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#uni-view"
-                                                    class="btn btn-info btn-xs me-2 view-btn" title="View"
-                                                    data-toggle="tooltip">
-                                                    View
-                                                </button>
-                                            </td>
-                                          
 
-                                            <td class="text-center">
+                                            <td class="text-center"> AUKASHAJAWAID@GMAIL.COM</td>
+                                            <td class="text-center"> 03008262875</td>
+
+
+                                            <td class="text-center"> JANUARY- MARCH 2023</td>
+
+
+
+
+
+
+                                            <td class="text-center"> UK<br> </td>
+
+                                            <td class="text-center"> </td>
+                                            <!--#progres =1-->
+                                            <!--#potential = 2-->
+                                            <!--#deferred = 3-->
+                                            <!--#wasted = 4-->
+
+                                            <td>Closed</td>
+
+
+                                            <td class="text-center"> 
                                                 <button type="button" data-bs-toggle="modal" data-bs-target="#view"
                                                     class="btn btn-info btn-xs me-2 view-btn" title="View"
                                                     data-toggle="tooltip">
                                                     View
                                                 </button>
 
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#edit"
-                                                    class="btn btn-info btn-xs edit-btn" title="Edit"
-                                                    data-toggle="tooltip">
-                                                    Edit
-                                                </button>
-
-                                            </td>
-                                            <td class="text-center"> <button type="button"
-                                                    class="btn btn-info btn-xs edit-btn" data-bs-toggle="modal"
-                                                    data-bs-target="#followUp" title="FollowUp" data-toggle="tooltip">
-                                                    FollowUp
-                                                </button>
-
-
                                             </td>
                                         </tr>
+
 
                                     </tbody>
                                 </table>
@@ -2297,468 +2037,469 @@
                 </div>
             </div>
         </div>
-         <!--view uni Modal -->
-         <div class="modal fade" id="uni-view" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-         aria-labelledby="staticBackdropLabel" aria-hidden="true">
-         <div class="modal-dialog modal-fullscreen modal-fullscreen2">
-             <div class="modal-content">
-                 <div class="modal-header modal-header-style">
-                     <h5 class="modal-title mb-3 text-white" id="staticBackdropLabel">Student Process </h5>
-                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                 </div>
-                 <form action="">
-                     <div class="modal-body">
-                         <div class="container-fluid">
-                           
-                             <div class="row">
-                                 <div class="col-lg-12 mb-3 mt-4">
-                                     <div class="comment-div">
-                                         Universties
-                                     </div>
-                                 </div>
-                             </div>
-                             <div class="add-more-uni-div">
-                                 <div class="row ">
-                                     <div class="col-lg-12 add-more-uniview-row">
-                                         <div class="add-more-uni-row position-relative mb-3">
-                                           
-                                             <div class="row">
-
-                                                 <div class="col-lg-2 mb-3">
-                                                     <label class="control-label col-sm-5 ">Uni Name</label>
-                                                     <input type="text" class="form-control name" value=""
-                                                         placeholder="Enter Name" readonly="">
-                                                 </div>
+        <!--view uni Modal -->
+        <div class="modal fade" id="uni-view" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen modal-fullscreen2">
+                <div class="modal-content">
+                    <div class="modal-header modal-header-style">
+                        <h5 class="modal-title mb-3 text-white" id="staticBackdropLabel">Student Process </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <form action="">
+                        <div class="modal-body">
+                            <div class="container-fluid">
+
+                                <div class="row">
+                                    <div class="col-lg-12 mb-3 mt-4">
+                                        <div class="comment-div">
+                                            Universties
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="add-more-uni-div">
+                                    <div class="row ">
+                                        <div class="col-lg-12 add-more-uniview-row">
+                                            <div class="add-more-uni-row position-relative mb-3">
 
-                                                 <div class="col-lg-2 mb-3">
-                                                     <label class="control-label col-sm-5 ">Applied&nbsp;Date</label>
-                                                     <input type="date" class="form-control name" value=""
-                                                         placeholder="Enter Date" readonly="">
-                                                 </div>
+                                                <div class="row">
 
-                                                 <div class="col-lg-2 mb-3">
-                                                     <label class="control-label col-sm-5 ">Offer&nbsp;Status</label>
-                                                     <select class="form-select" id="pro">
+                                                    <div class="col-lg-2 mb-3">
+                                                        <label class="control-label col-sm-5 ">Uni Name</label>
+                                                        <input type="text" class="form-control name" value=""
+                                                            placeholder="Enter Name" readonly="">
+                                                    </div>
 
-                                                         <option value="Issued" selected="">
-                                                             Issued </option>
+                                                    <div class="col-lg-2 mb-3">
+                                                        <label class="control-label col-sm-5 ">Applied&nbsp;Date</label>
+                                                        <input type="date" class="form-control name" value=""
+                                                            placeholder="Enter Date" readonly="">
+                                                    </div>
 
+                                                    <div class="col-lg-2 mb-3">
+                                                        <label class="control-label col-sm-5 ">Offer&nbsp;Status</label>
+                                                        <select class="form-select" id="pro">
 
-                                                         <option value="Rejected">
-                                                             Rejected </option>
+                                                            <option value="Issued" selected="">
+                                                                Issued </option>
 
 
-                                                         <option value="Pending">
-                                                             Pending </option>
+                                                            <option value="Rejected">
+                                                                Rejected </option>
 
 
-                                                         <option value="Awaited">
-                                                             Awaited </option>
+                                                            <option value="Pending">
+                                                                Pending </option>
 
 
-                                                     </select>
-                                                 </div>
+                                                            <option value="Awaited">
+                                                                Awaited </option>
 
 
-                                                 <div class="col-lg-2 mb-3">
-                                                     <label class="control-label col-sm-5 ">Enter Fee</label>
-                                                     <input type="text" class="form-control name" value=""
-                                                         placeholder="Enter Name" readonly="">
-                                                 </div>
+                                                        </select>
+                                                    </div>
 
-                                                 <div class="col-lg-2 mb-3">
-                                                     <label class="control-label col-sm-5 ">Cas/I20/COE </label>
-                                                     <select class="form-select">
-                                                         <option selected="" disabled=""> Select </option>
-                                                         <option value="1">
-                                                             Issued </option>
-                                                         <option value="2">
-                                                             Awaited </option>
-                                                         <option value="3">
-                                                             Rejected </option>
 
-                                                     </select>
-                                                 </div>
+                                                    <div class="col-lg-2 mb-3">
+                                                        <label class="control-label col-sm-5 ">Enter Fee</label>
+                                                        <input type="text" class="form-control name" value=""
+                                                            placeholder="Enter Name" readonly="">
+                                                    </div>
 
-                                                 <div class="col-lg-2 mb-3">
-                                                     <label class="control-label col-sm-5 ">Visa Issue </label>
-                                                     <select class="form-select">
-                                                         <option selected="" disabled=""> Select </option>
-                                                         <option value="1">
-                                                             Yes </option>
-                                                         <option value="2">
-                                                             No </option>
-                                                         <option value="3">
-                                                             Online enrolled </option>
+                                                    <div class="col-lg-2 mb-3">
+                                                        <label class="control-label col-sm-5 ">Cas/I20/COE </label>
+                                                        <select class="form-select">
+                                                            <option selected="" disabled=""> Select </option>
+                                                            <option value="1">
+                                                                Issued </option>
+                                                            <option value="2">
+                                                                Awaited </option>
+                                                            <option value="3">
+                                                                Rejected </option>
 
-                                                     </select>
-                                                 </div>
+                                                        </select>
+                                                    </div>
 
-                                                 <div class="col-lg-6 mb-3">
-                                                     <label class="control-label col-sm-5 ">Agent</label>
-                                                     <select class="form-select" id="pro">
-                                                         <option selected="" disabled=""> Select </option>
-                                                         <option value="3">
-                                                             AS EDUCATION SERVICE </option>
+                                                    <div class="col-lg-2 mb-3">
+                                                        <label class="control-label col-sm-5 ">Visa Issue </label>
+                                                        <select class="form-select">
+                                                            <option selected="" disabled=""> Select </option>
+                                                            <option value="1">
+                                                                Yes </option>
+                                                            <option value="2">
+                                                                No </option>
+                                                            <option value="3">
+                                                                Online enrolled </option>
 
+                                                        </select>
+                                                    </div>
 
-                                                         <option value="4" selected="">
-                                                             EDUCATION RESOURCE NETWORK </option>
+                                                    <div class="col-lg-6 mb-3">
+                                                        <label class="control-label col-sm-5 ">Agent</label>
+                                                        <select class="form-select" id="pro">
+                                                            <option selected="" disabled=""> Select </option>
+                                                            <option value="3">
+                                                                AS EDUCATION SERVICE </option>
 
 
-                                                         <option value="5">
-                                                             INDEX </option>
+                                                            <option value="4" selected="">
+                                                                EDUCATION RESOURCE NETWORK </option>
 
 
-                                                         <option value="6">
-                                                             MR CONSULTANTS </option>
+                                                            <option value="5">
+                                                                INDEX </option>
 
 
-                                                         <option value="7">
-                                                             EDIFY CONSULTING </option>
+                                                            <option value="6">
+                                                                MR CONSULTANTS </option>
 
 
-                                                         <option value="8">
-                                                             HS CONSULTANTS </option>
+                                                            <option value="7">
+                                                                EDIFY CONSULTING </option>
 
 
-                                                         <option value="9">
-                                                             FALCON CONSULTANT </option>
+                                                            <option value="8">
+                                                                HS CONSULTANTS </option>
 
 
-                                                         <option value="10">
-                                                             MA CONSULTANTS </option>
+                                                            <option value="9">
+                                                                FALCON CONSULTANT </option>
 
 
-                                                         <option value="11">
-                                                             D EDUCATIONIST </option>
+                                                            <option value="10">
+                                                                MA CONSULTANTS </option>
 
 
-                                                         <option value="12">
-                                                             SUCCESS FACTOR </option>
+                                                            <option value="11">
+                                                                D EDUCATIONIST </option>
 
 
-                                                         <option value="13">
-                                                             QnA CONSULTANTS </option>
+                                                            <option value="12">
+                                                                SUCCESS FACTOR </option>
 
 
-                                                         <option value="14">
-                                                             REAL MENTORS </option>
+                                                            <option value="13">
+                                                                QnA CONSULTANTS </option>
 
 
-                                                         <option value="15">
-                                                             FM CONSULTANTS </option>
+                                                            <option value="14">
+                                                                REAL MENTORS </option>
 
 
-                                                         <option value="16">
-                                                             HR CONSULTANTS </option>
+                                                            <option value="15">
+                                                                FM CONSULTANTS </option>
 
 
-                                                         <option value="17">
-                                                             NASEEM KHAN </option>
+                                                            <option value="16">
+                                                                HR CONSULTANTS </option>
 
 
-                                                         <option value="18">
-                                                             FES CONSULTANTS </option>
+                                                            <option value="17">
+                                                                NASEEM KHAN </option>
 
 
-                                                         <option value="19">
-                                                             ICC </option>
+                                                            <option value="18">
+                                                                FES CONSULTANTS </option>
 
 
-                                                         <option value="20">
-                                                             Upskill Consultants </option>
+                                                            <option value="19">
+                                                                ICC </option>
 
 
-                                                     </select>
-                                                 </div>
+                                                            <option value="20">
+                                                                Upskill Consultants </option>
 
-                                                 <div class="col-lg-2 mb-3">
-                                                     <label class="control-label col-sm-5 ">Deposit</label>
-                                                     <div class="d-flex mt-2">
 
-                                                         <div class="form-check me-2 ">
-                                                             <input class="form-check-input" type="radio" name=""
-                                                                 id="" />
-                                                             <label class="form-check-label" for=""> Yes </label>
-                                                         </div>
-                                                         <div class="form-check">
-                                                             <input class="form-check-input" type="radio" name=""
-                                                                 id="" />
-                                                             <label class="form-check-label" for="">
-                                                                 No
-                                                             </label>
-                                                         </div>
-                                                     </div>
-                                                 </div>
+                                                        </select>
+                                                    </div>
 
-                                                 <div class="col-lg-2 mb-3">
-                                                     <label class="control-label col-sm-5 ">Medical </label>
-                                                     <div class="d-flex mt-2">
+                                                    <div class="col-lg-2 mb-3">
+                                                        <label class="control-label col-sm-5 ">Deposit</label>
+                                                        <div class="d-flex mt-2">
 
-                                                         <div class="form-check me-2 ">
-                                                             <input class="form-check-input" type="radio" name=""
-                                                                 id="" />
-                                                             <label class="form-check-label" for=""> Yes </label>
-                                                         </div>
-                                                         <div class="form-check">
-                                                             <input class="form-check-input" type="radio" name=""
-                                                                 id="" />
-                                                             <label class="form-check-label" for="">
-                                                                 No
-                                                             </label>
-                                                         </div>
-                                                     </div>
-                                                 </div>
+                                                            <div class="form-check me-2 ">
+                                                                <input class="form-check-input" type="radio" name=""
+                                                                    id="" />
+                                                                <label class="form-check-label" for=""> Yes </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name=""
+                                                                    id="" />
+                                                                <label class="form-check-label" for="">
+                                                                    No
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
-                                                 <div class="col-lg-2 mb-3">
-                                                     <label class="control-label col-sm-5 ">Action</label>
-                                                     <div class="d-flex mt-2">
+                                                    <div class="col-lg-2 mb-3">
+                                                        <label class="control-label col-sm-5 ">Medical </label>
+                                                        <div class="d-flex mt-2">
 
-                                                         <div class="form-check me-2 ">
-                                                             <input class="form-check-input" type="radio" name=""
-                                                                 id="" />
-                                                             <label class="form-check-label" for=""> Yes </label>
-                                                         </div>
-                                                         <div class="form-check">
-                                                             <input class="form-check-input" type="radio" name=""
-                                                                 id="" />
-                                                             <label class="form-check-label" for="">
-                                                                 No
-                                                             </label>
-                                                         </div>
-                                                     </div>
-                                                 </div>
+                                                            <div class="form-check me-2 ">
+                                                                <input class="form-check-input" type="radio" name=""
+                                                                    id="" />
+                                                                <label class="form-check-label" for=""> Yes </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name=""
+                                                                    id="" />
+                                                                <label class="form-check-label" for="">
+                                                                    No
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
-                                             </div>
-                                         </div>
+                                                    <div class="col-lg-2 mb-3">
+                                                        <label class="control-label col-sm-5 ">Action</label>
+                                                        <div class="d-flex mt-2">
 
-                                         <div class="add-more-uni-row position-relative mb-3">
-                                           
-                                             <div class="row">
+                                                            <div class="form-check me-2 ">
+                                                                <input class="form-check-input" type="radio" name=""
+                                                                    id="" />
+                                                                <label class="form-check-label" for=""> Yes </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name=""
+                                                                    id="" />
+                                                                <label class="form-check-label" for="">
+                                                                    No
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
-                                                 <div class="col-lg-2 mb-3">
-                                                     <label class="control-label col-sm-5 ">Uni Name</label>
-                                                     <input type="text" class="form-control name" value=""
-                                                         placeholder="Enter Name" readonly="">
-                                                 </div>
+                                                </div>
+                                            </div>
 
-                                                 <div class="col-lg-2 mb-3">
-                                                     <label class="control-label col-sm-5 ">Applied&nbsp;Date</label>
-                                                     <input type="date" class="form-control name" value=""
-                                                         placeholder="Enter Date" readonly="">
-                                                 </div>
+                                            <div class="add-more-uni-row position-relative mb-3">
 
-                                                 <div class="col-lg-2 mb-3">
-                                                     <label class="control-label col-sm-5 ">Offer&nbsp;Status</label>
-                                                     <select class="form-select" id="pro">
+                                                <div class="row">
 
-                                                         <option value="Issued" selected="">
-                                                             Issued </option>
+                                                    <div class="col-lg-2 mb-3">
+                                                        <label class="control-label col-sm-5 ">Uni Name</label>
+                                                        <input type="text" class="form-control name" value=""
+                                                            placeholder="Enter Name" readonly="">
+                                                    </div>
 
+                                                    <div class="col-lg-2 mb-3">
+                                                        <label class="control-label col-sm-5 ">Applied&nbsp;Date</label>
+                                                        <input type="date" class="form-control name" value=""
+                                                            placeholder="Enter Date" readonly="">
+                                                    </div>
 
-                                                         <option value="Rejected">
-                                                             Rejected </option>
+                                                    <div class="col-lg-2 mb-3">
+                                                        <label class="control-label col-sm-5 ">Offer&nbsp;Status</label>
+                                                        <select class="form-select" id="pro">
 
+                                                            <option value="Issued" selected="">
+                                                                Issued </option>
 
-                                                         <option value="Pending">
-                                                             Pending </option>
 
+                                                            <option value="Rejected">
+                                                                Rejected </option>
 
-                                                         <option value="Awaited">
-                                                             Awaited </option>
 
+                                                            <option value="Pending">
+                                                                Pending </option>
 
-                                                     </select>
-                                                 </div>
 
+                                                            <option value="Awaited">
+                                                                Awaited </option>
 
-                                                 <div class="col-lg-2 mb-3">
-                                                     <label class="control-label col-sm-5 ">Enter Fee</label>
-                                                     <input type="text" class="form-control name" value=""
-                                                         placeholder="Enter Name" readonly="">
-                                                 </div>
 
-                                                 <div class="col-lg-2 mb-3">
-                                                     <label class="control-label col-sm-5 ">Cas/I20/COE </label>
-                                                     <select class="form-select">
-                                                         <option selected="" disabled=""> Select </option>
-                                                         <option value="1">
-                                                             Issued </option>
-                                                         <option value="2">
-                                                             Awaited </option>
-                                                         <option value="3">
-                                                             Rejected </option>
+                                                        </select>
+                                                    </div>
 
-                                                     </select>
-                                                 </div>
 
-                                                 <div class="col-lg-2 mb-3">
-                                                     <label class="control-label col-sm-5 ">Visa Issue </label>
-                                                     <select class="form-select">
-                                                         <option selected="" disabled=""> Select </option>
-                                                         <option value="1">
-                                                             Yes </option>
-                                                         <option value="2">
-                                                             No </option>
-                                                         <option value="3">
-                                                             Online enrolled </option>
+                                                    <div class="col-lg-2 mb-3">
+                                                        <label class="control-label col-sm-5 ">Enter Fee</label>
+                                                        <input type="text" class="form-control name" value=""
+                                                            placeholder="Enter Name" readonly="">
+                                                    </div>
 
-                                                     </select>
-                                                 </div>
+                                                    <div class="col-lg-2 mb-3">
+                                                        <label class="control-label col-sm-5 ">Cas/I20/COE </label>
+                                                        <select class="form-select">
+                                                            <option selected="" disabled=""> Select </option>
+                                                            <option value="1">
+                                                                Issued </option>
+                                                            <option value="2">
+                                                                Awaited </option>
+                                                            <option value="3">
+                                                                Rejected </option>
 
-                                                 <div class="col-lg-6 mb-3">
-                                                     <label class="control-label col-sm-5 ">Agent</label>
-                                                     <select class="form-select" id="pro">
-                                                         <option selected="" disabled=""> Select </option>
-                                                         <option value="3">
-                                                             AS EDUCATION SERVICE </option>
+                                                        </select>
+                                                    </div>
 
+                                                    <div class="col-lg-2 mb-3">
+                                                        <label class="control-label col-sm-5 ">Visa Issue </label>
+                                                        <select class="form-select">
+                                                            <option selected="" disabled=""> Select </option>
+                                                            <option value="1">
+                                                                Yes </option>
+                                                            <option value="2">
+                                                                No </option>
+                                                            <option value="3">
+                                                                Online enrolled </option>
 
-                                                         <option value="4" selected="">
-                                                             EDUCATION RESOURCE NETWORK </option>
+                                                        </select>
+                                                    </div>
 
+                                                    <div class="col-lg-6 mb-3">
+                                                        <label class="control-label col-sm-5 ">Agent</label>
+                                                        <select class="form-select" id="pro">
+                                                            <option selected="" disabled=""> Select </option>
+                                                            <option value="3">
+                                                                AS EDUCATION SERVICE </option>
 
-                                                         <option value="5">
-                                                             INDEX </option>
 
+                                                            <option value="4" selected="">
+                                                                EDUCATION RESOURCE NETWORK </option>
 
-                                                         <option value="6">
-                                                             MR CONSULTANTS </option>
 
+                                                            <option value="5">
+                                                                INDEX </option>
 
-                                                         <option value="7">
-                                                             EDIFY CONSULTING </option>
 
+                                                            <option value="6">
+                                                                MR CONSULTANTS </option>
 
-                                                         <option value="8">
-                                                             HS CONSULTANTS </option>
 
+                                                            <option value="7">
+                                                                EDIFY CONSULTING </option>
 
-                                                         <option value="9">
-                                                             FALCON CONSULTANT </option>
 
+                                                            <option value="8">
+                                                                HS CONSULTANTS </option>
 
-                                                         <option value="10">
-                                                             MA CONSULTANTS </option>
 
+                                                            <option value="9">
+                                                                FALCON CONSULTANT </option>
 
-                                                         <option value="11">
-                                                             D EDUCATIONIST </option>
 
+                                                            <option value="10">
+                                                                MA CONSULTANTS </option>
 
-                                                         <option value="12">
-                                                             SUCCESS FACTOR </option>
 
+                                                            <option value="11">
+                                                                D EDUCATIONIST </option>
 
-                                                         <option value="13">
-                                                             QnA CONSULTANTS </option>
 
+                                                            <option value="12">
+                                                                SUCCESS FACTOR </option>
 
-                                                         <option value="14">
-                                                             REAL MENTORS </option>
 
+                                                            <option value="13">
+                                                                QnA CONSULTANTS </option>
 
-                                                         <option value="15">
-                                                             FM CONSULTANTS </option>
 
+                                                            <option value="14">
+                                                                REAL MENTORS </option>
 
-                                                         <option value="16">
-                                                             HR CONSULTANTS </option>
 
+                                                            <option value="15">
+                                                                FM CONSULTANTS </option>
 
-                                                         <option value="17">
-                                                             NASEEM KHAN </option>
 
+                                                            <option value="16">
+                                                                HR CONSULTANTS </option>
 
-                                                         <option value="18">
-                                                             FES CONSULTANTS </option>
 
+                                                            <option value="17">
+                                                                NASEEM KHAN </option>
 
-                                                         <option value="19">
-                                                             ICC </option>
 
+                                                            <option value="18">
+                                                                FES CONSULTANTS </option>
 
-                                                         <option value="20">
-                                                             Upskill Consultants </option>
 
+                                                            <option value="19">
+                                                                ICC </option>
 
-                                                     </select>
-                                                 </div>
 
-                                                 <div class="col-lg-2 mb-3">
-                                                     <label class="control-label col-sm-5 ">Deposit</label>
-                                                     <div class="d-flex mt-2">
+                                                            <option value="20">
+                                                                Upskill Consultants </option>
 
-                                                         <div class="form-check me-2 ">
-                                                             <input class="form-check-input" type="radio" name=""
-                                                                 id="" />
-                                                             <label class="form-check-label" for=""> Yes </label>
-                                                         </div>
-                                                         <div class="form-check">
-                                                             <input class="form-check-input" type="radio" name=""
-                                                                 id="" />
-                                                             <label class="form-check-label" for="">
-                                                                 No
-                                                             </label>
-                                                         </div>
-                                                     </div>
-                                                 </div>
 
-                                                 <div class="col-lg-2 mb-3">
-                                                     <label class="control-label col-sm-5 ">Medical </label>
-                                                     <div class="d-flex mt-2">
+                                                        </select>
+                                                    </div>
 
-                                                         <div class="form-check me-2 ">
-                                                             <input class="form-check-input" type="radio" name=""
-                                                                 id="" />
-                                                             <label class="form-check-label" for=""> Yes </label>
-                                                         </div>
-                                                         <div class="form-check">
-                                                             <input class="form-check-input" type="radio" name=""
-                                                                 id="" />
-                                                             <label class="form-check-label" for="">
-                                                                 No
-                                                             </label>
-                                                         </div>
-                                                     </div>
-                                                 </div>
+                                                    <div class="col-lg-2 mb-3">
+                                                        <label class="control-label col-sm-5 ">Deposit</label>
+                                                        <div class="d-flex mt-2">
 
-                                                 <div class="col-lg-2 mb-3">
-                                                     <label class="control-label col-sm-5 ">Action</label>
-                                                     <div class="d-flex mt-2">
+                                                            <div class="form-check me-2 ">
+                                                                <input class="form-check-input" type="radio" name=""
+                                                                    id="" />
+                                                                <label class="form-check-label" for=""> Yes </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name=""
+                                                                    id="" />
+                                                                <label class="form-check-label" for="">
+                                                                    No
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
-                                                         <div class="form-check me-2 ">
-                                                             <input class="form-check-input" type="radio" name=""
-                                                                 id="" />
-                                                             <label class="form-check-label" for=""> Yes </label>
-                                                         </div>
-                                                         <div class="form-check">
-                                                             <input class="form-check-input" type="radio" name=""
-                                                                 id="" />
-                                                             <label class="form-check-label" for="">
-                                                                 No
-                                                             </label>
-                                                         </div>
-                                                     </div>
-                                                 </div>
+                                                    <div class="col-lg-2 mb-3">
+                                                        <label class="control-label col-sm-5 ">Medical </label>
+                                                        <div class="d-flex mt-2">
 
-                                             </div>
-                                         </div>
-                                     </div>
-                                 </div>
+                                                            <div class="form-check me-2 ">
+                                                                <input class="form-check-input" type="radio" name=""
+                                                                    id="" />
+                                                                <label class="form-check-label" for=""> Yes </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name=""
+                                                                    id="" />
+                                                                <label class="form-check-label" for="">
+                                                                    No
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
-                             </div>
-                         </div>
-                       
-                     </div>
-                     <div class="modal-footer">
-                         <button type="button" class="btn btn-gray float-end ms-auto text-dark" data-bs-dismiss="modal">Close</button>
-                     </div>
-                 </form>
-             </div>
-         </div>
-     </div>
+                                                    <div class="col-lg-2 mb-3">
+                                                        <label class="control-label col-sm-5 ">Action</label>
+                                                        <div class="d-flex mt-2">
+
+                                                            <div class="form-check me-2 ">
+                                                                <input class="form-check-input" type="radio" name=""
+                                                                    id="" />
+                                                                <label class="form-check-label" for=""> Yes </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name=""
+                                                                    id="" />
+                                                                <label class="form-check-label" for="">
+                                                                    No
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-gray float-end ms-auto text-dark"
+                                data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
 
         <!--Delete Modal -->
         <div class="modal fade" id="delete" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -3082,10 +2823,10 @@
 
         <script src="assets/Js/table.js"></script>
         <script>
-            // new DataTable('#example');
+            // new DataTable('#assign');
             $(document).ready(function () {
 
-                new DataTable('#example', {
+                new DataTable('#assign', {
                     language: {
                         searchvalue: "Search records",
                     },
@@ -3105,8 +2846,8 @@
                 });
 
 
-                  // new DataTable('#inprogress');
-                  new DataTable('#inprogress', {
+                // new DataTable('#inprogress');
+                new DataTable('#inprogress', {
                     language: {
                         searchvalue: "Search records",
                     },
@@ -3115,8 +2856,8 @@
                     "info": false
                 });
 
-                 // new DataTable('#inprogress');
-                 new DataTable('#paidstudent', {
+                // new DataTable('#inprogress');
+                new DataTable('#paidstudent', {
                     language: {
                         searchvalue: "Search records",
                     },
@@ -3125,8 +2866,8 @@
                     "info": false
                 });
 
-                    // new DataTable('#inprogress');
-                    new DataTable('#t20', {
+                // new DataTable('#inprogress');
+                new DataTable('#t20', {
                     language: {
                         searchvalue: "Search records",
                     },
@@ -3135,9 +2876,9 @@
                     "info": false
                 });
 
-                
-                    // new DataTable('#visaAccepted');
-                    new DataTable('#visaAccepted', {
+
+                // new DataTable('#visaAccepted');
+                new DataTable('#visaAccepted', {
                     language: {
                         searchvalue: "Search records",
                     },
@@ -3146,8 +2887,8 @@
                     "info": false
                 });
 
-                    // new DataTable('#visaAccepted');
-                    new DataTable('#visaRefused', {
+                // new DataTable('#visaAccepted');
+                new DataTable('#visaRefused', {
                     language: {
                         searchvalue: "Search records",
                     },
@@ -3155,8 +2896,8 @@
                     "paging": false,
                     "info": false
                 });
-                  // new DataTable('#close');
-                  new DataTable('#closed', {
+                // new DataTable('#close');
+                new DataTable('#closed', {
                     language: {
                         searchvalue: "Search records",
                     },

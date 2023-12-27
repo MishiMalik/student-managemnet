@@ -73,14 +73,14 @@
                     </li>
 
                     <!-- registration -->
-                    <li class="menu-item active open">
+                    <li class="menu-item ">
                         <a href="javascript:void(0)" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-copy"></i>
                             <div data-i18n="Extended UI">Registration</div>
                         </a>
                         <ul class="menu-sub">
 
-                            <li class="menu-item active">
+                            <li class="menu-item ">
                                 <a href="student-management.html" class="menu-link">
                                     <div data-i18n="Text Divider">Student Management</div>
                                 </a>
@@ -98,7 +98,7 @@
                         </a>
                         <ul class="menu-sub">
 
-                            <li class="menu-item">
+                            <li class="menu-item ">
                                 <a href="assign_counselor.html" class="menu-link">
                                     <div data-i18n="Text Divider">Assign Counselor</div>
                                 </a>
@@ -108,15 +108,15 @@
                     </li>
 
                     <!-- User Managementn -->
-                    <li class="menu-item ">
+                    <li class="menu-item active open">
                         <a href="javascript:void(0)" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-copy"></i>
                             <div data-i18n="Extended UI">User Management</div>
                         </a>
                         <ul class="menu-sub">
 
-                            <li class="menu-item ">
-                                 <a href="users-list.html" class="menu-link">
+                            <li class="menu-item active">
+                                <a href="users-list.html" class="menu-link">
                                     <div data-i18n="Text Divider">Users</div>
                                 </a>
                             </li>
@@ -233,1742 +233,97 @@
 
 
                     <div class="container-xxl flex-grow-1 container-p-y">
-                        <!-- <h4 class="pt-3 pb-2">Student Management</h4> -->
-
-                        <div class="tab mb-3">
-                            <div class="tab-scroll">
-                                <button class="tablinks" data-tab="sm" id="defaultOpen">Student
-                                    Management</button>
-                                <button class="tablinks" data-tab="Inquery">Inquiry</button>
-                                <button class="tablinks" data-tab="in-progress">In Progress</button>
-                                <button class="tablinks" data-tab="paid">Paid</button>
-                                <button class="tablinks" data-tab="cas">Cas/T20</button>
-                                <button class="tablinks" data-tab="visa">Visa</button>
-                                <button class="tablinks" data-tab="visa-accepted">Visa Accepted</button>
-                                <button class="tablinks" data-tab="close">Close</button>
-                            </div>
-
-                        </div>
-
-                        <div id="sm" class="tabcontent">
-
-                            <!-- Striped Rows -->
-                            <div class="card  pb-4 px-lg-4 px-2">
-                                <h5 class="card-header px-0 bg-white border-bottom-0  py-3 mb-2">Student Management</h5>
-                                <div class="d-flex align-items-center flex-md-row flex-column filter-div">
-                                    <select class="form-select session-select" required="" style="width: fit-content;">
-                                        <option>Select Session </option>
-                                        <option value="9">
-                                            SEPTEMBER 2021 </option>
-                                        <option value="10">
-                                            JANUARY- MARCH 2022 </option>
-                                        <option value="11">
-                                            SEPTEMBER 2022 </option>
-                                        <option value="12">
-                                            JANUARY- MARCH 2023 </option>
-                                        <option value="13">
-                                            SEPTEMBER 2023 </option>
-                                        <option value="15">
-                                            JANUARY- MARCH 2024 </option>
-                                        <option value="16">
-                                            SEPTEMBER 2024 </option>
-                                        <option value="17">
-                                        </option>
-                                    </select>
-
-                                    <div class="d-flex">
-                                        <button class="btn btn-primary mx-2 mt-md-0 mt-3">Apply </button>
-                                        <button class="btn btn-secondary mt-md-0 mt-3">Clear </button>
-                                    </div>
+                        <!-- <h4 class=" pb-2">User Register</h4> -->
+                        <div class="card mb-4">
+                            <h5 class="card-header">User Register</h5>
+                            <div class="card-body">
+                              <form class="row">
+                                <div class="col-lg-6">
+                                    <div class="mb-3">
+                                        <label class="form-label" >Name</label>
+                                        <input type="text" class="form-control" 
+                                          placeholder="Enter Name" />
+                                      </div>
                                 </div>
-                                <table id="example" class="table  nowrap border-0" style="width:100%">
-                                    <thead>
-                                        <tr class="dt-head">
-                                            <th class="no-sort"></th>
-                                            <th>#</th>
-
-                                            <th> Name </th>
-
-                                            <th style="text-align:center; "> Contact# </th>
-
-                                            <th style="text-align:center; "> Session Month </th>
-
-
-                                            <th style="text-align:center; "> Interested Country </th>
-
-                                            <th style="text-align:center; "> Reference </th>
-                                            <th style="text-align:center; "> Status </th>
-                                            <th style="text-align:center; "> Counselor </th>
-                                            <th style="text-align:center; "> Uni List </th>
-                                            <th style="text-align:center; "> Actions </th>
-                                            <th style="text-align:center; "> FollowUp </th>
-                                            <th style="text-align:center; "> Del </th>
-
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td></td>
-                                            <td class="text-center">1</td>
-
-
-                                            <td class="text-center"> Daniyal Adnan</td>
-
-
-                                            <td class="text-center"> 03208242965</td>
-
-
-                                            <td class="text-center"> JANUARY- MARCH 2022</td>
-
-                                            <td class="text-center"> CANADA- </td>
-
-
-
-
-                                            <td class="text-center"> </td>
-
-
-                                            <!--#progres =1-->
-                                            <!--#potential = 2-->
-                                            <!--#deferred = 3-->
-                                            <!--#wasted = 4-->
-
-                                            <td>Wasted</td>
-
-                                            <td class="text-center"> </td>
-
-                                            <td class="text-center">
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#view-unit"
-                                                    class="btn btn-info btn-xs me-2 view-btn" title="View"
-                                                    data-toggle="tooltip">
-                                                    View
-                                                </button>
-                                            </td>
-
-                                            <td class="text-center">
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#view"
-                                                    class="btn btn-info btn-xs me-2 view-btn" title="View"
-                                                    data-toggle="tooltip">
-                                                    View
-                                                </button>
-
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#edit"
-                                                    class="btn btn-info btn-xs edit-btn" title="Edit"
-                                                    data-toggle="tooltip">
-                                                    Edit
-                                                </button>
-
-                                            </td>
-                                            <td class="text-center"> <button type="button"
-                                                    class="btn btn-info btn-xs edit-btn" data-bs-toggle="modal"
-                                                    data-bs-target="#followUp" title="FollowUp" data-toggle="tooltip">
-                                                    FollowUp
-                                                </button>
-
-
-                                            </td>
-                                            <td>
-
-                                                <button type="button" class="btn btn-danger btn-xs edit-btn"
-                                                    data-bs-toggle="modal" data-bs-target="#delete">
-                                                    Delete
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td class="text-center">2</td>
-
-
-                                            <td class="text-center"> Daniyal Adnan</td>
-
-
-                                            <td class="text-center"> 03208242965</td>
-
-
-                                            <td class="text-center"> JANUARY- MARCH 2022</td>
-
-                                            <td class="text-center"> CANADA- </td>
-
-
-
-
-                                            <td class="text-center"> </td>
-
-
-                                            <!--#progres =1-->
-                                            <!--#potential = 2-->
-                                            <!--#deferred = 3-->
-                                            <!--#wasted = 4-->
-
-                                            <td>Wasted</td>
-
-                                            <td class="text-center"> </td>
-
-                                            <td class="text-center">
-
-                                                <button type="button" data-bs-toggle="modal"
-                                                    data-bs-target="#action-uni"
-                                                    class="btn btn-info btn-xs me-2 view-btn" title="View"
-                                                    data-toggle="tooltip">
-                                                    Action
-                                                </button>
-
-
-                                            </td>
-
-                                            <td class="text-center">
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#view"
-                                                    class="btn btn-info btn-xs me-2 view-btn" title="View"
-                                                    data-toggle="tooltip">
-                                                    View
-                                                    </butt>
-
-                                                    <button type="button" data-bs-toggle="modal" data-bs-target="#edit"
-                                                        class="btn btn-info btn-xs edit-btn" title="Edit"
-                                                        data-toggle="tooltip">
-                                                        Edit
-                                                    </button>
-
-                                            </td>
-                                            <td class="text-center"><button type="button"
-                                                    class="btn btn-info btn-xs edit-btn" data-bs-toggle="modal"
-                                                    data-bs-target="#followUp" title="FollowUp" data-toggle="tooltip">
-                                                    FollowUp
-                                                </button>
-
-
-                                            </td>
-                                            <td>
-
-                                                <button type="button" class="btn btn-danger btn-xs edit-btn"
-                                                    data-bs-toggle="modal" data-bs-target="#delete">
-                                                    Delete
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td class="text-center">3</td>
-
-
-                                            <td class="text-center"> MUHAMMAD BILAL</td>
-
-
-                                            <td class="text-center"> 923338138363</td>
-
-
-                                            <td class="text-center"> JANUARY- MARCH 2022</td>
-
-                                            <td class="text-center"> UK- </td>
-
-
-
-
-                                            <td class="text-center"> </td>
-
-
-                                            <!--#progres =1-->
-                                            <!--#potential = 2-->
-                                            <!--#deferred = 3-->
-                                            <!--#wasted = 4-->
-
-                                            <td>Wasted</td>
-
-                                            <td class="text-center"> </td>
-
-                                            <td class="text-center">
-                                                <button type="button" data-bs-toggle="modal"
-                                                    data-bs-target="#action-uni"
-                                                    class="btn btn-info btn-xs me-2 view-btn" title="View"
-                                                    data-toggle="tooltip">
-                                                    Action
-                                                </button>
-
-                                            </td>
-
-                                            <td class="text-center">
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#view"
-                                                    class="btn btn-info btn-xs me-2 view-btn" title="View"
-                                                    data-toggle="tooltip">
-                                                    View
-                                                    </butt>
-
-                                                    <button type="button" data-bs-toggle="modal" data-bs-target="#edit"
-                                                        class="btn btn-info btn-xs edit-btn edit-btn" title="Edit"
-                                                        data-toggle="tooltip">
-                                                        Edit
-                                                    </button>
-                                            </td>
-                                            <td class="text-center">
-                                                <button type="button" class="btn btn-info btn-xs edit-btn"
-                                                    data-bs-toggle="modal" data-bs-target="#followUp" title="FollowUp"
-                                                    data-toggle="tooltip">
-                                                    FollowUp
-                                                </button>
-                                            </td>
-                                            <td>
-                                                <button type="button" class="btn btn-danger btn-xs edit-btn"
-                                                    data-bs-toggle="modal" data-bs-target="#delete">
-                                                    Delete
-                                                </button>
-
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <!--/ Striped Rows -->
-
-                        </div>
-
-                        <div id="Inquery" class="tabcontent">
-
-                            <!-- Striped Rows -->
-                            <div class="card  pb-4 px-lg-4 px-2">
-                                <h5 class="card-header px-0 bg-white border-bottom-0  py-3 mb-2">InQuiry</h5>
-                                <div class="row ">
-                                    <div class="col-lg-3 mb-3">
-
-                                        <select class="form-select session-select" required=""
-                                            style="width: fit-content;">
-                                            <option>Select Session </option>
-                                            <option value="9">
-                                                SEPTEMBER 2021 </option>
-                                            <option value="10">
-                                                JANUARY- MARCH 2022 </option>
-                                            <option value="11">
-                                                SEPTEMBER 2022 </option>
-                                            <option value="12">
-                                                JANUARY- MARCH 2023 </option>
-                                            <option value="13">
-                                                SEPTEMBER 2023 </option>
-                                            <option value="15">
-                                                JANUARY- MARCH 2024 </option>
-                                            <option value="16">
-                                                SEPTEMBER 2024 </option>
-                                            <option value="17">
-                                            </option>
-                                        </select>
-
-                                    </div>
-
-
-                                    <div class="col-lg-3 mb-3">
-
-                                        <select class="form-select" name="coun">
-                                            <option>Select Counselor </option>
-                                            <option value="4">
-                                                UZAIR SOOBASHAH </option>
-                                            <option value="5">
-                                                ALI BAIG </option>
-                                            <option value="6">
-                                                Ali Mama </option>
-                                            <option value="7">
-                                                Fariha Aziz </option>
-                                        </select>
-
-                                    </div>
-
-                                    <div class="col-lg-3 mb-3">
-                                        <select class="form-select" name="ref">
-                                            <option>Select Ref </option>
-                                            <option value="3">
-                                                ALPHA COLLEGE </option>
-                                            <option value="4">
-                                                INDEX </option>
-                                            <option value="5">
-                                                RANA </option>
-                                            <option value="6">
-                                                ERN </option>
-                                            <option value="7">
-                                                OMER ALTAF </option>
-                                            <option value="8">
-                                                KASHAN IQBAL </option>
-                                            <option value="9">
-                                                ALI RAZA GRAVITY </option>
-                                            <option value="10">
-                                                SALMAN MUSTAFA </option>
-                                            <option value="11">
-                                                ZARAK MUSTAFA </option>
-                                            <option value="12">
-                                                ICC </option>
-                                            <option value="13">
-                                                STALLION </option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-3 mb-3">
-                                        <div class="d-flex">
-                                            <button class="btn btn-primary mx-2 mt-md-0 mt-3">Apply</button>
-                                            <button class="btn btn-secondary mt-md-0 mt-3">Clear</button>
-                                        </div>
-                                    </div>
+                                <div class="col-lg-6">
+                                    <div class="mb-3">
+                                        <label class="form-label" >User Name</label>
+                                        <input type="text" class="form-control" 
+                                          placeholder="User Name" />
+                                      </div>
                                 </div>
-                                <table id="inquiry" class="table  nowrap border-0 " style="width:100%">
-                                    <thead>
-                                        <tr class="dt-head">
-                                            <th></th>
-                                            <th>#</th>
-
-                                            <th style=" text-align:center; "> Name </th>
-                                            <th style=" text-align:center; "> Contact # </th>
-
-                                            <th style=" text-align:center; "> Intst Country </th>
-                                            <th style=" text-align:center; "> Reference </th>
-                                            <th style=" text-align:center; "> Session </th>
-                                            <th style=" text-align:center; "> Counselor </th>
-
-                                            <th style=" text-align:center; "> Actions </th>
-                                            <th style="text-align:center; "> Uni View </th>
-                                            <th style=" text-align:center; "> Details </th>
-                                            <th style=" text-align:center; "> FollowUP </th>
-                                        </tr>
-
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td></td>
-                                            <td class="text-center">1</td>
-
-
-                                            <td class="text-center"> Obaid Jalal (Titan College)</td>
-
-                                            <td class="text-center"> 03342149286</td>
-
-                                            <td class="text-center"> UK- </td>
-                                            <td class="text-center"> </td>
-
-                                            <td class="text-center"> SEPTEMBER 2024</td>
-
-                                            <td class="text-center"> </td>
-
-
-
-                                            <td class="text-center">
-
-                                                <div class="btn-group btn-group2">
-                                                    <button class="btn mb-lg-0 mb-3 btn-primary btn-sm"
-                                                        style="background-color: #8d8d8d;" type="submit"
-                                                        name="potential" value="2428  "> Potential</button>
-
-                                                    <button class="btn mb-lg-0 mb-3 btn-primary btn-sm" type="submit"
-                                                        name="progress" value="2428  "> In Progress</button>
-
-                                                    <button class="btn mb-lg-0 mb-3 btn-danger btn-sm" type="submit"
-                                                        name="wasted" value="2428  "> Wasted</button>
-
-                                                    <button class="btn mb-lg-0 mb-3 text-white btn-sm" type="submit"
-                                                        name="visa_accepted" style="background-color: #193765;"
-                                                        value="2428  "> Visa Acptd</button>
-
-                                                    <button class="btn mb-lg-0 mb-3 text-white btn-sm" type="submit"
-                                                        name="refused" style="background-color: #196545;"
-                                                        value="2428  "> Visa
-                                                        Rfsd</button>
-
-
-                                                    <button class="btn mb-lg-0 mb-3 text-white btn-sm" type="submit"
-                                                        name="visa_refused" style="background-color: #17a2b8;"
-                                                        value="2428  "> Paid Student </button>
-
-                                                    <button class="btn mb-lg-0 mb-3 btn-primary btn-sm" type="submit"
-                                                        name="closed" style="background-color: #28a745;" value="2428  ">
-                                                        Closed</button>
-                                                </div>
-
-
-                                            </td>
-
-                                            <td class="text-center">
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#uni-view"
-                                                    class="btn btn-info btn-xs me-2 view-btn" title="View"
-                                                    data-toggle="tooltip">
-                                                    View
-                                                </button>
-                                            </td>
-
-
-                                            <td class="text-center">
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#view"
-                                                    class="btn btn-info btn-xs me-2 view-btn" title="View"
-                                                    data-toggle="tooltip">
-                                                    View
-                                                </button>
-
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#edit"
-                                                    class="btn btn-info btn-xs edit-btn" title="Edit"
-                                                    data-toggle="tooltip">
-                                                    Edit
-                                                </button>
-
-                                            </td>
-                                            <td class="text-center"> <button type="button"
-                                                    class="btn btn-info btn-xs edit-btn" data-bs-toggle="modal"
-                                                    data-bs-target="#followUp" title="FollowUp" data-toggle="tooltip">
-                                                    FollowUp
-                                                </button>
-
-
-                                            </td>
-                                        </tr>
-
-                                    </tbody>
-                                </table>
-                            </div>
-                            <!--/ Striped Rows -->
-
-                        </div>
-
-                        <div id="in-progress" class="tabcontent">
-                            <!-- Striped Rows -->
-                            <div class="card  pb-4 px-lg-4 px-2">
-                                <h5 class="card-header px-0 bg-white border-bottom-0  py-3 mb-2">In Progress</h5>
-                                <div class="row ">
-                                    <div class="col-lg-3 mb-3">
-
-                                        <select class="form-select session-select" required=""
-                                            style="width: fit-content;">
-                                            <option>Select Session </option>
-                                            <option value="9">
-                                                SEPTEMBER 2021 </option>
-                                            <option value="10">
-                                                JANUARY- MARCH 2022 </option>
-                                            <option value="11">
-                                                SEPTEMBER 2022 </option>
-                                            <option value="12">
-                                                JANUARY- MARCH 2023 </option>
-                                            <option value="13">
-                                                SEPTEMBER 2023 </option>
-                                            <option value="15">
-                                                JANUARY- MARCH 2024 </option>
-                                            <option value="16">
-                                                SEPTEMBER 2024 </option>
-                                            <option value="17">
-                                            </option>
-                                        </select>
-
-                                    </div>
-
-
-                                    <div class="col-lg-3 mb-3">
-
-                                        <select class="form-select" name="coun">
-                                            <option>Select Counselor </option>
-                                            <option value="4">
-                                                UZAIR SOOBASHAH </option>
-                                            <option value="5">
-                                                ALI BAIG </option>
-                                            <option value="6">
-                                                Ali Mama </option>
-                                            <option value="7">
-                                                Fariha Aziz </option>
-                                        </select>
-
-                                    </div>
-
-                                    <div class="col-lg-3 mb-3">
-                                        <select class="form-select" name="ref">
-                                            <option>Select Ref </option>
-                                            <option value="3">
-                                                ALPHA COLLEGE </option>
-                                            <option value="4">
-                                                INDEX </option>
-                                            <option value="5">
-                                                RANA </option>
-                                            <option value="6">
-                                                ERN </option>
-                                            <option value="7">
-                                                OMER ALTAF </option>
-                                            <option value="8">
-                                                KASHAN IQBAL </option>
-                                            <option value="9">
-                                                ALI RAZA GRAVITY </option>
-                                            <option value="10">
-                                                SALMAN MUSTAFA </option>
-                                            <option value="11">
-                                                ZARAK MUSTAFA </option>
-                                            <option value="12">
-                                                ICC </option>
-                                            <option value="13">
-                                                STALLION </option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-3 mb-3">
-                                        <div class="d-flex">
-                                            <button class="btn btn-primary mx-2 mt-md-0 mt-3">Apply</button>
-                                            <button class="btn btn-secondary mt-md-0 mt-3">Clear</button>
-                                        </div>
-                                    </div>
+                                <div class="col-lg-6">
+                                    <div class="mb-3">
+                                        <label class="form-label" >Password</label>
+                                        <input type="text" class="form-control" 
+                                          placeholder="Enter Password" />
+                                      </div>
                                 </div>
+                                <div class="col-lg-6">
+                                    <div class="mb-3">
+                                        <label class="form-label" >User Role</label>
+                                        <select class="form-select" name="level">
+                                            <option value="1">Admin</option>
+                                          <option value="2">Staff</option>
+                                          <option value="3">Intern</option>
+                                       </select>
+                                      </div>
+                                </div>
+                               
+                                <div class="d-flex justify-content-end">
+                                  <button type="submit" class="btn btn-primary">Register</button>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+
+
+                            <div class="card  pb-4 px-lg-4 px-2">
+                                <h5 class="card-header px-0 bg-white border-bottom-0  py-3 mb-2">Assign Counselor</h5>
+                             
                                 <table id="inprogress" class="table  nowrap border-0 " style="width:100%">
                                     <thead>
                                         <tr class="dt-head">
-                                            <th></th>
-                                            <th>#</th>
-                                            <th style=" text-align:center; "> Name </th>
-                                            <th style=" text-align:center; "> Contact # </th>
-                                            <th style=" text-align:center; "> Intst Country </th>
-                                            <th style=" text-align:center; "> Reference </th>
-                                            <th style=" text-align:center; "> Session </th>
-                                            <th style=" text-align:center; "> Counselor </th>
-                                            <th style=" text-align:center; "> Actions </th>
-                                            <th style="text-align:center; "> Uni View </th>
-                                            <th style=" text-align:center; "> Process </th>
-                                            <th style=" text-align:center; "> Details </th>
-                                            <th style=" text-align:center; "> FollowUP </th>
-                                        </tr>
-
+                                            <th class="text-center" style="width: 50px;">#</th>
+                                            <th>Name </th>
+                                            <th>Username</th>
+                                            <th class="text-center" >User Role</th>
+                                            <th class="text-center" >Status</th>
+                                            <th>Last Login</th>
+                                            <th class="text-center" >Actions</th>
+                                          </tr>
+                                      
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td></td>
-                                            <td class="text-center">1</td>
-
-
-                                            <td class="text-center"> Obaid Jalal (Titan College)</td>
-
-                                            <td class="text-center"> 03342149286</td>
-
-                                            <td class="text-center"> UK- </td>
-                                            <td class="text-center"> </td>
-
-                                            <td class="text-center"> SEPTEMBER 2024</td>
-
-                                            <td class="text-center"> </td>
-
+                                            <td class="text-center d-flex">1</td>
+                                            <td>Admin</td>
+                                            <td>Admin</td>
+                                            <td class="text-center">Admin</td>
                                             <td class="text-center">
-
-                                                <div class="btn-group btn-group2">
-                                                    <button class="btn mb-lg-0 mb-3 btn-primary btn-sm"
-                                                        style="background-color: #8d8d8d;" type="submit"
-                                                        name="potential" value="2428  "> Potential</button>
-
-                                                    <button class="btn mb-lg-0 mb-3 btn-primary btn-sm" type="submit"
-                                                        name="progress" value="2428  "> In Progress</button>
-
-                                                    <button class="btn mb-lg-0 mb-3 btn-danger btn-sm" type="submit"
-                                                        name="wasted" value="2428  "> Wasted</button>
-
-                                                    <button class="btn mb-lg-0 mb-3 text-white btn-sm" type="submit"
-                                                        name="visa_accepted" style="background-color: #193765;"
-                                                        value="2428  "> Visa Acptd</button>
-
-                                                    <button class="btn mb-lg-0 mb-3 text-white btn-sm" type="submit"
-                                                        name="refused" style="background-color: #196545;"
-                                                        value="2428  "> Visa
-                                                        Rfsd</button>
-
-
-                                                    <button class="btn mb-lg-0 mb-3 text-white btn-sm" type="submit"
-                                                        name="visa_refused" style="background-color: #17a2b8;"
-                                                        value="2428  "> Paid Student </button>
-
-                                                    <button class="btn mb-lg-0 mb-3 btn-primary btn-sm" type="submit"
-                                                        name="closed" style="background-color: #28a745;" value="2428  ">
-                                                        Closed</button>
-                                                </div>
-
-
-                                            </td>
+                                                        <span class="label label-success">Active</span>
+                                                      </td>
+                                            <td>December 27, 2023, 4:31:59 pm</td>
                                             <td class="text-center">
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#uni-view"
-                                                    class="btn btn-info btn-xs me-2 view-btn" title="View"
-                                                    data-toggle="tooltip">
-                                                    View
-                                                </button>
+                                              <div class="btn-group">
+                                               
+                                                <button type="button"class="btn btn-xs  btn-warning" 
+                                                data-bs-toggle="modal" data-bs-target="#edit">
+                                                Edit
+                                            </button>
+                                               
+                                                 <button type="button"class="btn btn-xs btn-danger" 
+                                                 data-bs-toggle="modal" data-bs-target="#delete">
+                                                 Delete
+                                             </button>
+                                                 </div>
                                             </td>
-
-                                            <td class="text-center">
-
-                                                <button type="button" data-bs-toggle="modal"
-                                                    data-bs-target="#action-uni"
-                                                    class="btn btn-info btn-xs me-2 view-btn" title="View"
-                                                    data-toggle="tooltip">
-                                                    Action
-                                                </button>
-
-
-                                            </td>
-                                            <td class="text-center">
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#view"
-                                                    class="btn btn-info btn-xs me-2 view-btn" title="View"
-                                                    data-toggle="tooltip">
-                                                    View
-                                                </button>
-
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#edit"
-                                                    class="btn btn-info btn-xs edit-btn" title="Edit"
-                                                    data-toggle="tooltip">
-                                                    Edit
-                                                </button>
-
-                                            </td>
-                                            <td class="text-center"> <button type="button"
-                                                    class="btn btn-info btn-xs edit-btn" data-bs-toggle="modal"
-                                                    data-bs-target="#followUp" title="FollowUp" data-toggle="tooltip">
-                                                    FollowUp
-                                                </button>
-
-
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td class="text-center">1</td>
-
-
-                                            <td class="text-center"> Obaid Jalal (Titan College)</td>
-
-                                            <td class="text-center"> 03342149286</td>
-
-                                            <td class="text-center"> UK- </td>
-                                            <td class="text-center"> </td>
-
-                                            <td class="text-center"> SEPTEMBER 2024</td>
-
-                                            <td class="text-center"> </td>
-
-                                            <td class="text-center">
-
-                                                <div class="btn-group btn-group2">
-                                                    <button class="btn mb-lg-0 mb-3 btn-primary btn-sm"
-                                                        style="background-color: #8d8d8d;" type="submit"
-                                                        name="potential" value="2428  "> Potential</button>
-
-                                                    <button class="btn mb-lg-0 mb-3 btn-primary btn-sm" type="submit"
-                                                        name="progress" value="2428  "> In Progress</button>
-
-                                                    <button class="btn mb-lg-0 mb-3 btn-danger btn-sm" type="submit"
-                                                        name="wasted" value="2428  "> Wasted</button>
-
-                                                    <button class="btn mb-lg-0 mb-3 text-white btn-sm" type="submit"
-                                                        name="visa_accepted" style="background-color: #193765;"
-                                                        value="2428  "> Visa Acptd</button>
-
-                                                    <button class="btn mb-lg-0 mb-3 text-white btn-sm" type="submit"
-                                                        name="refused" style="background-color: #196545;"
-                                                        value="2428  "> Visa
-                                                        Rfsd</button>
-
-
-                                                    <button class="btn mb-lg-0 mb-3 text-white btn-sm" type="submit"
-                                                        name="visa_refused" style="background-color: #17a2b8;"
-                                                        value="2428  "> Paid Student </button>
-
-                                                    <button class="btn mb-lg-0 mb-3 btn-primary btn-sm" type="submit"
-                                                        name="closed" style="background-color: #28a745;" value="2428  ">
-                                                        Closed</button>
-                                                </div>
-
-
-                                            </td>
-                                            <td class="text-center">
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#uni-view"
-                                                    class="btn btn-info btn-xs me-2 view-btn" title="View"
-                                                    data-toggle="tooltip">
-                                                    View
-                                                </button>
-                                            </td>
-                                            <td class="text-center">
-
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#view-unit"
-                                                    class="btn btn-info btn-xs me-2 view-btn" title="View"
-                                                    data-toggle="tooltip">
-                                                    View
-                                                </button>
-
-
-                                            </td>
-                                            <td class="text-center">
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#view"
-                                                    class="btn btn-info btn-xs me-2 view-btn" title="View"
-                                                    data-toggle="tooltip">
-                                                    View
-                                                </button>
-
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#edit"
-                                                    class="btn btn-info btn-xs edit-btn" title="Edit"
-                                                    data-toggle="tooltip">
-                                                    Edit
-                                                </button>
-
-                                            </td>
-                                            <td class="text-center"> <button type="button"
-                                                    class="btn btn-info btn-xs edit-btn" data-bs-toggle="modal"
-                                                    data-bs-target="#followUp" title="FollowUp" data-toggle="tooltip">
-                                                    FollowUp
-                                                </button>
-
-
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <!--/ Striped Rows -->
-                        </div>
-
-                        <div id="paid" class="tabcontent">
-                            <!-- Striped Rows -->
-                            <div class="card  pb-4 px-lg-4 px-2">
-                                <h5 class="card-header px-0 bg-white border-bottom-0  py-3 mb-2">Paid</h5>
-                                <div class="row ">
-                                    <div class="col-lg-3 mb-3">
-
-                                        <select class="form-select session-select" required=""
-                                            style="width: fit-content;">
-                                            <option>Select Session </option>
-                                            <option value="9">
-                                                SEPTEMBER 2021 </option>
-                                            <option value="10">
-                                                JANUARY- MARCH 2022 </option>
-                                            <option value="11">
-                                                SEPTEMBER 2022 </option>
-                                            <option value="12">
-                                                JANUARY- MARCH 2023 </option>
-                                            <option value="13">
-                                                SEPTEMBER 2023 </option>
-                                            <option value="15">
-                                                JANUARY- MARCH 2024 </option>
-                                            <option value="16">
-                                                SEPTEMBER 2024 </option>
-                                            <option value="17">
-                                            </option>
-                                        </select>
-
-                                    </div>
-
-
-                                    <div class="col-lg-3 mb-3">
-
-                                        <select class="form-select" name="coun">
-                                            <option>Select Counselor </option>
-                                            <option value="4">
-                                                UZAIR SOOBASHAH </option>
-                                            <option value="5">
-                                                ALI BAIG </option>
-                                            <option value="6">
-                                                Ali Mama </option>
-                                            <option value="7">
-                                                Fariha Aziz </option>
-                                        </select>
-
-                                    </div>
-
-                                    <div class="col-lg-3 mb-3">
-                                        <select class="form-select" name="ref">
-                                            <option>Select Ref </option>
-                                            <option value="3">
-                                                ALPHA COLLEGE </option>
-                                            <option value="4">
-                                                INDEX </option>
-                                            <option value="5">
-                                                RANA </option>
-                                            <option value="6">
-                                                ERN </option>
-                                            <option value="7">
-                                                OMER ALTAF </option>
-                                            <option value="8">
-                                                KASHAN IQBAL </option>
-                                            <option value="9">
-                                                ALI RAZA GRAVITY </option>
-                                            <option value="10">
-                                                SALMAN MUSTAFA </option>
-                                            <option value="11">
-                                                ZARAK MUSTAFA </option>
-                                            <option value="12">
-                                                ICC </option>
-                                            <option value="13">
-                                                STALLION </option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-3 mb-3">
-                                        <div class="d-flex">
-                                            <button class="btn btn-primary mx-2 mt-md-0 mt-3">Apply</button>
-                                            <button class="btn btn-secondary mt-md-0 mt-3">Clear</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <table id="paidstudent" class="table  nowrap border-0 " style="width:100%">
-                                    <thead>
-                                        <tr class="dt-head">
-                                            <th></th>
-                                            <th>#</th>
-
-                                            <th style=" text-align:center; "> Name </th>
-                                            <th style=" text-align:center; "> Contact # </th>
-
-                                            <th style=" text-align:center; "> Intst Country </th>
-                                            <th style=" text-align:center; "> Reference </th>
-                                            <th style=" text-align:center; "> Session </th>
-                                            <th style=" text-align:center; "> Counselor </th>
-
-                                            <th style=" text-align:center; "> Actions </th>
-                                            <th style="text-align:center; "> Uni View </th>
-                                            <th style=" text-align:center; "> Details </th>
-                                            <th style=" text-align:center; "> FollowUP </th>
-                                        </tr>
-
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td></td>
-                                            <td class="text-center">1</td>
-
-
-                                            <td class="text-center"> Obaid Jalal (Titan College)</td>
-
-                                            <td class="text-center"> 03342149286</td>
-
-                                            <td class="text-center"> UK- </td>
-                                            <td class="text-center"> </td>
-
-                                            <td class="text-center"> SEPTEMBER 2024</td>
-
-                                            <td class="text-center"> </td>
-
-                                            <td class="text-center">
-
-                                                <div class="btn-group btn-group2">
-                                                    <button class="btn mb-lg-0 mb-3 btn-primary btn-sm"
-                                                        style="background-color: #8d8d8d;" type="submit"
-                                                        name="potential" value="2428  "> Potential</button>
-
-                                                    <button class="btn mb-lg-0 mb-3 btn-primary btn-sm" type="submit"
-                                                        name="progress" value="2428  "> In Progress</button>
-
-                                                    <button class="btn mb-lg-0 mb-3 btn-danger btn-sm" type="submit"
-                                                        name="wasted" value="2428  "> Wasted</button>
-
-                                                    <button class="btn mb-lg-0 mb-3 text-white btn-sm" type="submit"
-                                                        name="visa_accepted" style="background-color: #193765;"
-                                                        value="2428  "> Visa Acptd</button>
-
-                                                    <button class="btn mb-lg-0 mb-3 text-white btn-sm" type="submit"
-                                                        name="refused" style="background-color: #196545;"
-                                                        value="2428  "> Visa
-                                                        Rfsd</button>
-
-
-                                                    <button class="btn mb-lg-0 mb-3 text-white btn-sm" type="submit"
-                                                        name="visa_refused" style="background-color: #17a2b8;"
-                                                        value="2428  "> Paid Student </button>
-
-                                                    <button class="btn mb-lg-0 mb-3 btn-primary btn-sm" type="submit"
-                                                        name="closed" style="background-color: #28a745;" value="2428  ">
-                                                        Closed</button>
-                                                </div>
-
-
-                                            </td>
-
-                                            <td class="text-center">
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#uni-view"
-                                                    class="btn btn-info btn-xs me-2 view-btn" title="View"
-                                                    data-toggle="tooltip">
-                                                    View
-                                                </button>
-                                            </td>
-
-
-                                            <td class="text-center">
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#view"
-                                                    class="btn btn-info btn-xs me-2 view-btn" title="View"
-                                                    data-toggle="tooltip">
-                                                    View
-                                                </button>
-
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#edit"
-                                                    class="btn btn-info btn-xs edit-btn" title="Edit"
-                                                    data-toggle="tooltip">
-                                                    Edit
-                                                </button>
-
-                                            </td>
-                                            <td class="text-center"> <button type="button"
-                                                    class="btn btn-info btn-xs edit-btn" data-bs-toggle="modal"
-                                                    data-bs-target="#followUp" title="FollowUp" data-toggle="tooltip">
-                                                    FollowUp
-                                                </button>
-
-
-                                            </td>
-                                        </tr>
+                                           </tr>
 
                                     </tbody>
                                 </table>
                             </div>
-                            <!--/ Striped Rows -->
-                        </div>
-
-                        <div id="cas" class="tabcontent">
-                            <!-- Striped Rows -->
-                            <div class="card  pb-4 px-lg-4 px-2">
-                                <h5 class="card-header px-0 bg-white border-bottom-0  py-3 mb-2">Cas/T20</h5>
-                                <div class="row ">
-                                    <div class="col-lg-3 mb-3">
-
-                                        <select class="form-select session-select" required=""
-                                            style="width: fit-content;">
-                                            <option>Select Session </option>
-                                            <option value="9">
-                                                SEPTEMBER 2021 </option>
-                                            <option value="10">
-                                                JANUARY- MARCH 2022 </option>
-                                            <option value="11">
-                                                SEPTEMBER 2022 </option>
-                                            <option value="12">
-                                                JANUARY- MARCH 2023 </option>
-                                            <option value="13">
-                                                SEPTEMBER 2023 </option>
-                                            <option value="15">
-                                                JANUARY- MARCH 2024 </option>
-                                            <option value="16">
-                                                SEPTEMBER 2024 </option>
-                                            <option value="17">
-                                            </option>
-                                        </select>
-
-                                    </div>
-
-
-                                    <div class="col-lg-3 mb-3">
-
-                                        <select class="form-select" name="coun">
-                                            <option>Select Counselor </option>
-                                            <option value="4">
-                                                UZAIR SOOBASHAH </option>
-                                            <option value="5">
-                                                ALI BAIG </option>
-                                            <option value="6">
-                                                Ali Mama </option>
-                                            <option value="7">
-                                                Fariha Aziz </option>
-                                        </select>
-
-                                    </div>
-
-                                    <div class="col-lg-3 mb-3">
-                                        <select class="form-select" name="ref">
-                                            <option>Select Ref </option>
-                                            <option value="3">
-                                                ALPHA COLLEGE </option>
-                                            <option value="4">
-                                                INDEX </option>
-                                            <option value="5">
-                                                RANA </option>
-                                            <option value="6">
-                                                ERN </option>
-                                            <option value="7">
-                                                OMER ALTAF </option>
-                                            <option value="8">
-                                                KASHAN IQBAL </option>
-                                            <option value="9">
-                                                ALI RAZA GRAVITY </option>
-                                            <option value="10">
-                                                SALMAN MUSTAFA </option>
-                                            <option value="11">
-                                                ZARAK MUSTAFA </option>
-                                            <option value="12">
-                                                ICC </option>
-                                            <option value="13">
-                                                STALLION </option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-3 mb-3">
-                                        <div class="d-flex">
-                                            <button class="btn btn-primary mx-2 mt-md-0 mt-3">Apply</button>
-                                            <button class="btn btn-secondary mt-md-0 mt-3">Clear</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <table id="t20" class="table  nowrap border-0 " style="width:100%">
-                                    <thead>
-                                        <tr class="dt-head">
-                                            <th></th>
-                                            <th>#</th>
-
-                                            <th style=" text-align:center; "> Name </th>
-                                            <th style=" text-align:center; "> Contact # </th>
-
-                                            <th style=" text-align:center; "> Intst Country </th>
-                                            <th style=" text-align:center; "> Reference </th>
-                                            <th style=" text-align:center; "> Session </th>
-                                            <th style=" text-align:center; "> Counselor </th>
-                                            <th style=" text-align:center; "> Actions </th>
-                                            <th style="text-align:center; "> Uni View</th>
-                                            <th style=" text-align:center; "> Details </th>
-                                            <th style=" text-align:center; "> FollowUP </th>
-                                        </tr>
-
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td></td>
-                                            <td class="text-center">1</td>
-
-
-                                            <td class="text-center"> Obaid Jalal (Titan College)</td>
-
-                                            <td class="text-center"> 03342149286</td>
-
-                                            <td class="text-center"> UK- </td>
-                                            <td class="text-center"> </td>
-
-                                            <td class="text-center"> SEPTEMBER 2024</td>
-
-                                            <td class="text-center"> </td>
-
-                                            <td class="text-center">
-
-                                                <div class="btn-group btn-group2">
-                                                    <button class="btn mb-lg-0 mb-3 btn-primary btn-sm"
-                                                        style="background-color: #8d8d8d;" type="submit"
-                                                        name="potential" value="2428  "> Potential</button>
-
-                                                    <button class="btn mb-lg-0 mb-3 btn-primary btn-sm" type="submit"
-                                                        name="progress" value="2428  "> In Progress</button>
-
-                                                    <button class="btn mb-lg-0 mb-3 btn-danger btn-sm" type="submit"
-                                                        name="wasted" value="2428  "> Wasted</button>
-
-                                                    <button class="btn mb-lg-0 mb-3 text-white btn-sm" type="submit"
-                                                        name="visa_accepted" style="background-color: #193765;"
-                                                        value="2428  "> Visa Acptd</button>
-
-                                                    <button class="btn mb-lg-0 mb-3 text-white btn-sm" type="submit"
-                                                        name="refused" style="background-color: #196545;"
-                                                        value="2428  "> Visa
-                                                        Rfsd</button>
-
-
-                                                    <button class="btn mb-lg-0 mb-3 text-white btn-sm" type="submit"
-                                                        name="visa_refused" style="background-color: #17a2b8;"
-                                                        value="2428  "> Paid Student </button>
-
-                                                    <button class="btn mb-lg-0 mb-3 btn-primary btn-sm" type="submit"
-                                                        name="closed" style="background-color: #28a745;" value="2428  ">
-                                                        Closed</button>
-                                                </div>
-
-
-                                            </td>
-
-                                            <td class="text-center">
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#uni-view"
-                                                    class="btn btn-info btn-xs me-2 view-btn" title="View"
-                                                    data-toggle="tooltip">
-                                                    View
-                                                </button>
-                                            </td>
-
-
-                                            <td class="text-center">
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#view"
-                                                    class="btn btn-info btn-xs me-2 view-btn" title="View"
-                                                    data-toggle="tooltip">
-                                                    View
-                                                </button>
-
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#edit"
-                                                    class="btn btn-info btn-xs edit-btn" title="Edit"
-                                                    data-toggle="tooltip">
-                                                    Edit
-                                                </button>
-
-                                            </td>
-                                            <td class="text-center"> <button type="button"
-                                                    class="btn btn-info btn-xs edit-btn" data-bs-toggle="modal"
-                                                    data-bs-target="#followUp" title="FollowUp" data-toggle="tooltip">
-                                                    FollowUp
-                                                </button>
-
-
-                                            </td>
-                                        </tr>
-
-                                    </tbody>
-                                </table>
-                            </div>
-                            <!--/ Striped Rows -->
-
-                        </div>
-
-                        <div id="visa" class="tabcontent">
-                            <!-- Striped Rows -->
-                            <div class="card  pb-4 px-lg-4 px-2">
-                                <h5 class="card-header px-0 bg-white border-bottom-0  py-3 mb-2">Visa</h5>
-                                <div class="row ">
-                                    <div class="col-lg-3 mb-3">
-
-                                        <select class="form-select session-select" required=""
-                                            style="width: fit-content;">
-                                            <option>Select Session </option>
-                                            <option value="9">
-                                                SEPTEMBER 2021 </option>
-                                            <option value="10">
-                                                JANUARY- MARCH 2022 </option>
-                                            <option value="11">
-                                                SEPTEMBER 2022 </option>
-                                            <option value="12">
-                                                JANUARY- MARCH 2023 </option>
-                                            <option value="13">
-                                                SEPTEMBER 2023 </option>
-                                            <option value="15">
-                                                JANUARY- MARCH 2024 </option>
-                                            <option value="16">
-                                                SEPTEMBER 2024 </option>
-                                            <option value="17">
-                                            </option>
-                                        </select>
-
-                                    </div>
-
-
-                                    <div class="col-lg-3 mb-3">
-
-                                        <select class="form-select" name="coun">
-                                            <option>Select Counselor </option>
-                                            <option value="4">
-                                                UZAIR SOOBASHAH </option>
-                                            <option value="5">
-                                                ALI BAIG </option>
-                                            <option value="6">
-                                                Ali Mama </option>
-                                            <option value="7">
-                                                Fariha Aziz </option>
-                                        </select>
-
-                                    </div>
-
-                                    <div class="col-lg-3 mb-3">
-                                        <select class="form-select" name="ref">
-                                            <option>Select Ref </option>
-                                            <option value="3">
-                                                ALPHA COLLEGE </option>
-                                            <option value="4">
-                                                INDEX </option>
-                                            <option value="5">
-                                                RANA </option>
-                                            <option value="6">
-                                                ERN </option>
-                                            <option value="7">
-                                                OMER ALTAF </option>
-                                            <option value="8">
-                                                KASHAN IQBAL </option>
-                                            <option value="9">
-                                                ALI RAZA GRAVITY </option>
-                                            <option value="10">
-                                                SALMAN MUSTAFA </option>
-                                            <option value="11">
-                                                ZARAK MUSTAFA </option>
-                                            <option value="12">
-                                                ICC </option>
-                                            <option value="13">
-                                                STALLION </option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-3 mb-3">
-                                        <div class="d-flex">
-                                            <button class="btn btn-primary mx-2 mt-md-0 mt-3">Apply</button>
-                                            <button class="btn btn-secondary mt-md-0 mt-3">Clear</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <table id="visaRefused" class="table  nowrap border-0 " style="width:100%">
-                                    <thead>
-                                        <tr class="dt-head">
-                                            <th></th>
-                                            <th>#</th>
-
-                                            <th style=" text-align:center; "> Name </th>
-                                            <th style=" text-align:center; "> Contact # </th>
-
-                                            <th style=" text-align:center; "> Intst Country </th>
-                                            <th style=" text-align:center; "> Reference </th>
-                                            <th style=" text-align:center; "> Session </th>
-                                            <th style=" text-align:center; "> Counselor </th>
-                                            <th style=" text-align:center; "> Actions </th>
-                                            <th style="text-align:center; "> Uni View </th>
-                                            <th style=" text-align:center; "> Details </th>
-                                            <th style=" text-align:center; "> FollowUP </th>
-                                        </tr>
-
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td></td>
-                                            <td class="text-center">1</td>
-
-
-                                            <td class="text-center"> Obaid Jalal (Titan College)</td>
-
-                                            <td class="text-center"> 03342149286</td>
-
-                                            <td class="text-center"> UK- </td>
-                                            <td class="text-center"> </td>
-
-                                            <td class="text-center"> SEPTEMBER 2024</td>
-
-                                            <td class="text-center"> </td>
-
-                                            <td class="text-center">
-
-                                                <div class="btn-group btn-group2">
-                                                    <button class="btn mb-lg-0 mb-3 btn-primary btn-sm"
-                                                        style="background-color: #8d8d8d;" type="submit"
-                                                        name="potential" value="2428  "> Potential</button>
-
-                                                    <button class="btn mb-lg-0 mb-3 btn-primary btn-sm" type="submit"
-                                                        name="progress" value="2428  "> In Progress</button>
-
-                                                    <button class="btn mb-lg-0 mb-3 btn-danger btn-sm" type="submit"
-                                                        name="wasted" value="2428  "> Wasted</button>
-
-                                                    <button class="btn mb-lg-0 mb-3 text-white btn-sm" type="submit"
-                                                        name="visa_accepted" style="background-color: #193765;"
-                                                        value="2428  "> Visa Acptd</button>
-
-                                                    <button class="btn mb-lg-0 mb-3 text-white btn-sm" type="submit"
-                                                        name="refused" style="background-color: #196545;"
-                                                        value="2428  "> Visa
-                                                        Rfsd</button>
-
-
-                                                    <button class="btn mb-lg-0 mb-3 text-white btn-sm" type="submit"
-                                                        name="visa_refused" style="background-color: #17a2b8;"
-                                                        value="2428  "> Paid Student </button>
-
-                                                    <button class="btn mb-lg-0 mb-3 btn-primary btn-sm" type="submit"
-                                                        name="closed" style="background-color: #28a745;" value="2428  ">
-                                                        Closed</button>
-                                                </div>
-
-
-                                            </td>
-
-                                            <td class="text-center">
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#uni-view"
-                                                    class="btn btn-info btn-xs me-2 view-btn" title="View"
-                                                    data-toggle="tooltip">
-                                                    View
-                                                </button>
-                                            </td>
-
-
-                                            <td class="text-center">
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#view"
-                                                    class="btn btn-info btn-xs me-2 view-btn" title="View"
-                                                    data-toggle="tooltip">
-                                                    View
-                                                </button>
-
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#edit"
-                                                    class="btn btn-info btn-xs edit-btn" title="Edit"
-                                                    data-toggle="tooltip">
-                                                    Edit
-                                                </button>
-
-                                            </td>
-                                            <td class="text-center"> <button type="button"
-                                                    class="btn btn-info btn-xs edit-btn" data-bs-toggle="modal"
-                                                    data-bs-target="#followUp" title="FollowUp" data-toggle="tooltip">
-                                                    FollowUp
-                                                </button>
-
-
-                                            </td>
-                                        </tr>
-
-                                    </tbody>
-                                </table>
-                            </div>
-                            <!--/ Striped Rows -->
-                        </div>
-
-                        <div id="visa-accepted" class="tabcontent">
-                            <!-- Striped Rows -->
-                            <div class="card  pb-4 px-lg-4 px-2">
-                                <h5 class="card-header px-0 bg-white border-bottom-0  py-3 mb-2">Visa Accepted</h5>
-                                <div class="row ">
-                                    <div class="col-lg-3 mb-3">
-
-                                        <select class="form-select session-select" required=""
-                                            style="width: fit-content;">
-                                            <option>Select Session </option>
-                                            <option value="9">
-                                                SEPTEMBER 2021 </option>
-                                            <option value="10">
-                                                JANUARY- MARCH 2022 </option>
-                                            <option value="11">
-                                                SEPTEMBER 2022 </option>
-                                            <option value="12">
-                                                JANUARY- MARCH 2023 </option>
-                                            <option value="13">
-                                                SEPTEMBER 2023 </option>
-                                            <option value="15">
-                                                JANUARY- MARCH 2024 </option>
-                                            <option value="16">
-                                                SEPTEMBER 2024 </option>
-                                            <option value="17">
-                                            </option>
-                                        </select>
-
-                                    </div>
-
-
-                                    <div class="col-lg-3 mb-3">
-
-                                        <select class="form-select" name="coun">
-                                            <option>Select Counselor </option>
-                                            <option value="4">
-                                                UZAIR SOOBASHAH </option>
-                                            <option value="5">
-                                                ALI BAIG </option>
-                                            <option value="6">
-                                                Ali Mama </option>
-                                            <option value="7">
-                                                Fariha Aziz </option>
-                                        </select>
-
-                                    </div>
-
-                                    <div class="col-lg-3 mb-3">
-                                        <select class="form-select" name="ref">
-                                            <option>Select Ref </option>
-                                            <option value="3">
-                                                ALPHA COLLEGE </option>
-                                            <option value="4">
-                                                INDEX </option>
-                                            <option value="5">
-                                                RANA </option>
-                                            <option value="6">
-                                                ERN </option>
-                                            <option value="7">
-                                                OMER ALTAF </option>
-                                            <option value="8">
-                                                KASHAN IQBAL </option>
-                                            <option value="9">
-                                                ALI RAZA GRAVITY </option>
-                                            <option value="10">
-                                                SALMAN MUSTAFA </option>
-                                            <option value="11">
-                                                ZARAK MUSTAFA </option>
-                                            <option value="12">
-                                                ICC </option>
-                                            <option value="13">
-                                                STALLION </option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-3 mb-3">
-                                        <div class="d-flex">
-                                            <button class="btn btn-primary mx-2 mt-md-0 mt-3">Apply</button>
-                                            <button class="btn btn-secondary mt-md-0 mt-3">Clear</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <table id="visaAccepted" class="table  nowrap border-0 " style="width:100%">
-                                    <thead>
-                                        <tr class="dt-head">
-                                            <th></th>
-                                            <th>#</th>
-
-                                            <th style=" text-align:center; "> Name </th>
-                                            <th style=" text-align:center; "> Contact # </th>
-
-                                            <th style=" text-align:center; "> Intst Country </th>
-                                            <th style=" text-align:center; "> Reference </th>
-                                            <th style=" text-align:center; "> Session </th>
-                                            <th style=" text-align:center; "> Counselor </th>
-                                            <th style=" text-align:center; "> Actions </th>
-                                            <th style="text-align:center; "> Uni View </th>
-                                            <th style=" text-align:center; "> Details </th>
-                                            <th style=" text-align:center; "> FollowUP </th>
-                                        </tr>
-
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td></td>
-                                            <td class="text-center">1</td>
-
-
-                                            <td class="text-center"> Obaid Jalal (Titan College)</td>
-
-                                            <td class="text-center"> 03342149286</td>
-
-                                            <td class="text-center"> UK- </td>
-                                            <td class="text-center"> </td>
-
-                                            <td class="text-center"> SEPTEMBER 2024</td>
-
-                                            <td class="text-center"> </td>
-
-                                            <td class="text-center">
-
-                                                <div class="btn-group btn-group2">
-                                                    <button class="btn mb-lg-0 mb-3 btn-primary btn-sm"
-                                                        style="background-color: #8d8d8d;" type="submit"
-                                                        name="potential" value="2428  "> Potential</button>
-
-                                                    <button class="btn mb-lg-0 mb-3 btn-primary btn-sm" type="submit"
-                                                        name="progress" value="2428  "> In Progress</button>
-
-                                                    <button class="btn mb-lg-0 mb-3 btn-danger btn-sm" type="submit"
-                                                        name="wasted" value="2428  "> Wasted</button>
-
-                                                    <button class="btn mb-lg-0 mb-3 text-white btn-sm" type="submit"
-                                                        name="visa_accepted" style="background-color: #193765;"
-                                                        value="2428  "> Visa Acptd</button>
-
-                                                    <button class="btn mb-lg-0 mb-3 text-white btn-sm" type="submit"
-                                                        name="refused" style="background-color: #196545;"
-                                                        value="2428  "> Visa
-                                                        Rfsd</button>
-
-
-                                                    <button class="btn mb-lg-0 mb-3 text-white btn-sm" type="submit"
-                                                        name="visa_refused" style="background-color: #17a2b8;"
-                                                        value="2428  "> Paid Student </button>
-
-                                                    <button class="btn mb-lg-0 mb-3 btn-primary btn-sm" type="submit"
-                                                        name="closed" style="background-color: #28a745;" value="2428  ">
-                                                        Closed</button>
-                                                </div>
-
-
-                                            </td>
-
-                                            <td class="text-center">
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#uni-view"
-                                                    class="btn btn-info btn-xs me-2 view-btn" title="View"
-                                                    data-toggle="tooltip">
-                                                    View
-                                                </button>
-                                            </td>
-
-
-                                            <td class="text-center">
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#view"
-                                                    class="btn btn-info btn-xs me-2 view-btn" title="View"
-                                                    data-toggle="tooltip">
-                                                    View
-                                                </button>
-
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#edit"
-                                                    class="btn btn-info btn-xs edit-btn" title="Edit"
-                                                    data-toggle="tooltip">
-                                                    Edit
-                                                </button>
-
-                                            </td>
-                                            <td class="text-center"> <button type="button"
-                                                    class="btn btn-info btn-xs edit-btn" data-bs-toggle="modal"
-                                                    data-bs-target="#followUp" title="FollowUp" data-toggle="tooltip">
-                                                    FollowUp
-                                                </button>
-
-
-                                            </td>
-                                        </tr>
-
-                                    </tbody>
-                                </table>
-                            </div>
-                            <!--/ Striped Rows -->
-                        </div>
-
-                        <div id="close" class="tabcontent">
-                            <!-- Striped Rows -->
-                            <div class="card  pb-4 px-lg-4 px-2">
-                                <h5 class="card-header px-0 bg-white border-bottom-0  py-3 mb-2">Close</h5>
-                                <div class="row ">
-                                    <div class="col-lg-3 mb-3">
-
-                                        <select class="form-select session-select" required=""
-                                            style="width: fit-content;">
-                                            <option>Select Session </option>
-                                            <option value="9">
-                                                SEPTEMBER 2021 </option>
-                                            <option value="10">
-                                                JANUARY- MARCH 2022 </option>
-                                            <option value="11">
-                                                SEPTEMBER 2022 </option>
-                                            <option value="12">
-                                                JANUARY- MARCH 2023 </option>
-                                            <option value="13">
-                                                SEPTEMBER 2023 </option>
-                                            <option value="15">
-                                                JANUARY- MARCH 2024 </option>
-                                            <option value="16">
-                                                SEPTEMBER 2024 </option>
-                                            <option value="17">
-                                            </option>
-                                        </select>
-
-                                    </div>
-
-
-                                    <div class="col-lg-3 mb-3">
-
-                                        <select class="form-select" name="coun">
-                                            <option>Select Counselor </option>
-                                            <option value="4">
-                                                UZAIR SOOBASHAH </option>
-                                            <option value="5">
-                                                ALI BAIG </option>
-                                            <option value="6">
-                                                Ali Mama </option>
-                                            <option value="7">
-                                                Fariha Aziz </option>
-                                        </select>
-
-                                    </div>
-
-                                    <div class="col-lg-3 mb-3">
-                                        <select class="form-select" name="ref">
-                                            <option>Select Ref </option>
-                                            <option value="3">
-                                                ALPHA COLLEGE </option>
-                                            <option value="4">
-                                                INDEX </option>
-                                            <option value="5">
-                                                RANA </option>
-                                            <option value="6">
-                                                ERN </option>
-                                            <option value="7">
-                                                OMER ALTAF </option>
-                                            <option value="8">
-                                                KASHAN IQBAL </option>
-                                            <option value="9">
-                                                ALI RAZA GRAVITY </option>
-                                            <option value="10">
-                                                SALMAN MUSTAFA </option>
-                                            <option value="11">
-                                                ZARAK MUSTAFA </option>
-                                            <option value="12">
-                                                ICC </option>
-                                            <option value="13">
-                                                STALLION </option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-3 mb-3">
-                                        <div class="d-flex">
-                                            <button class="btn btn-primary mx-2 mt-md-0 mt-3">Apply</button>
-                                            <button class="btn btn-secondary mt-md-0 mt-3">Clear</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <table id="closed" class="table  nowrap border-0 " style="width:100%">
-                                    <thead>
-                                        <tr class="dt-head">
-                                            <th></th>
-                                            <th>#</th>
-
-                                            <th style=" text-align:center; "> Name </th>
-                                            <th style=" text-align:center; "> Contact # </th>
-
-                                            <th style=" text-align:center; "> Intst Country </th>
-                                            <th style=" text-align:center; "> Reference </th>
-                                            <th style=" text-align:center; "> Session </th>
-                                            <th style=" text-align:center; "> Counselor </th>
-                                            <th style=" text-align:center; "> Actions </th>
-                                            <th style="text-align:center; "> Uni View </th>
-                                            <th style=" text-align:center; "> Details </th>
-                                            <th style=" text-align:center; "> FollowUP </th>
-                                        </tr>
-
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td></td>
-                                            <td class="text-center">1</td>
-
-
-                                            <td class="text-center"> Obaid Jalal (Titan College)</td>
-
-                                            <td class="text-center"> 03342149286</td>
-
-                                            <td class="text-center"> UK- </td>
-                                            <td class="text-center"> </td>
-
-                                            <td class="text-center"> SEPTEMBER 2024</td>
-
-                                            <td class="text-center"> </td>
-
-                                            <td class="text-center">
-
-                                                <div class="btn-group btn-group2">
-                                                    <button class="btn mb-lg-0 mb-3 btn-primary btn-sm"
-                                                        style="background-color: #8d8d8d;" type="submit"
-                                                        name="potential" value="2428  "> Potential</button>
-
-                                                    <button class="btn mb-lg-0 mb-3 btn-primary btn-sm" type="submit"
-                                                        name="progress" value="2428  "> In Progress</button>
-
-                                                    <button class="btn mb-lg-0 mb-3 btn-danger btn-sm" type="submit"
-                                                        name="wasted" value="2428  "> Wasted</button>
-
-                                                    <button class="btn mb-lg-0 mb-3 text-white btn-sm" type="submit"
-                                                        name="visa_accepted" style="background-color: #193765;"
-                                                        value="2428  "> Visa Acptd</button>
-
-                                                    <button class="btn mb-lg-0 mb-3 text-white btn-sm" type="submit"
-                                                        name="refused" style="background-color: #196545;"
-                                                        value="2428  "> Visa
-                                                        Rfsd</button>
-
-
-                                                    <button class="btn mb-lg-0 mb-3 text-white btn-sm" type="submit"
-                                                        name="visa_refused" style="background-color: #17a2b8;"
-                                                        value="2428  "> Paid Student </button>
-
-                                                    <button class="btn mb-lg-0 mb-3 btn-primary btn-sm" type="submit"
-                                                        name="closed" style="background-color: #28a745;" value="2428  ">
-                                                        Closed</button>
-                                                </div>
-
-
-                                            </td>
-
-
-
-                                            <td class="text-center">
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#uni-view"
-                                                    class="btn btn-info btn-xs me-2 view-btn" title="View"
-                                                    data-toggle="tooltip">
-                                                    View
-                                                </button>
-                                            </td>
-                                            <td class="text-center">
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#view"
-                                                    class="btn btn-info btn-xs me-2 view-btn" title="View"
-                                                    data-toggle="tooltip">
-                                                    View
-                                                </button>
-
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#edit"
-                                                    class="btn btn-info btn-xs edit-btn" title="Edit"
-                                                    data-toggle="tooltip">
-                                                    Edit
-                                                </button>
-
-                                            </td>
-                                            <td class="text-center"> <button type="button"
-                                                    class="btn btn-info btn-xs edit-btn" data-bs-toggle="modal"
-                                                    data-bs-target="#followUp" title="FollowUp" data-toggle="tooltip">
-                                                    FollowUp
-                                                </button>
-
-
-                                            </td>
-                                        </tr>
-
-                                    </tbody>
-                                </table>
-                            </div>
-                            <!--/ Striped Rows -->
-                        </div>
+                         
 
                         <!-- Footer -->
                         <footer class="content-footer footer bg-footer-theme">
@@ -2223,222 +578,93 @@
             </div>
         </div>
         <!--edit Modal -->
-        <div class="modal fade" id="edit" data-bs-backdrop="static" data-bs-keyboard="false"
+        <div class="modal fade" id="edit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog  modal-fullscreen ">
                 <div class="modal-content ">
-
                     <div class="modal-header modal-header-style">
-                        <h5 class="modal-title mb-3 text-white" id="staticBackdropLabel">Student Registration</h5>
+                        <h5 class="modal-title mb-3 text-white" id="staticBackdropLabel">Update Admin Profile
+                        </h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <form action="">
                         <div class="modal-body">
                             <div class="container ">
                                 <div class="row">
-                                    <div class="col-lg-4 lube-input mb-3">
-                                        <label class="control-label mb-2 mt-2 col-sm-2 ">Name<span
-                                                class="text-danger">*</span></label>
-                                        <input type="text" class="form-control name" name="name" value="Enter name"
-                                            required="">
-                                        <input type="hidden" class="form-control name" name="id" value="Enter Email"
-                                            value="2434" required="">
+                                    <div class="col-lg-12">
+                                        <h5 class="modal-title mb-3">Update Admin Account
+                                        </h5>
                                     </div>
-                                    <div class="col-lg-4 lube-input mb-3">
-                                        <label class="control-label mb-2 mt-2 col-sm-3 col-md-7">Email Address </label>
-                                        <input type="email" class="form-control name" name="email" value="Enter Email ">
+                                    <div class="col-lg-6">
+                                        <div class="mb-3">
+                                            <label class="form-label" >Name</label>
+                                            <input type="text" class="form-control" 
+                                              placeholder="Enter Name" />
+                                          </div>
                                     </div>
-                                    <div class="col-lg-4 lube-input mb-3">
-                                        <label class="control-label mb-2 mt-2 col-sm-3 col-md-6">Contact# <span
-                                                class="text-danger">*</span> </label>
-                                        <input type="number" class="form-control name" name="contact"
-                                            value="Enter contact #" required="">
+                                    <div class="col-lg-6">
+                                        <div class="mb-3">
+                                            <label class="form-label" >User Name</label>
+                                            <input type="text" class="form-control" 
+                                              placeholder="User Name" />
+                                          </div>
+                                    </div>
+                                    
+                                    <div class="col-lg-6">
+                                        <div class="mb-3">
+                                            <label class="form-label" >User Role</label>
+                                            <select class="form-select" name="level">
+                                                <option value="1">Admin</option>
+                                              <option value="2">Staff</option>
+                                              <option value="3">Intern</option>
+                                           </select>
+                                          </div>
                                     </div>
 
-                                    <div class="col-lg-12 lube-input mb-3">
-                                        <label class="control-label mb-2 mt-2 col-sm-2 ">Address <span
-                                                class="text-danger">*</span></label>
-                                        <input type="text" class="form-control name" name="address"
-                                            value="Enter address" required="">
+                                    <div class="col-lg-6">
+                                        <div class="mb-3">
+                                            <label class="form-label" >Status</label>
+                                            <select class="form-select" name="level">
+                                                <option value="1">Active</option>
+                                              <option value="2">Deactive</option>
+                                           </select>
+                                          </div>
                                     </div>
-                                    <div class="col-lg-6 lube-input mb-3">
-                                        <label class="control-label mb-2 mt-2 col-md-10 ">Qualification 1<span
-                                                class="text-danger">*</span></label>
-                                        <select class="form-select" name="qualification" required="required">
-                                            <!--<option  disabled></option>-->
-                                            <option value=""> -- School Level --</option>
+                                   
+                                    <div class="d-flex justify-content-end">
+                                      <button type="submit" class="btn btn-primary">Update</button>
+                                    </div>
+                                  </div>
 
-                                            <option value="1">
-                                                Matric </option>
-
-                                            <option value="2">
-                                                O-Level </option>
-
-                                            <option value="3">
-                                                Other </option>
-                                        </select>
+                                  <div class="row mt-4">
+                                    <div class="col-lg-12">
+                                        <h5 class="modal-title mb-3">Change Admin password
+                                        </h5>
                                     </div>
-                                    <div class="col-lg-6 lube-input mb-3" id="text_area" style="display:none;">
-
-                                        <label class="control-label mb-2 mt-2 col-md-6 ">Other</label>
-                                        <input type="text" class="form-control name" name="other" value="Enter  Other">
-
-
+                                    <div class="col-lg-6">
+                                        <div class="mb-3">
+                                            <label class="form-label" >Old Password</label>
+                                            <input type="password" class="form-control" 
+                                              placeholder="******" />
+                                          </div>
                                     </div>
-                                    <div class="col-lg-6 lube-input mb-3">
-                                        <label class="control-label mb-2 mt-2 col-md-6 ">Grade 1 </label>
-                                        <input type="text" class="form-control name" name="grade_1" value="Enter Grade">
+                                    <div class="col-lg-6">
+                                        <div class="mb-3">
+                                            <label class="form-label" >New Password</label>
+                                            <input type="password" class="form-control" 
+                                              placeholder="******"  />
+                                          </div>
                                     </div>
-                                    <div class="col-lg-6 lube-input mb-3">
-                                        <label class="control-label mb-2 mt-2 col-md-10 ">Qualification 2 <span
-                                                class="text-danger">*</span></label>
-                                        <select class="form-select" name="qualification_2">
-                                            <option value=""> -- College Level --</option>
-                                            <option value="1">
-                                                Inter </option>
-                                            <option value="2">
-                                                A-Level </option>
-                                            <option value="3">
-                                                IB </option>
-                                            <option value="4">
-                                                AP </option>
-                                            <option value="5">
-                                                Other </option>
-                                            <option value="6">
-                                                none </option>
-                                        </select>
+                                    
+                                    
+                                   
+                                    <div class="d-flex justify-content-end">
+                                      <button type="submit" class="btn btn-primary">Change</button>
                                     </div>
-                                    <div class="col-lg-6 lube-input mb-3">
-                                        <label class="control-label mb-2 mt-2 col-md-6 ">Grade 2 </label>
-                                        <input type="text" class="form-control name" name="grade_2" value="Enter Grade">
-                                    </div>
-                                    <div class="col-lg-6 lube-input mb-3">
-                                        <label class="control-label mb-2 mt-2 col-md-10 ">Qualification 3 </label>
-                                        <select class="form-select" name="qualification_3" required="required">
-                                            <option value=""> -- University Level --</option>
-                                            <option value="1">
-                                                B.Com </option>
-                                            <option value="2">
-                                                BA </option>
-                                            <option value="3">
-                                                3 Year Bachelors </option>
-                                            <option value="4">
-                                                4 Year Bachelors </option>
-                                            <option value="5">
-                                                Master </option>
-                                            <option value="6">
-                                                Other </option>
-                                            <option value="7">
-                                                none </option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-6 lube-input mb-3">
-                                        <label class="control-label mb-2 mt-2 col-sm-6 ">Grade 3 </label>
-                                        <input type="text" class="form-control name" name="grade_3" value="Enter Grade">
-                                    </div>
-                                    <div class="col-lg-6 lube-input mb-3">
-                                        <label class="control-label mb-2 mt-2 col-sm-10 ">Education Country <span
-                                                class="text-danger">*</span></label>
-                                        <select class="form-select" name="country_id" required="">
-                                            <option value="8">
-                                                AUSTRALIA </option>
-                                            <option value="7">
-                                                CANADA </option>
-                                            <option value="9">
-                                                MALAYSIA </option>
-                                            <option value="11">
-                                                PAKISTAN </option>
-                                            <option value="10">
-                                                TURKEY </option>
-                                            <option value="6">
-                                                UAE </option>
-                                            <option value="5">
-                                                UK </option>
-                                            <option value="4">
-                                                USA </option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-6 mb-3">
-                                        <label class="control-label mb-2 mt-2 col-sm-10 ">Interested Country <span
-                                                class="text-danger">*</span></label>
-                                        <select class="js-example-basic-multiple w-100 form-select" id="select2"
-                                            name="states[]" multiple="multiple">
-                                            <option value="AS">
-                                                AUSTRALIA </option>
-                                            <option value="CN">
-                                                CANADA </option>
-                                            <option value="ML">
-                                                MALAYSIA </option>
-                                            <option value="PK">
-                                                PAKISTAN </option>
-                                            <option value="TK">
-                                                TURKEY </option>
-                                            <option value="UAE">
-                                                UAE </option>
-                                            <option value="UK">
-                                                UK </option>
-                                            <option value="USA">
-                                                USA </option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-6 lube-input mb-3">
-                                        <label class="control-label mb-2 mt-2 col-sm-10 "> Session Looking <span
-                                                class="text-danger">*</span></label>
-                                        <select class="form-select" name="session" required="">
-                                            <option value="17" selected="">
-                                            </option>
-                                            <option value="10" selected="">
-                                                JANUARY- MARCH 2022 </option>
-                                            <option value="12" selected="">
-                                                JANUARY- MARCH 2023 </option>
-                                            <option value="15" selected="">
-                                                JANUARY- MARCH 2024 </option>
-                                            <option value="9" selected="">
-                                                SEPTEMBER 2021 </option>
-                                            <option value="11" selected="">
-                                                SEPTEMBER 2022 </option>
-                                            <option value="13" selected="">
-                                                SEPTEMBER 2023 </option>
-                                            <option value="16" selected="">
-                                                SEPTEMBER 2024 </option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-6 lube-input mb-3">
-                                        <label class="control-label mb-2 mt-2 col-sm-6 ">Year <span
-                                                class="text-danger">*</span>
-                                        </label>
-                                        <input type="text" class="form-control name" name="year" value="Enter Year"
-                                            required="">
-                                    </div>
-                                    <div class="col-lg-6 lube-input mb-3">
-                                        <label class="control-label mb-2 mt-2 col-sm-2 ">Courses<span
-                                                class="text-danger">*</span></label>
-                                        <input type="text" class="form-control name" name="course" value="Enter Courses"
-                                            required="">
-                                    </div>
-                                    <div class="col-lg-6 lube-input mb-3">
-                                        <label class="control-label mb-2 mt-2 col-sm-5 col-md-12">IELTS/TOEFL/SAT1/2
-                                            GRE/ GMAT
-                                            Score
-                                        </label>
-                                        <input type="text" class="form-control name" name="score"
-                                            value="Enter Score with Name">
-                                    </div>
-                                    <div class="col-lg-12 lube-input mb-3">
-                                        <label class="control-label mb-2 mt-2 col-sm-3 col-md-8">How you know about AS
-                                            EDUCATION
-                                            <span class="text-danger">*</span>
-                                        </label>
-                                        <input type="text" class="form-control name" name="ref" value="Enter Reference"
-                                            required="">
-                                    </div>
-                                </div>
+                                  </div>
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Update Now</button>
-                        </div>
+                       
                     </form>
                 </div>
             </div>
@@ -2608,18 +834,8 @@
 
                                                     <div class="col-lg-2 mb-3">
                                                         <label class="control-label col-sm-5 ">Uni Name</label>
-                                                        <!-- <input type="text" class="form-control name" value=""
-                                                            placeholder="Enter Name" readonly=""> -->
-                                                        <select class="form-select">
-                                                            <option selected="" disabled=""> Select </option>
-                                                            <option value="1">
-                                                                UNI 1 </option>
-                                                            <option value="2">
-                                                                UNI 2 </option>
-                                                            <option value="3">
-                                                                UNI 3</option>
-
-                                                        </select>
+                                                        <input type="text" class="form-control name" value=""
+                                                            placeholder="Enter Name" readonly="">
                                                     </div>
 
                                                     <div class="col-lg-2 mb-3">
@@ -2832,16 +1048,8 @@
 
                                                     <div class="col-lg-2 mb-3">
                                                         <label class="control-label col-sm-5 ">Uni Name</label>
-                                                        <select class="form-select">
-                                                            <option selected="" disabled=""> Select </option>
-                                                            <option value="1">
-                                                                UNI 1 </option>
-                                                            <option value="2">
-                                                                UNI 2 </option>
-                                                            <option value="3">
-                                                                UNI 3</option>
-
-                                                        </select>
+                                                        <input type="text" class="form-control name" value=""
+                                                            placeholder="Enter Name" readonly="">
                                                     </div>
 
                                                     <div class="col-lg-2 mb-3">
@@ -3602,16 +1810,8 @@
 
                                                     <div class="col-lg-2 mb-3">
                                                         <label class="control-label col-sm-5 ">Uni Name</label>
-                                                        <select class="form-select">
-                                                            <option selected="" disabled=""> Select </option>
-                                                            <option value="1">
-                                                                UNI 1 </option>
-                                                            <option value="2">
-                                                                UNI 2 </option>
-                                                            <option value="3">
-                                                                UNI 3</option>
-
-                                                        </select>
+                                                        <input type="text" class="form-control name" value=""
+                                                            placeholder="Enter Name" readonly="">
                                                     </div>
 
                                                     <div class="col-lg-2 mb-3">
@@ -3823,16 +2023,8 @@
 
                                                     <div class="col-lg-2 mb-3">
                                                         <label class="control-label col-sm-5 ">Uni Name</label>
-                                                        <select class="form-select">
-                                                            <option selected="" disabled=""> Select </option>
-                                                            <option value="1">
-                                                                UNI 1 </option>
-                                                            <option value="2">
-                                                                UNI 2 </option>
-                                                            <option value="3">
-                                                                UNI 3</option>
-
-                                                        </select>
+                                                        <input type="text" class="form-control name" value=""
+                                                            placeholder="Enter Name" readonly="">
                                                     </div>
 
                                                     <div class="col-lg-2 mb-3">
@@ -4140,16 +2332,8 @@
 
                                                     <div class="col-lg-2 mb-3">
                                                         <label class="control-label col-sm-5 ">Uni Name</label>
-                                                        <select class="form-select">
-                                                            <option selected="" disabled=""> Select </option>
-                                                            <option value="1">
-                                                               UNI 1 </option>
-                                                            <option value="2">
-                                                                UNI 2 </option>
-                                                            <option value="3">
-                                                                UNI 3</option>
-
-                                                        </select>
+                                                        <input type="text" class="form-control name" value=""
+                                                            placeholder="Enter Name" readonly="">
                                                     </div>
 
                                                     <div class="col-lg-2 mb-3">
@@ -4383,10 +2567,10 @@
 
         <script src="assets/Js/table.js"></script>
         <script>
-            // new DataTable('#example');
+            // new DataTable('#assign');
             $(document).ready(function () {
 
-                new DataTable('#example', {
+                new DataTable('#assign', {
                     language: {
                         searchvalue: "Search records",
                     },
@@ -4510,7 +2694,14 @@
             });
             document.getElementById("defaultOpen").click();
         </script>
+        <script>
+            $("#edit").on("shown.bs.modal", function () {
 
+                $('.js-example-basic-multiple').select2();
+                console.log("popup")
+            })
+
+        </script>
         <!-- add more commment -->
         <script>
             // jQuery document ready function
@@ -4561,16 +2752,6 @@
                 // Remove the parent .add-more-uni-row
                 $(this).closest('.add-more-uni-row').remove();
             });
-
-        </script>
-
-        <script>
-            $("#edit").on("shown.bs.modal", function () {
-                $('#select2').select2({
-                    dropdownParent: $('#edit .modal-content form .modal-body .container .row .col-lg-6')
-                });
-                // $.fn.modal.Constructor.prototype.enforceFocus = function() {};
-            })
 
         </script>
 </body>

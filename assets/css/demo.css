@@ -452,8 +452,14 @@ table.dataTable>tbody>tr{
   font-weight: 500;
   border-radius: 4px;
 }
+.filter-div{
+  z-index: 10 !important;
+  position: relative !important;
+}
+#assign_wrapper,
 #example_wrapper{
   margin-top: -40px;
+ 
 }
 .add-more-uni-row{
   background-color: #ece8e8;
@@ -482,14 +488,25 @@ table.dataTable>tbody>tr{
 #inquiry_wrapper>.row>.col-md-6{
   width: 100% !important;
 }
-div.dataTables_wrapper div.dataTables_filter{
-  width: 100% !important;
-}
+
+div.dataTables_wrapper div.dataTables_filter,
 div.dataTables_wrapper div.dataTables_filter label,
 div.dataTables_wrapper div.dataTables_filter label input{
   width: 100% !important;
   margin: 0px !important;
   margin-bottom: 3px !important;
+}
+#example_filter,
+#example_filter label,
+#example_filter label input
+#assign_filter,
+#assign_filter label,
+#assign_filter label input{
+  width: auto !important;
+  margin: 0px !important;
+  margin-bottom: 3px !important;
+  position: relative !important; 
+  z-index: 15 !important;
 }
 @media only screen and (max-width:1024px){
   .tab{
@@ -505,6 +522,7 @@ div.dataTables_wrapper div.dataTables_filter label input{
     display: flex;
     flex-direction: column;
   }
+  #assign_wrapper,
   #example_wrapper{
     margin-top: 15px;
 
@@ -512,6 +530,15 @@ div.dataTables_wrapper div.dataTables_filter label input{
   .session-select{
     width: 100% !important;
   }
+  #example_filter,
+#example_filter label,
+#example_filter label input
+#assign_filter,
+#assign_filter label,
+#assign_filter label input{
+  width: 100% !important;
+  
+}
 }
 @media only screen and (max-width:560px){
   .modal-fullscreen{
