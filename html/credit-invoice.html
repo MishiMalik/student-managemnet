@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+
+<html lang="en" class="light-style layout-menu-fixed layout-compact" dir="ltr" data-theme="theme-default"
+  data-assets-path="../assets/" data-template="vertical-menu-template-free">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+   <title>BookaLube - Admin</title>
+
+  <meta name="description" content="" />
+
+  <!-- Favicon -->
+  <!-- <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" /> -->
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css" />
+  <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+  <link rel="stylesheet" href="../assets/css/demo.css" />
+
+  <!-- Vendors CSS -->
+  <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+  <!-- Page CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <!-- Helpers -->
+  <script src="../assets/vendor/js/helpers.js"></script>
+  <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+  <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+  <script src="../assets/js/config.js"></script>
+</head>
+
+<body>
+  <!-- Layout wrapper -->
+  <div class="layout-wrapper layout-content-navbar">
+    <div class="layout-container">
+      <!-- Menu -->
+
+      <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+        <div class="app-brand demo">
+          <a href="index.html" class="">
+            <img src="/assets/img/Asset 1.png" alt="" class="">
+          </a>
+        </div>
+        <div class="menu-inner-shadow"></div>
+
+        <ul class="menu-inner py-1">
+          <!-- Dashboards -->
+          <li class="menu-item ">
+            <a href="dashboard.html" class="menu-link ">
+              <i class="menu-icon tf-icons bx bx-home-circle"></i>
+              <div data-i18n="Dashboards">Dashboards</div>
+            </a>
+         
+          </li>
+
+          <!-- registration -->
+          <li class="menu-item  ">
+            <a href="javascript:void(0)" class="menu-link menu-toggle">
+              <i class="menu-icon tf-icons bx bx-copy"></i>
+              <div data-i18n="Extended UI">Registration</div>
+            </a>
+            <ul class="menu-sub">
+              <li class="menu-item ">
+                <a href="engine.html" class="menu-link">
+                  <div data-i18n="Perfect Scrollbar">Engine</div>
+                </a>
+              </li>
+             
+              <li class="menu-item">
+                <a href="model.html" class="menu-link">
+                  <div data-i18n="Text Divider">Model</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="make.html" class="menu-link">
+                  <div data-i18n="Text Divider"> Make</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="year.html" class="menu-link">
+                  <div data-i18n="Text Divider">Year</div>
+                </a>
+              </li>
+              <li class="menu-item ">
+                <a href="services.html" class="menu-link">
+                  <div data-i18n="Text Divider">Services</div>
+                </a>
+              </li>
+              <li class="menu-item ">
+                <a href="engine-oil.html" class="menu-link">
+                  <div data-i18n="Text Divider">Engine oil </div>
+                </a>
+              </li>
+               
+              <li class="menu-item">
+                <a href="air-filters.html" class="menu-link">
+                  <div data-i18n="Text Divider">Air filters</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="fuel-filter.html" class="menu-link">
+                  <div data-i18n="Text Divider">Fuel filters</div>
+                </a>
+              </li>
+
+
+              <li class="menu-item ">
+                <a href="Oil-filters.html" class="menu-link">
+                  <div data-i18n="Text Divider">Oil filters</div>
+                </a>
+              </li>
+              <li class="menu-item ">
+                <a href="transmission-filters.html" class="menu-link">
+                  <div data-i18n="Text Divider">Transmission filters</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="incoming-services.html" class="menu-link">
+                  <div data-i18n="Text Divider">Incoming services</div>
+                </a>
+              </li>
+            
+              <li class="menu-item active">
+                <a href="register-customers.html" class="menu-link">
+                  <div data-i18n="Text Divider">Register Customers</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="year-combination.html" class="menu-link">
+                  <div data-i18n="Text Divider">Year Combination</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="make-combination.html" class="menu-link">
+                  <div data-i18n="Text Divider">Make Combination</div>
+                </a>
+              </li>
+             <li class="menu-item">
+                <a href="model-combination.html" class="menu-link">
+                  <div data-i18n="Text Divider">Model Combination</div>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+       
+
+          <!--Credit Invoice  -->
+          <li class="menu-item active">
+           <a href="credit-invoice.html" class="menu-link ">
+          <i class="menu-icon tf-icons bx bx-file"></i>
+        <div data-i18n="Dashboards">Credit Invoice</div>
+      </a>
+         
+          </li>
+        </ul>
+      </aside>
+      <!-- / Menu -->
+
+      <!-- Layout container -->
+      <div class="layout-page">
+        <!-- Navbar -->
+
+        <nav
+          class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+          id="layout-navbar">
+          <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+            <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+              <i class="bx bx-menu bx-sm"></i>
+            </a>
+          </div>
+
+          <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+            <!-- Search -->
+            <div class="navbar-nav align-items-center">
+              <div class="nav-item d-flex align-items-center">
+                <i class="bx bx-search fs-4 lh-0"></i>
+                <input type="text" class="form-control border-0 shadow-none ps-1 ps-sm-2" placeholder="Search..."
+                  aria-label="Search..." />
+              </div>
+            </div>
+            <!-- /Search -->
+
+            <ul class="navbar-nav flex-row align-items-center ms-auto">
+              <!-- Place this tag where you want the button to render. -->
+              <!-- <li class="nav-item lh-1 me-3">
+                <a class="github-button" href="https://github.com/themeselection/sneat-html-admin-template-free"
+                  data-icon="octicon-star" data-size="large" data-show-count="true"
+                  aria-label="Star themeselection/sneat-html-admin-template-free on GitHub">Star</a>
+              </li> -->
+
+              <!-- User -->
+              <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                  <div class="avatar avatar-online">
+                    <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                  </div>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 me-3">
+                          <div class="avatar avatar-online">
+                            <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                          </div>
+                        </div>
+                        <div class="flex-grow-1">
+                          <span class="fw-medium d-block">John Doe</span>
+                          <small class="text-muted">Admin</small>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="dropdown-divider"></div>
+                  </li>
+                  <!-- <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="bx bx-user me-2"></i>
+                      <span class="align-middle">My Profile</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="bx bx-cog me-2"></i>
+                      <span class="align-middle">Settings</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <span class="d-flex align-items-center align-middle">
+                        <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
+                        <span class="flex-grow-1 align-middle ms-1">Billing</span>
+                        <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
+                      </span>
+                    </a>
+                  </li> -->
+                  <!-- <li>
+                    <div class="dropdown-divider"></div>
+                  </li> -->
+                  <li>
+                    <a class="dropdown-item" href="javascript:void(0);">
+                      <i class="bx bx-power-off me-2"></i>
+                      <span class="align-middle">Log Out</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!--/ User -->
+            </ul>
+          </div>
+        </nav>
+
+        <!-- / Navbar -->
+
+        <!-- Content wrapper -->
+        <div class="content-wrapper">
+          <!-- Content -->
+
+          <div class="container-xxl flex-grow-1 container-p-y">
+         
+
+           <!-- Striped Rows -->
+           <div class="card px-4 pb-4 ">
+            <div class="d-flex justify-content-between align-items-md-center align-items-start flex-md-row flex-column ">
+              <h5 class="card-header px-0 pb-3">Credit Invoice</h5>
+            
+            </div>
+            <div class=" datatable-responsive">
+              <table id="example" class="display" style="width:100%">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Email</th>
+                    <th>Service Used</th>
+                    <th>Paid Amount</th>
+                    <th>Last Service Date</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>abc@gmail.com</td>
+                    <td>5 Times</td>
+                    <td>
+                      $345
+                    </td>
+                    <td>
+                        12-5-2023
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-between align-items-center">
+                           <button type="button" class="info-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="bi bi-info-circle-fill"></i>
+                           </button>
+                             <a href="bonus.html" class="btn btn-primary ">Add Bonus</a>
+                        </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>abc@gmail.com</td>
+                    <td>5 Times</td>
+                    <td>
+                      $345
+                    </td>
+                    <td>
+                        12-5-2023
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-between align-items-center">
+                           <button type="button" class="info-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="bi bi-info-circle-fill"></i>
+                           </button>
+                             <a href="bonus.html" class="btn btn-primary ">Add Bonus</a>
+                        </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>abc@gmail.com</td>
+                    <td>5 Times</td>
+                    <td>
+                      $345
+                    </td>
+                    <td>
+                        12-5-2023
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-between align-items-center">
+                           <button type="button" class="info-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="bi bi-info-circle-fill"></i>
+                           </button>
+                             <a href="bonus.html" class="btn btn-primary ">Add Bonus</a>
+                        </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>abc@gmail.com</td>
+                    <td>5 Times</td>
+                    <td>
+                      $345
+                    </td>
+                    <td>
+                        12-5-2023
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-between align-items-center">
+                           <button type="button" class="info-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="bi bi-info-circle-fill"></i>
+                           </button>
+                             <a href="bonus.html" class="btn btn-primary ">Add Bonus</a>
+                        </div>
+                    </td>
+                  </tr>  
+                  <tr>
+                    <td>5</td>
+                    <td>abc@gmail.com</td>
+                    <td>5 Times</td>
+                    <td>
+                      $345
+                    </td>
+                    <td>
+                        12-5-2023
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-between align-items-center">
+                           <button type="button" class="info-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="bi bi-info-circle-fill"></i>
+                           </button>
+                             <a href="bonus.html" class="btn btn-primary ">Add Bonus</a>
+                        </div>
+                    </td>
+                  </tr>
+                </tbody>
+
+              </table>
+            </div>
+          </div>
+          <!--/ Striped Rows -->
+
+
+
+            <!-- Footer -->
+            <footer class="content-footer footer bg-footer-theme">
+              <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+                <div class="mb-2 mb-md-0">
+                  ©
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  , Developed with by
+                  <a href="https://techwizard.com" target="_blank" class="footer-link fw-medium">Techwizard</a>
+                </div>
+
+              </div>
+            </footer>
+            <!-- / Footer -->
+            <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered info-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Information</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="reciept-box w-100 flex-lg-grow-1 ">
+            <div class="reciept-header d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <div class="me-2">
+                        <svg width="34" height="34" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_59_559)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12 0C18.6275 0 24 5.3725 24 12C24 18.6275 18.6275 24 12 24C5.3725 24 0 18.6275 0 12C0 5.3725 5.3725 0 12 0ZM6.691 12.3193C6.852 11.3857 7.9175 10.866 8.75825 11.3717C8.8345 11.4172 8.90725 11.4712 8.975 11.5332L8.9815 11.5395C9.35875 11.901 9.7815 12.2773 10.2005 12.6503L10.56 12.973L14.8258 8.4985C15.0805 8.23175 15.2668 8.05925 15.649 7.97325C16.9578 7.6845 17.878 9.28425 16.9505 10.262L11.634 15.8415C11.1333 16.3757 10.2382 16.4245 9.7 15.9143C9.3915 15.6278 9.056 15.3363 8.71675 15.042C8.12925 14.5315 7.53 14.0107 7.0415 13.4952C6.74825 13.2022 6.62175 12.7225 6.691 12.3193Z"
+                                    fill="#6BBE66" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_59_559">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+
+                    <h2 class="mb-0 pb-0">Honda</h2>
+                </div>
+                <div>
+                    <h4 class="mb-0 pb-0">$50</h4>
+                </div>
+            </div>
+            <div class="border-r"></div>
+            <h2 class="text-center my-3">Vehicle Information</h2>
+            <div class="d-flex justify-content-between align-items-center px-lg-3">
+                <div>
+                    <p class="mb-0 pb-0">Year</p>
+                    <h4>2024</h4>
+                </div>
+                <div>
+                    <p class="mb-0 pb-0">Make</p>
+                    <h4>Toyota</h4>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center px-lg-3">
+                <div>
+                    <p class="mb-0 pb-0">Engine</p>
+                    <h4>sf4asd</h4>
+                </div>
+                <div>
+                    <p class="mb-0 pb-0">Model</p>
+                    <h4>2022</h4>
+                </div>
+            </div>
+            <div class="border-r my-2"></div>
+            <div>
+                <h2 class="text-center my-3">Service Information</h2>
+                <div class="d-flex justify-content-between align-items-center mb-2 px-lg-4">
+                    <h4>Date</h4>
+                    <h4>5/5/23</h4>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-2 px-lg-4">
+                    <h4>Time</h4>
+                    <h4>12:30Pm</h4>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-2 px-lg-4">
+                    <h4>Kilometer at Service</h4>
+                    <h4>12,2571 Km</h4>
+                </div>
+                <div class="border-r my-3"></div>
+                <div class="d-flex justify-content-between align-items-center mb-2 px-lg-4">
+                    <h4>Engine Oil/Filter</h4>
+                    <h4>$10</h4>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-2 px-lg-4">
+                    <h4>Tire Exchange</h4>
+                    <h4>$20</h4>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center mb-2 px-lg-4">
+                    <h4>HST@13%</h4>
+                    <h4>$15</h4>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-2 px-lg-4 total-div text-white">
+                    <h2 class="text-white mb-0 f-24 py-2">Total</h2>
+                    <h2 class="text-white mb-0 f-24 py-2">$45</h2>
+                </div>
+            </div>
+            <div class="border-r my-2"></div>
+            <h4 class="text-center mt-2">Notes</h4>
+            <div class="reciept-note mb-3">
+                This customer car was too old and too much exhaust engine at all.
+            </div>
+        </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+      </div>
+
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+    <!-- / Layout wrapper -->
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Edit Transmission Filter</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form action="">
+            <div class="modal-body">
+              <div class="mb-3">
+                <label class="form-label" for="basic-default-fullname">Name</label>
+                <input type="text" class="form-control" id="basic-default-fullname" placeholder="Edit Transmission FilterName"
+                  value="" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="edit-price">Price</label>
+                <input type="text" class="form-control" id="edit-price" placeholder="Edit Transmission FilterPrice"
+                  value="" />
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="../assets/vendor/js/menu.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+
+    <!-- Main JS -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- Page JS -->
+
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+    <script>
+      // new DataTable('#example');
+      $(document).ready(function () {
+        $('#example').DataTable({
+          "paging": false,
+          "info": false
+        });
+
+      });
+    </script>
+</body>
+
+</html>
