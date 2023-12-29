@@ -126,13 +126,13 @@
                         </a>
                         <ul class="menu-sub">
 
-                            <li class="menu-item active">
+                            <li class="menu-item ">
                                 <a href="users-list.html" class="menu-link">
                                     <div data-i18n="Text Divider">Users</div>
                                 </a>
                             </li>
                            
-                            <li class="menu-item ">
+                            <li class="menu-item active">
                                 <a href="user-access.html" class="menu-link">
                                     <div data-i18n="Text Divider">Users Access Role</div>
                                 </a>
@@ -251,49 +251,9 @@
 
                     <div class="container-xxl flex-grow-1 container-p-y">
                         <!-- <h4 class=" pb-2">User Register</h4> -->
-                        <div class="card mb-4">
-                            <h5 class="card-header">User Register</h5>
-                            <div class="card-body">
-                                <form class="row">
-                                    <div class="col-lg-6">
-                                        <div class="mb-3">
-                                            <label class="form-label">Name</label>
-                                            <input type="text" class="form-control" placeholder="Enter Name" />
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="mb-3">
-                                            <label class="form-label">User Name</label>
-                                            <input type="text" class="form-control" placeholder="User Name" />
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="mb-3">
-                                            <label class="form-label">Password</label>
-                                            <input type="text" class="form-control" placeholder="Enter Password" />
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="mb-3">
-                                            <label class="form-label">User Role</label>
-                                            <select class="form-select" name="level">
-                                                <option value="1">Admin</option>
-                                                <option value="2">Staff</option>
-                                                <option value="3">Intern</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="d-flex justify-content-end">
-                                        <button type="submit" class="btn btn-primary">Register</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-
-
+                        
                         <div class="card  pb-4 px-lg-4 px-2">
-                            <h5 class="card-header px-0 bg-white border-bottom-0  py-3 mb-2">Assign Counselor</h5>
+                            <h5 class="card-header px-0 bg-white border-bottom-0  py-3 mb-2">Users Access Role</h5>
 
                             <table id="inprogress" class="table  nowrap border-0 " style="width:100%">
                                 <thead>
@@ -320,15 +280,9 @@
                                         <td>December 27, 2023, 4:31:59 pm</td>
                                         <td class="text-center">
                                             <div class="btn-group">
-
-                                                <button type="button" class="btn btn-xs  btn-warning"
-                                                    data-bs-toggle="modal" data-bs-target="#edit">
-                                                    Edit
-                                                </button>
-
-                                                <button type="button" class="btn btn-xs btn-danger"
-                                                    data-bs-toggle="modal" data-bs-target="#delete">
-                                                    Delete
+                                                <button type="button" class="btn btn-xs btn-primary"
+                                                    data-bs-toggle="modal" data-bs-target="#access">
+                                                    Access Controls
                                                 </button>
                                             </div>
                                         </td>
@@ -370,221 +324,100 @@
         </div>
         <!-- / Layout wrapper -->
         <!--View Modal -->
-        <div class="modal fade" id="view" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        <div class="modal fade" id="access" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog  modal-fullscreen ">
+            <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content ">
                     <div class="modal-header modal-header-style">
-                        <h5 class="modal-title mb-3 text-white " id="staticBackdropLabel">Student Registration</h5>
+                        <h5 class="modal-title mb-3 text-white " id="staticBackdropLabel">Acess Control</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <form action="">
                         <div class="modal-body">
                             <div class="container ">
                                 <div class="row">
-                                    <div class="col-lg-4 lube-input mb-3">
-                                        <label class="control-label mb-2 mt-2 col-sm-2 ">Name<span
-                                                class="text-danger">*</span></label>
-                                        <input type="text" class="form-control name" name="name" readonly value="ABC"
-                                            required="">
-                                        <input type="hidden" class="form-control name" name="id" readonly
-                                            value="abc@gmail.com" value="2434" required="">
-                                    </div>
-                                    <div class="col-lg-4 lube-input mb-3">
-                                        <label class="control-label mb-2 mt-2 col-sm-3 col-md-7">Email Address </label>
-                                        <input readonly type="email" class="form-control name" name="email"
-                                            value="abc@gmail.com ">
-                                    </div>
-                                    <div class="col-lg-4 lube-input mb-3">
-                                        <label class="control-label mb-2 mt-2 col-sm-3 col-md-6">Contact# <span
-                                                class="text-danger">*</span> </label>
-                                        <input readonly type="number" class="form-control name" name="contact"
-                                            value="09276272635362" required="">
-                                    </div>
-
-                                    <div class="col-lg-12 lube-input mb-3">
-                                        <label class="control-label mb-2 mt-2 col-sm-2 ">Address <span
-                                                class="text-danger">*</span></label>
-                                        <input readonly type="text" class="form-control name" name="address"
-                                            value="Lahore, Punjab, Pakistan" required="">
-                                    </div>
-                                    <div class="col-lg-6 lube-input mb-3">
-                                        <label class="control-label mb-2 mt-2 col-md-10 ">Qualification 1<span
-                                                class="text-danger">*</span></label>
-                                        <select class="form-select" name="qualification" required="required">
-                                            <!--<option  disabled></option>-->
-                                            <option value=""> -- School Level --</option>
-
-                                            <option value="1" selected>
-                                                Matric </option>
-
-                                            <option value="2">
-                                                O-Level </option>
-
-                                            <option value="3">
-                                                Other </option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-6 lube-input mb-3" id="text_area" style="display:none;">
-
-                                        <label class="control-label mb-2 mt-2 col-md-6 ">Other</label>
-                                        <input readonly type="text" class="form-control name" name="other" value="ABCD">
-
-
-                                    </div>
-                                    <div class="col-lg-6 lube-input mb-3">
-                                        <label class="control-label mb-2 mt-2 col-md-6 ">Grade 1 </label>
-                                        <input readonly type="text" class="form-control name" name="grade_1"
-                                            value="Enter Grade">
-                                    </div>
-                                    <div class="col-lg-6 lube-input mb-3">
-                                        <label class="control-label mb-2 mt-2 col-md-10 ">Qualification 2 <span
-                                                class="text-danger">*</span></label>
-                                        <select class="form-select" name="qualification_2">
-                                            <option value=""> -- College Level --</option>
-                                            <option value="1" selected>
-                                                Inter </option>
-                                            <option value="2">
-                                                A-Level </option>
-                                            <option value="3">
-                                                IB </option>
-                                            <option value="4">
-                                                AP </option>
-                                            <option value="5">
-                                                Other </option>
-                                            <option value="6">
-                                                none </option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-6 lube-input mb-3">
-                                        <label class="control-label mb-2 mt-2 col-md-6 ">Grade 2 </label>
-                                        <input readonly type="text" class="form-control name" name="grade_2"
-                                            value="Enter Grade">
-                                    </div>
-                                    <div class="col-lg-6 lube-input mb-3">
-                                        <label class="control-label mb-2 mt-2 col-md-10 ">Qualification 3 </label>
-                                        <select class="form-select" name="qualification_3" required="required">
-                                            <option value=""> -- University Level --</option>
-                                            <option value="1">
-                                                B.Com </option>
-                                            <option value="2" selected>
-                                                BA </option>
-                                            <option value="3">
-                                                3 Year Bachelors </option>
-                                            <option value="4">
-                                                4 Year Bachelors </option>
-                                            <option value="5">
-                                                Master </option>
-                                            <option value="6">
-                                                Other </option>
-                                            <option value="7">
-                                                none </option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-6 lube-input mb-3">
-                                        <label class="control-label mb-2 mt-2 col-sm-6 ">Grade 3 </label>
-                                        <input readonly type="text" class="form-control name" name="grade_3"
-                                            value="Enter Grade">
-                                    </div>
-                                    <div class="col-lg-6 lube-input mb-3">
-                                        <label class="control-label mb-2 mt-2 col-sm-10 ">Education Country <span
-                                                class="text-danger">*</span></label>
-                                        <select class="form-select" name="country_id" required="">
-                                            <option value="8">
-                                                AUSTRALIA </option>
-                                            <option value="7" selected>
-                                                CANADA </option>
-                                            <option value="9">
-                                                MALAYSIA </option>
-                                            <option value="11">
-                                                PAKISTAN </option>
-                                            <option value="10">
-                                                TURKEY </option>
-                                            <option value="6">
-                                                UAE </option>
-                                            <option value="5">
-                                                UK </option>
-                                            <option value="4">
-                                                USA </option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-6 mb-3">
-                                        <label class="control-label mb-2 mt-2 col-sm-10 ">Interested Country <span
-                                                class="text-danger">*</span></label>
-                                        <select class="form-select">
-                                            <option value="AS" selected>
-                                                AUSTRALIA </option>
-                                            <option value="CN">
-                                                CANADA </option>
-                                            <option value="ML">
-                                                MALAYSIA </option>
-                                            <option value="PK">
-                                                PAKISTAN </option>
-                                            <option value="TK">
-                                                TURKEY </option>
-                                            <option value="UAE">
-                                                UAE </option>
-                                            <option value="UK">
-                                                UK </option>
-                                            <option value="USA">
-                                                USA </option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-6 lube-input mb-3">
-                                        <label class="control-label mb-2 mt-2 col-sm-10 "> Session Looking <span
-                                                class="text-danger">*</span></label>
-                                        <select class="form-select" name="session" required="">
-                                            <option value="17" selected="">
-                                            </option>
-                                            <option value="10" selected="">
-                                                JANUARY- MARCH 2022 </option>
-                                            <option value="12" selected="">
-                                                JANUARY- MARCH 2023 </option>
-                                            <option value="15" selected="">
-                                                JANUARY- MARCH 2024 </option>
-                                            <option value="9" selected="">
-                                                SEPTEMBER 2021 </option>
-                                            <option value="11" selected="">
-                                                SEPTEMBER 2022 </option>
-                                            <option value="13" selected="">
-                                                SEPTEMBER 2023 </option>
-                                            <option value="16" selected="">
-                                                SEPTEMBER 2024 </option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-6 lube-input mb-3">
-                                        <label class="control-label mb-2 mt-2 col-sm-6 ">Year <span
-                                                class="text-danger">*</span>
-                                        </label>
-                                        <input readonly type="text" class="form-control name" name="year" value="2023"
-                                            required="">
-                                    </div>
-                                    <div class="col-lg-6 lube-input mb-3">
-                                        <label class="control-label mb-2 mt-2 col-sm-2 ">Courses<span
-                                                class="text-danger">*</span></label>
-                                        <input readonly type="text" class="form-control name" name="course"
-                                            value="Enter Courses" required="">
-                                    </div>
-                                    <div class="col-lg-6 lube-input mb-3">
-                                        <label class="control-label mb-2 mt-2 col-sm-5 col-md-12">IELTS/TOEFL/SAT1/2
-                                            GRE/ GMAT
-                                            Score
-                                        </label>
-                                        <input readonly type="text" class="form-control name" name="score" value="276">
-                                    </div>
-                                    <div class="col-lg-12 lube-input mb-3">
-                                        <label class="control-label mb-2 mt-2 col-sm-3 col-md-8">How you know about AS
-                                            EDUCATION
-                                            <span class="text-danger">*</span>
-                                        </label>
-                                        <input readonly type="text" class="form-control name" name="ref" value="CS"
-                                            required="">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered" style="min-width: 700px;">
+                                            <thead>
+                                                <tr class="dt-head">
+                                                    <th scope="col">Page Name</th>
+                                                    <th scope="col" class="text-center">View</th>
+                                                    <th scope="col" class="text-center">Edit</th>
+                                                    <th class="text-center">Delete</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="">
+                                                <tr class="">
+                                                    
+                                                    <td class="">
+                                                        Engine
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-center">
+                                                            <input type="checkbox" class="" >
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-center">
+                                                            <input type="checkbox" class="" >
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-center">
+                                                            <input type="checkbox" class="" >
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="">
+                                                    
+                                                    <td class="">
+                                                        Engine Oil
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-center">
+                                                            <input type="checkbox" class="" >
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-center">
+                                                            <input type="checkbox" class="" >
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-center">
+                                                            <input type="checkbox" class="" >
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="">
+                                                    
+                                                    <td class="">
+                                                        Filer Oil
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-center">
+                                                            <input type="checkbox" class="" >
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-center">
+                                                            <input type="checkbox" class="" >
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-center">
+                                                            <input type="checkbox" class="" >
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
                             <!-- <button type="button" class="btn btn-primary">Save</button> -->
                         </div>
                     </form>

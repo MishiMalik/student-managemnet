@@ -11,7 +11,7 @@
   justify-content: center;
 }
 .app-brand a img{
-  height: 80px !important;
+  height: 60px !important;
   width: auto !important;
 }
 .app-brand-logo.demo  svg {
@@ -507,6 +507,16 @@ div.dataTables_wrapper div.dataTables_filter label input{
   margin-bottom: 3px !important;
   position: relative !important; 
   z-index: 15 !important;
+}
+
+.table-responsive::-webkit-scrollbar {
+  height: 7px;
+}
+ 
+
+ 
+.table-responsive::-webkit-scrollbar-thumb {
+  background-color: #696cff;
 }
 @media only screen and (max-width:1024px){
   .tab{

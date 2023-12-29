@@ -57,7 +57,7 @@
             <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
                 <div class="app-brand demo">
                     <a href="index.html" class="">
-                        <img src="/assets/img/Asset 1.png" alt="" class="">
+                        <img src="/assets/img/logo (2).png" alt="" class="">
                     </a>
                 </div>
                 <div class="menu-inner-shadow"></div>
@@ -98,11 +98,26 @@
                         </a>
                         <ul class="menu-sub">
 
+
+
+                            <li class="menu-item ">
+                                <a href="student-invoice.html" class="menu-link">
+                                    <div data-i18n="Text Divider">Student Invoice</div>
+                                </a>
+                            </li>
+                            <li class="menu-item ">
+                                <a href="sale-invoice.html" class="menu-link">
+                                    <div data-i18n="Text Divider">Sale Invoice</div>
+                                </a>
+                            </li>
+
                             <li class="menu-item active">
                                 <a href="assign_counselor.html" class="menu-link">
                                     <div data-i18n="Text Divider">Assign Counselor</div>
                                 </a>
                             </li>
+
+
 
                         </ul>
                     </li>
@@ -118,6 +133,11 @@
                             <li class="menu-item ">
                                 <a href="users-list.html" class="menu-link">
                                     <div data-i18n="Text Divider">Users</div>
+                                </a>
+                            </li>
+                            <li class="menu-item ">
+                                <a href="user-access.html" class="menu-link">
+                                   <div data-i18n="Text Divider">Users Access Role</div>
                                 </a>
                             </li>
 
@@ -272,7 +292,7 @@
                                         <tr class="dt-head">
                                             <th style="width: 40px;"></th>
                                             <th style="width: 50px;">Check</th>
-                                            <th  style="width: 40px;">#</th>
+                                            <th style="width: 40px;">#</th>
 
                                             <th style="text-align:center; "> Name </th>
                                             <th style="text-align:center; "> Assign Std </th>
@@ -295,11 +315,14 @@
                                     <tbody>
                                         <tr>
                                             <td style="width: 40px;"></td>
-                                            <td style="width: 40px !important;"><input type="checkbox" name="check[]" value="done"></td>
+                                            <td style="width: 40px !important;"><input type="checkbox" name="check[]"
+                                                    value="done"></td>
                                             <td class="text-center" style="width: 40px;">1</td>
 
 
-                                            <td class="text-center" style="white-space: normal !important; min-width: 100px !important;"> MUHAMMAD ADNAN</td>
+                                            <td class="text-center"
+                                                style="white-space: normal !important; min-width: 100px !important;">
+                                                MUHAMMAD ADNAN</td>
                                             <td>
 
 
@@ -331,7 +354,7 @@
                                             <td>In Progess</td>
 
 
-                                            <td class="text-center"> 
+                                            <td class="text-center">
                                                 <button type="button" data-bs-toggle="modal" data-bs-target="#view"
                                                     class="btn btn-info btn-xs me-2 view-btn" title="View"
                                                     data-toggle="tooltip">
@@ -354,7 +377,7 @@
                             <!-- Striped Rows -->
                             <div class="card  pb-4 px-lg-4 px-2">
                                 <h5 class="card-header px-0 bg-white border-bottom-0  py-3 mb-2">Assigned Counselor</h5>
-                              
+
                                 <table id="inquiry" class="table  nowrap border-0 " style="width:100%">
                                     <thead>
 
@@ -385,30 +408,32 @@
                                             <td class="text-center">1</td>
 
 
-                                            <td class="text-center" style="white-space: normal !important; min-width: 170px !important;" > AUKASHA JAWAID</td>
+                                            <td class="text-center"
+                                                style="white-space: normal !important; min-width: 170px !important;">
+                                                AUKASHA JAWAID</td>
                                             <td>
-                                                <form method="post" >
+                                                <form method="post">
 
-                                                  <div class="d-flex">
-                                                    <input type="hidden" class="form-control name" name="std_id"
-                                                    value="1541" placeholder="Enter address" required="">
-                                                <select class="form-select " 
-                                                    required="required" style="width: 100%;">
-                                                    <!--<option  disabled></option>-->
-                                                    <option value=""> -- Select Coun --</option>
-                                                    <option value="4">
-                                                        UZAIR SOOBASHAH </option>
-                                                    <option value="5" selected="">
-                                                        ALI BAIG </option>
-                                                    <option value="6">
-                                                        Ali Mama </option>
-                                                    <option value="7">
-                                                        Fariha Aziz </option>
-                                                </select>
-                                                
-                                                <button class="btn btn-primary btn-sm ms-2" type="submit" name="wasted"
-                                                    value="1541  "> Submit</button>
-                                                  </div>
+                                                    <div class="d-flex">
+                                                        <input type="hidden" class="form-control name" name="std_id"
+                                                            value="1541" placeholder="Enter address" required="">
+                                                        <select class="form-select " required="required"
+                                                            style="width: 100%;">
+                                                            <!--<option  disabled></option>-->
+                                                            <option value=""> -- Select Coun --</option>
+                                                            <option value="4">
+                                                                UZAIR SOOBASHAH </option>
+                                                            <option value="5" selected="">
+                                                                ALI BAIG </option>
+                                                            <option value="6">
+                                                                Ali Mama </option>
+                                                            <option value="7">
+                                                                Fariha Aziz </option>
+                                                        </select>
+
+                                                        <button class="btn btn-primary btn-sm ms-2" type="submit"
+                                                            name="wasted" value="1541  "> Submit</button>
+                                                    </div>
                                                 </form>
                                             </td>
 
@@ -434,7 +459,7 @@
                                             <td>Closed</td>
 
 
-                                            <td class="text-center"> 
+                                            <td class="text-center">
                                                 <button type="button" data-bs-toggle="modal" data-bs-target="#view"
                                                     class="btn btn-info btn-xs me-2 view-btn" title="View"
                                                     data-toggle="tooltip">
@@ -2828,8 +2853,8 @@
 
                 new DataTable('#assign', {
                     language: {
-        searchPlaceholder: "Search records"
-    },
+                        searchPlaceholder: "Search records"
+                    },
                     responsive: true,
                     "paging": false,
                     "info": false
@@ -2838,8 +2863,8 @@
                 // new DataTable('#inquiry');
                 new DataTable('#inquiry', {
                     language: {
-        searchPlaceholder: "Search records"
-    },
+                        searchPlaceholder: "Search records"
+                    },
                     responsive: true,
                     "paging": false,
                     "info": false
