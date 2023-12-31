@@ -31,11 +31,11 @@
 
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
-    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/dt-1.13.6/datatables.min.css">
-  <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/dt-1.13.6/datatables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.bootstrap5.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.bootstrap5.min.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 
@@ -270,7 +270,7 @@
                             <div class="card  pb-4 px-lg-4 px-2">
                                 <h5 class="card-header px-0 bg-white border-bottom-0  py-3 mb-2">Assign Counselor</h5>
                                 <div class="row filter-div">
-                                    <div class="col-md-5">
+                                    <div class="col-md-5 ms-auto">
                                         <div class="d-flex align-items-center flex-md-row flex-column ">
                                             <select class="form-select ">
                                                 <option value=""> -- Select Coun --</option>
@@ -287,10 +287,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <table id="assign" class="table  nowrap border-0 " style="width:100%">
+                                <div class="table-responsive mt-n">
+                                <table id="assign-C" class="table  nowrap border-0 " style="width:100%">
                                     <thead>
                                         <tr class="dt-head">
-                                            <th style="width: 40px;"></th>
                                             <th style="width: 50px;">Check</th>
                                             <th style="width: 40px;">#</th>
 
@@ -314,14 +314,13 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td style="width: 40px;"></td>
                                             <td style="width: 40px !important;"><input type="checkbox" name="check[]"
                                                     value="done"></td>
                                             <td class="text-center" style="width: 40px;">1</td>
 
 
                                             <td class="text-center"
-                                                style="white-space: normal !important; min-width: 100px !important;">
+                                     >
                                                 MUHAMMAD ADNAN</td>
                                             <td>
 
@@ -368,6 +367,7 @@
                                     </tbody>
                                 </table>
                             </div>
+                            </div>
                             <!--/ Striped Rows -->
 
                         </div>
@@ -377,12 +377,11 @@
                             <!-- Striped Rows -->
                             <div class="card  pb-4 px-lg-4 px-2">
                                 <h5 class="card-header px-0 bg-white border-bottom-0  py-3 mb-2">Assigned Counselor</h5>
-
+                                  <div class="table-responsive">
                                 <table id="inquiry" class="table  nowrap border-0 " style="width:100%">
                                     <thead>
 
                                         <tr class="dt-head">
-                                            <th></th>
                                             <th>#</th>
 
                                             <th style=" text-align:center; "> Name </th>
@@ -404,21 +403,20 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td></td>
                                             <td class="text-center">1</td>
 
 
                                             <td class="text-center"
-                                                style="white-space: normal !important; min-width: 170px !important;">
+                                               >
                                                 AUKASHA JAWAID</td>
                                             <td>
                                                 <form method="post">
 
                                                     <div class="d-flex">
                                                         <input type="hidden" class="form-control name" name="std_id"
-                                                            value="1541" placeholder="Enter address" required="">
+                                                            value="1541" placeholder="Enter address" required="" >
                                                         <select class="form-select " required="required"
-                                                            style="width: 100%;">
+                                                        style="min-width: 180px !important;">
                                                             <!--<option  disabled></option>-->
                                                             <option value=""> -- Select Coun --</option>
                                                             <option value="4">
@@ -472,6 +470,7 @@
 
                                     </tbody>
                                 </table>
+                            </div>
                             </div>
                             <!--/ Striped Rows -->
 
@@ -2840,10 +2839,13 @@
         <script async defer src="https://buttons.github.io/buttons.js"></script>
 
         <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-        <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+        
+        <!-- <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
         <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
         <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
-        <script src="https://cdn.datatables.net/responsive/2.5.0/js/responsive.bootstrap5.min.js"></script>
+        <script src="https://cdn.datatables.net/responsive/2.5.0/js/responsive.bootstrap5.min.js"></script> -->
+        <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+
         <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
         <script src="assets/Js/table.js"></script>
@@ -2851,7 +2853,7 @@
             // new DataTable('#assign');
             $(document).ready(function () {
 
-                new DataTable('#assign', {
+                new DataTable('#assign-C', {
                     language: {
                         searchPlaceholder: "Search records"
                     },

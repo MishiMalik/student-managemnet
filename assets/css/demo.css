@@ -391,6 +391,7 @@ div.dataTables_wrapper div.dataTables_filter input {
 }
 .dt-head th{
   color: white !important;
+  white-space: nowrap;
 }
 table.dataTable>tbody>tr.child ul.dtr-details{
   width: 100% !important;
@@ -478,7 +479,19 @@ table.dataTable>tbody>tr{
   box-shadow: 0 0.125rem 0.25rem 0 rgba(105, 108, 255, 0.4);
   cursor: pointer;
 }
+ /* Add custom styles to move the search filter to the left */
+ /* .dataTables_wrapper .dataTables_filter {
+  text-align: left !important;
+} */
+
+ table.dataTable.nowrap td{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: start !important;
+  font-size: 14px !important;
+}
 .dataTables_filter.row>.col-md-6,
+#sm-table_wrapper>.row>.col-md-6,
 #closed_wrapper>.row>.col-md-6,
 #visaRefused_wrapper>.row>.col-md-6,
 #visaAccepted_wrapper>.row>.col-md-6,
@@ -496,7 +509,7 @@ div.dataTables_wrapper div.dataTables_filter label input{
   margin: 0px !important;
   margin-bottom: 3px !important;
 }
-#example_filter,
+/* #example_filter,
 #example_filter label,
 #example_filter label input
 #assign_filter,
@@ -507,14 +520,22 @@ div.dataTables_wrapper div.dataTables_filter label input{
   margin-bottom: 3px !important;
   position: relative !important; 
   z-index: 15 !important;
-}
+} */
 
 .table-responsive::-webkit-scrollbar {
   height: 7px;
 }
- 
+.mt-n{
+  margin-top: -42px !important;
+}
+#assign-C_filter{
+width: 300px !important;
+float: left !important;
 
- 
+}
+td{
+  white-space: nowrap;
+}
 .table-responsive::-webkit-scrollbar-thumb {
   background-color: #1C315E;
 }
@@ -525,6 +546,14 @@ div.dataTables_wrapper div.dataTables_filter label input{
   .tab-scroll{
     width: 900px;
    
+  }
+}
+@media only screen and (max-width:991px){
+  .mt-n{
+    margin-top: 15px !important;
+  }
+  #assign-C_filter{
+    width: 100% !important;
   }
 }
 @media only screen and (max-width:768px){

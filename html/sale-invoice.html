@@ -31,13 +31,13 @@
 
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
-    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/dt-1.13.6/datatables.min.css">
-  <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css"> -->
+   <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/dt-1.13.6/datatables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.bootstrap5.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.bootstrap5.min.css">-->
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"> 
 
     <!-- Page CSS -->
 
@@ -257,46 +257,48 @@
                                     data-bs-target="#add-invoice">Add Invoice</button>
                             </div>
 
+<div class="table-responsive">
+    
+    <table id="inprogress" class="table  nowrap border-0 " style="width:100%">
+        <thead>
 
-                            <table id="inprogress" class="table  nowrap border-0 " style="width:100%">
-                                <thead>
+            <tr class="dt-head">
+                <th style=" text-align:center;">#</th>
 
-                                    <tr class="dt-head">
-                                        <th style=" text-align:center;">#</th>
+                <th style=" text-align:center; "> Invoice # </th>
+                <th style=" text-align:center; "> Session </th>
 
-                                        <th style=" text-align:center; "> Invoice # </th>
-                                        <th style=" text-align:center; "> Session </th>
-
-                                        <th style=" text-align:center; "> Date </th>
-
-
-
-                                        <th style=" text-align:center; "> Actions </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="text-center">1</td>
-
-
-                                        <td class="text-center"> 13</td>
-
-                                        <td class="text-center"> SEPTEMBER 2021</td>
-                                        <td class="text-center"> 2021-11-12</td>
-
-                                        <td class="text-center">
-                                            <button type="button" class="btn btn-primary btn-xs" data-bs-toggle="modal"
-                                                data-bs-target="#invoice-detail">Details</button>
-
-                                            <button type="button" class="btn btn-primary btn-xs" data-bs-toggle="modal"
-                                                data-bs-target="#invoice-edit">Edit</button>
-                                        </td>
-                                    </tr>
+                <th style=" text-align:center; "> Date </th>
 
 
 
-                                </tbody>
-                            </table>
+                <th style=" text-align:center; "> Actions </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="text-center">1</td>
+
+
+                <td class="text-center"> 13</td>
+
+                <td class="text-center"> SEPTEMBER 2021</td>
+                <td class="text-center"> 2021-11-12</td>
+
+                <td class="text-center">
+                    <button type="button" class="btn btn-primary btn-xs" data-bs-toggle="modal"
+                        data-bs-target="#invoice-detail">Details</button>
+
+                    <button type="button" class="btn btn-primary btn-xs" data-bs-toggle="modal"
+                        data-bs-target="#invoice-edit">Edit</button>
+                </td>
+            </tr>
+
+
+
+        </tbody>
+    </table>
+</div>
                         </div>
 
 
@@ -822,11 +824,11 @@
         <script async defer src="https://buttons.github.io/buttons.js"></script>
 
         <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-        <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+        <!-- <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
         <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
         <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
         <script src="https://cdn.datatables.net/responsive/2.5.0/js/responsive.bootstrap5.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script> -->
 
         <script src="assets/Js/table.js"></script>
         <script>
