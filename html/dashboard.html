@@ -251,817 +251,577 @@
                     <div class="container-xxl flex-grow-1 container-p-y">
                         <!-- <h4 class="pt-3 pb-2">Student Management</h4> -->
 
+
                         <div class="tab mb-3">
                             <div class="tab-scroll">
-                                <button class="tablinks" data-tab="SD" id="defaultOpen">Student Data</button>
-                                <button class="tablinks" data-tab="Appointmens">Appointmens</button>
-
+                                <button class="tablinks" data-tab="SD" id="defaultOpen">Student
+                                    Data</button>
+                                <button class="tablinks" data-tab="Appointments">Appointments</button>
                             </div>
 
                         </div>
 
                         <div id="SD" class="tabcontent">
                             <div class="row">
-                                <div class="col-lg-3">
-                                    <div class="dashboard-btn">
-                                        < </div>
+                                <div class="col-lg-4">
+                                    <div class=" dashboard-btn  mb-3 d-flex justify-content-between align-items-center "
+                                        style=" color:white !important; background-color: #17a2b8 !important;">
+                                        <div>
+                                            <a href="" class="text-white">
+                                                In Query Student
+                                            </a>
+                                        </div>
+                                        <div><i class="bi bi-arrow-right-circle-fill ms-3"></i></div>
                                     </div>
                                 </div>
-
-                                <!-- Striped Rows -->
-                                <div class="card  pb-4 px-lg-4 px-2">
-                                    <h5 class="card-header px-0 bg-white border-bottom-0  py-3 mb-2">Student Management
-                                    </h5>
-                                    <div class="row ">
-                                        <div class="col-lg-3 mb-3">
-
-                                            <select class="form-select session-select" required=""
-                                                style="width: fit-content;">
-                                                <option>Select Session </option>
-                                                <option value="9">
-                                                    SEPTEMBER 2021 </option>
-                                                <option value="10">
-                                                    JANUARY- MARCH 2022 </option>
-                                                <option value="11">
-                                                    SEPTEMBER 2022 </option>
-                                                <option value="12">
-                                                    JANUARY- MARCH 2023 </option>
-                                                <option value="13">
-                                                    SEPTEMBER 2023 </option>
-                                                <option value="15">
-                                                    JANUARY- MARCH 2024 </option>
-                                                <option value="16">
-                                                    SEPTEMBER 2024 </option>
-                                                <option value="17">
-                                                </option>
-                                            </select>
-
+                                <div class="col-lg-4">
+                                    <div class=" dashboard-btn  mb-3 d-flex justify-content-between align-items-center "
+                                        style=" color:white !important; background-color: #8d8d8d !important">
+                                        <div>
+                                            <a href="" class="text-white">
+                                                In Potential Student
+                                            </a>
                                         </div>
-
-
-                                        <div class="col-lg-3 mb-3">
-
-                                            <select class="form-select" name="coun">
-                                                <option>Select Counselor </option>
-                                                <option value="4">
-                                                    UZAIR SOOBASHAH </option>
-                                                <option value="5">
-                                                    ALI BAIG </option>
-                                                <option value="6">
-                                                    Ali Mama </option>
-                                                <option value="7">
-                                                    Fariha Aziz </option>
-                                            </select>
-
-                                        </div>
-
-                                        <div class="col-lg-3 mb-3">
-                                            <select class="form-select" name="ref">
-                                                <option>Select Ref </option>
-                                                <option value="3">
-                                                    ALPHA COLLEGE </option>
-                                                <option value="4">
-                                                    INDEX </option>
-                                                <option value="5">
-                                                    RANA </option>
-                                                <option value="6">
-                                                    ERN </option>
-                                                <option value="7">
-                                                    OMER ALTAF </option>
-                                                <option value="8">
-                                                    KASHAN IQBAL </option>
-                                                <option value="9">
-                                                    ALI RAZA GRAVITY </option>
-                                                <option value="10">
-                                                    SALMAN MUSTAFA </option>
-                                                <option value="11">
-                                                    ZARAK MUSTAFA </option>
-                                                <option value="12">
-                                                    ICC </option>
-                                                <option value="13">
-                                                    STALLION </option>
-                                            </select>
-                                        </div>
-                                        <div class="col-lg-3 mb-3">
-                                            <div class="d-flex">
-                                                <button class="btn btn-primary mx-2 mt-md-0 mt-3">Apply</button>
-                                                <button class="btn btn-secondary mt-md-0 mt-3">Clear</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="table-responsive">
-                                        <table id="sm-table" class="table  nowrap border-0 " style="width:100%">
-                                            <thead>
-                                                <tr class="dt-head">
-
-                                                    <th>#</th>
-
-                                                    <th> Name </th>
-
-                                                    <th style="text-align:center; "> Contact# </th>
-
-                                                    <th style="text-align:center; "> Session Month </th>
-
-
-                                                    <th style="text-align:center; "> Interested Country </th>
-
-                                                    <th style="text-align:center; "> Reference </th>
-                                                    <th style="text-align:center; "> Status </th>
-                                                    <th style="text-align:center; "> Counselor </th>
-                                                    <th style="text-align:center; "> Uni List </th>
-                                                    <th style="text-align:center; "> Actions </th>
-                                                    <th style="text-align:center; "> FollowUp </th>
-                                                    <th style="text-align:center; "> Del </th>
-
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-
-                                                    <td class="text-center">1</td>
-
-
-                                                    <td class="text-center"> Daniyal Adnan</td>
-
-
-                                                    <td class="text-center"> 03208242965</td>
-
-
-                                                    <td class="text-center"> JANUARY- MARCH 2022</td>
-
-                                                    <td class="text-center"> CANADA- </td>
-
-
-
-
-                                                    <td class="text-center"> </td>
-
-
-                                                    <!--#progres =1-->
-                                                    <!--#potential = 2-->
-                                                    <!--#deferred = 3-->
-                                                    <!--#wasted = 4-->
-
-                                                    <td>Wasted</td>
-
-                                                    <td class="text-center"> </td>
-
-                                                    <td class="text-center">
-                                                        <button type="button" data-bs-toggle="modal"
-                                                            data-bs-target="#view-unit"
-                                                            class="btn btn-primary btn-xs me-2 view-btn" title="View"
-                                                            data-toggle="tooltip">
-                                                            View
-                                                        </button>
-                                                    </td>
-
-                                                    <td class="text-center">
-                                                        <button type="button" data-bs-toggle="modal"
-                                                            data-bs-target="#view"
-                                                            class="btn btn-primary btn-xs me-2 view-btn" title="View"
-                                                            data-toggle="tooltip">
-                                                            View
-                                                        </button>
-
-                                                        <button type="button" data-bs-toggle="modal"
-                                                            data-bs-target="#edit"
-                                                            class="btn btn-primary btn-xs edit-btn" title="Edit"
-                                                            data-toggle="tooltip">
-                                                            Edit
-                                                        </button>
-
-                                                    </td>
-                                                    <td class="text-center"> <button type="button"
-                                                            class="btn btn-primary btn-xs edit-btn"
-                                                            data-bs-toggle="modal" data-bs-target="#followUp"
-                                                            title="FollowUp" data-toggle="tooltip">
-                                                            FollowUp
-                                                        </button>
-
-
-                                                    </td>
-                                                    <td>
-
-                                                        <button type="button" class="btn btn-danger btn-xs edit-btn"
-                                                            data-bs-toggle="modal" data-bs-target="#delete">
-                                                            Delete
-                                                        </button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-
-                                                    <td class="text-center">2</td>
-
-
-                                                    <td class="text-center"> Daniyal Adnan</td>
-
-
-                                                    <td class="text-center"> 03208242965</td>
-
-
-                                                    <td class="text-center"> JANUARY- MARCH 2022</td>
-
-                                                    <td class="text-center"> CANADA- </td>
-
-
-
-
-                                                    <td class="text-center"> </td>
-
-
-                                                    <!--#progres =1-->
-                                                    <!--#potential = 2-->
-                                                    <!--#deferred = 3-->
-                                                    <!--#wasted = 4-->
-
-                                                    <td>Wasted</td>
-
-                                                    <td class="text-center"> </td>
-
-                                                    <td class="text-center">
-
-                                                        <button type="button" data-bs-toggle="modal"
-                                                            data-bs-target="#action-uni"
-                                                            class="btn btn-primary btn-xs me-2 view-btn" title="View"
-                                                            data-toggle="tooltip">
-                                                            Action
-                                                        </button>
-
-
-                                                    </td>
-
-                                                    <td class="text-center">
-                                                        <button type="button" data-bs-toggle="modal"
-                                                            data-bs-target="#view"
-                                                            class="btn btn-primary btn-xs me-2 view-btn" title="View"
-                                                            data-toggle="tooltip">
-                                                            View
-                                                            </butt>
-
-                                                            <button type="button" data-bs-toggle="modal"
-                                                                data-bs-target="#edit"
-                                                                class="btn btn-primary btn-xs edit-btn" title="Edit"
-                                                                data-toggle="tooltip">
-                                                                Edit
-                                                            </button>
-
-                                                    </td>
-                                                    <td class="text-center"><button type="button"
-                                                            class="btn btn-primary btn-xs edit-btn"
-                                                            data-bs-toggle="modal" data-bs-target="#followUp"
-                                                            title="FollowUp" data-toggle="tooltip">
-                                                            FollowUp
-                                                        </button>
-
-
-                                                    </td>
-                                                    <td>
-
-                                                        <button type="button" class="btn btn-danger btn-xs edit-btn"
-                                                            data-bs-toggle="modal" data-bs-target="#delete">
-                                                            Delete
-                                                        </button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-
-                                                    <td class="text-center">3</td>
-
-
-                                                    <td class="text-center"> MUHAMMAD BILAL</td>
-
-
-                                                    <td class="text-center"> 923338138363</td>
-
-
-                                                    <td class="text-center"> JANUARY- MARCH 2022</td>
-
-                                                    <td class="text-center"> UK- </td>
-
-
-
-
-                                                    <td class="text-center"> </td>
-
-
-                                                    <!--#progres =1-->
-                                                    <!--#potential = 2-->
-                                                    <!--#deferred = 3-->
-                                                    <!--#wasted = 4-->
-
-                                                    <td>Wasted</td>
-
-                                                    <td class="text-center"> </td>
-
-                                                    <td class="text-center">
-                                                        <button type="button" data-bs-toggle="modal"
-                                                            data-bs-target="#action-uni"
-                                                            class="btn btn-primary btn-xs me-2 view-btn" title="View"
-                                                            data-toggle="tooltip">
-                                                            Action
-                                                        </button>
-
-                                                    </td>
-
-                                                    <td class="text-center">
-                                                        <button type="button" data-bs-toggle="modal"
-                                                            data-bs-target="#view"
-                                                            class="btn btn-primary btn-xs me-2 view-btn" title="View"
-                                                            data-toggle="tooltip">
-                                                            View
-                                                            </butt>
-
-                                                            <button type="button" data-bs-toggle="modal"
-                                                                data-bs-target="#edit"
-                                                                class="btn btn-primary btn-xs edit-btn edit-btn"
-                                                                title="Edit" data-toggle="tooltip">
-                                                                Edit
-                                                            </button>
-                                                    </td>
-                                                    <td class="text-center">
-                                                        <button type="button" class="btn btn-primary btn-xs edit-btn"
-                                                            data-bs-toggle="modal" data-bs-target="#followUp"
-                                                            title="FollowUp" data-toggle="tooltip">
-                                                            FollowUp
-                                                        </button>
-                                                    </td>
-                                                    <td>
-                                                        <button type="button" class="btn btn-danger btn-xs edit-btn"
-                                                            data-bs-toggle="modal" data-bs-target="#delete">
-                                                            Delete
-                                                        </button>
-
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        <div><i class="bi bi-arrow-right-circle-fill ms-3"></i></div>
                                     </div>
                                 </div>
-                                <!--/ Striped Rows -->
-
+                                <div class="col-lg-4">
+                                    <div class=" dashboard-btn  mb-3 d-flex justify-content-between align-items-center "
+                                        style=" color:white !important; background-color: #28a745!important;">
+                                        <div>
+                                            <a href="" class="text-white">
+                                                In Progress Student
+                                            </a>
+                                        </div>
+                                        <div><i class="bi bi-arrow-right-circle-fill ms-3"></i></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class=" dashboard-btn  mb-3 d-flex justify-content-between align-items-center "
+                                        style=" color:white !important; background-color: #193765 !important">
+                                        <div>
+                                            <a href="" class="text-white">
+                                                Visa Accepted Student
+                                            </a>
+                                        </div>
+                                        <div><i class="bi bi-arrow-right-circle-fill ms-3"></i></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class=" dashboard-btn  mb-3 d-flex justify-content-between align-items-center "
+                                        style=" color:white !important; background-color: #196545 !important">
+                                        <div>
+                                            <a href="" class="text-white">
+                                                Visa Refused Student
+                                            </a>
+                                        </div>
+                                        <div><i class="bi bi-arrow-right-circle-fill ms-3"></i></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class=" dashboard-btn  mb-3 d-flex justify-content-between align-items-center "
+                                        style=" color:white !important; background-color: #a5742b !important">
+                                        <div>
+                                            <a href="" class="text-white">
+                                                Paid Student
+                                            </a>
+                                        </div>
+                                        <div><i class="bi bi-arrow-right-circle-fill ms-3"></i></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class=" dashboard-btn  mb-3 d-flex justify-content-between align-items-center "
+                                        style=" color:white !important; background-color: #ffc107 !important">
+                                        <div>
+                                            <a href="" class="text-white">
+                                                Deferred Student
+                                            </a>
+                                        </div>
+                                        <div><i class="bi bi-arrow-right-circle-fill ms-3"></i></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class=" dashboard-btn  mb-3 d-flex justify-content-between align-items-center "
+                                        style=" color:white !important; background-color: #dc3545 !important">
+                                        <div>
+                                            <a href="" class="text-white">
+                                                Wasted Student
+                                            </a>
+                                        </div>
+                                        <div><i class="bi bi-arrow-right-circle-fill ms-3"></i></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class=" dashboard-btn  mb-3 d-flex justify-content-between align-items-center "
+                                        style=" color:white !important; background-color: #000000 !important">
+                                        <div>
+                                            <a href="" class="text-white">
+                                                Closed Student
+                                            </a>
+                                        </div>
+                                        <div><i class="bi bi-arrow-right-circle-fill ms-3"></i></div>
+                                    </div>
+                                </div>
                             </div>
+                            <!-- Striped Rows -->
+                            <div class="card  pb-4 px-lg-4 px-2">
+                                <h5 class="card-header px-0 bg-white border-bottom-0  py-3 mb-2">New Leads</h5>
 
-                            <div id="Appointmens" class="tabcontent">
+                                <div class="table-responsive">
+                                    <table id="sm-table" class="table  nowrap border-0 " style="width:100%">
+                                        <thead>
+                                            <tr class="dt-head">
 
-                                <!-- Striped Rows -->
-                                <div class="card  pb-4 px-lg-4 px-2">
-                                    <h5 class="card-header px-0 bg-white border-bottom-0  py-3 mb-2">InQuiry</h5>
-                                    <div class="row ">
-                                        <div class="col-lg-3 mb-3">
+                                                <th>#</th>
 
-                                            <select class="form-select session-select" required=""
-                                                style="width: fit-content;">
-                                                <option>Select Session </option>
-                                                <option value="9">
-                                                    SEPTEMBER 2021 </option>
-                                                <option value="10">
-                                                    JANUARY- MARCH 2022 </option>
-                                                <option value="11">
-                                                    SEPTEMBER 2022 </option>
-                                                <option value="12">
-                                                    JANUARY- MARCH 2023 </option>
-                                                <option value="13">
-                                                    SEPTEMBER 2023 </option>
-                                                <option value="15">
-                                                    JANUARY- MARCH 2024 </option>
-                                                <option value="16">
-                                                    SEPTEMBER 2024 </option>
-                                                <option value="17">
-                                                </option>
-                                            </select>
+                                                <th> Name </th>
 
-                                        </div>
+                                                <th> Number</th>
+
+                                                <th> Session </th>
+
+                                                <th> Email</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="">
+
+                                                <td class="">1</td>
 
 
-                                        <div class="col-lg-3 mb-3">
-
-                                            <select class="form-select" name="coun">
-                                                <option>Select Counselor </option>
-                                                <option value="4">
-                                                    UZAIR SOOBASHAH </option>
-                                                <option value="5">
-                                                    ALI BAIG </option>
-                                                <option value="6">
-                                                    Ali Mama </option>
-                                                <option value="7">
-                                                    Fariha Aziz </option>
-                                            </select>
-
-                                        </div>
-
-                                        <div class="col-lg-3 mb-3">
-                                            <select class="form-select" name="ref">
-                                                <option>Select Ref </option>
-                                                <option value="3">
-                                                    ALPHA COLLEGE </option>
-                                                <option value="4">
-                                                    INDEX </option>
-                                                <option value="5">
-                                                    RANA </option>
-                                                <option value="6">
-                                                    ERN </option>
-                                                <option value="7">
-                                                    OMER ALTAF </option>
-                                                <option value="8">
-                                                    KASHAN IQBAL </option>
-                                                <option value="9">
-                                                    ALI RAZA GRAVITY </option>
-                                                <option value="10">
-                                                    SALMAN MUSTAFA </option>
-                                                <option value="11">
-                                                    ZARAK MUSTAFA </option>
-                                                <option value="12">
-                                                    ICC </option>
-                                                <option value="13">
-                                                    STALLION </option>
-                                            </select>
-                                        </div>
-                                        <div class="col-lg-3 mb-3">
-                                            <div class="d-flex">
-                                                <button class="btn btn-primary mx-2 mt-md-0 mt-3">Apply</button>
-                                                <button class="btn btn-secondary mt-md-0 mt-3">Clear</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="table-responsive">
-                                        <table id="inquiry" class="table  nowrap border-0 " style="width:100%">
-                                            <thead>
-                                                <tr class="dt-head">
-
-                                                    <th>#</th>
-
-                                                    <th style=" text-align:center; "> Name </th>
-                                                    <th style=" text-align:center; "> Contact # </th>
-
-                                                    <th style=" text-align:center; "> Intst Country </th>
-                                                    <th style=" text-align:center; "> Reference </th>
-                                                    <th style=" text-align:center; "> Session </th>
-                                                    <th style=" text-align:center; "> Counselor </th>
-
-                                                    <th style=" text-align:center; "> Actions </th>
-                                                    <th style="text-align:center; "> Uni View </th>
-                                                    <th style=" text-align:center; "> Details </th>
-                                                    <th style=" text-align:center; "> FollowUP </th>
-                                                </tr>
-
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-
-                                                    <td class="text-center">1</td>
+                                                <td class=""> Daniyal Adnan</td>
 
 
-                                                    <td class="text-center"> Obaid Jalal (Titan College)</td>
+                                                <td class=""> 03208242965</td>
 
-                                                    <td class="text-center"> 03342149286</td>
 
-                                                    <td class="text-center"> UK- </td>
-                                                    <td class="text-center"> </td>
+                                                <td class=""> JANUARY- MARCH 2022</td>
 
-                                                    <td class="text-center"> SEPTEMBER 2024</td>
-
-                                                    <td class="text-center"> </td>
+                                                <td class=""> abc@gmail.com</td>
 
 
 
-                                                    <td class="text-center">
+                                            </tr>
+                                            <tr class="">
 
-                                                        <div class="d-flex align-items-center">
+                                                <td class="">1</td>
 
-                                                            <select class="form-select " required="required"
-                                                                style="min-width: 180px !important;">
-                                                                <!--<option  disabled></option>-->
-                                                                <option value=""> -- Select Coun --</option>
-                                                                <option value="4">
-                                                                    Potential </option>
-                                                                <option value="5" selected="">
-                                                                    Wasted</option>
-                                                                <option value="6">
-                                                                    Visa Acptd </option>
-                                                                <option value="7">
-                                                                    Visa Rfsd</option>
-                                                                <option value="8">
-                                                                    Paid Student
-                                                                </option>
-                                                                <option value="9">
-                                                                    Closed
-                                                                </option>
-                                                            </select>
 
-                                                            <button class="btn btn-primary btn-xs ms-2 p-2"
-                                                                type="submit">
-                                                                Submit</button>
-                                                        </div>
+                                                <td class=""> Daniyal Adnan</td>
+
+
+                                                <td class=""> 03208242965</td>
+
+
+                                                <td class=""> JANUARY- MARCH 2022</td>
+
+                                                <td class=""> abc@gmail.com</td>
 
 
 
+                                            </tr>
+                                            <tr class="">
+
+                                                <td class="">1</td>
 
 
-                                                    </td>
-
-                                                    <td class="text-center">
-                                                        <button type="button" data-bs-toggle="modal"
-                                                            data-bs-target="#uni-view"
-                                                            class="btn btn-primary btn-xs me-2 view-btn" title="View"
-                                                            data-toggle="tooltip">
-                                                            View
-                                                        </button>
-                                                    </td>
+                                                <td class=""> Daniyal Adnan</td>
 
 
-                                                    <td class="text-center">
-                                                        <button type="button" data-bs-toggle="modal"
-                                                            data-bs-target="#view"
-                                                            class="btn btn-primary btn-xs me-2 view-btn" title="View"
-                                                            data-toggle="tooltip">
-                                                            View
-                                                        </button>
-
-                                                        <button type="button" data-bs-toggle="modal"
-                                                            data-bs-target="#edit"
-                                                            class="btn btn-primary btn-xs edit-btn" title="Edit"
-                                                            data-toggle="tooltip">
-                                                            Edit
-                                                        </button>
-
-                                                    </td>
-                                                    <td class="text-center"> <button type="button"
-                                                            class="btn btn-primary btn-xs edit-btn"
-                                                            data-bs-toggle="modal" data-bs-target="#followUp"
-                                                            title="FollowUp" data-toggle="tooltip">
-                                                            FollowUp
-                                                        </button>
+                                                <td class=""> 03208242965</td>
 
 
-                                                    </td>
-                                                </tr>
+                                                <td class=""> JANUARY- MARCH 2022</td>
 
-                                            </tbody>
-                                        </table>
-                                    </div>
+                                                <td class=""> abc@gmail.com</td>
+
+
+
+                                            </tr>
+                                            <tr class="">
+
+                                                <td class="">1</td>
+
+
+                                                <td class=""> Daniyal Adnan</td>
+
+
+                                                <td class=""> 03208242965</td>
+
+
+                                                <td class=""> JANUARY- MARCH 2022</td>
+
+                                                <td class=""> abc@gmail.com</td>
+
+
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
-                                <!--/ Striped Rows -->
-
                             </div>
+                            <!--/ Striped Rows -->
 
-
-
-                            <!-- Footer -->
-                            <footer class="content-footer footer bg-footer-theme">
-                                <div
-                                    class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
-                                    <div class="mb-2 mb-md-0">
-                                        ©
-                                        <script>
-                                            document.write(new Date().getFullYear());
-                                        </script>
-                                        , Developed with by
-                                        <a href="https://techwizard.com" target="_blank"
-                                            class="footer-link fw-medium">Techwizard</a>
-                                    </div>
-
-                                </div>
-                            </footer>
-
-                            <!-- / Footer -->
-
-                            <div class="content-backdrop fade"></div>
                         </div>
-                        <!-- Content wrapper -->
-                    </div>
-                    <!-- / Layout page -->
-                </div>
 
-                <!-- Overlay -->
-                <div class="layout-overlay layout-menu-toggle"></div>
+                        <div id="Appointments" class="tabcontent">
+
+                            <!-- Striped Rows -->
+                            <div class="card  pb-4 px-lg-4 px-2">
+                                <h5 class="card-header px-0 bg-white border-bottom-0  py-3 mb-2">Today Appointments</h5>
+                                <div class="table-responsive">
+                                    <table id="inquiry" class="table  nowrap border-0 " style="width:100%">
+                                        <thead>
+                                            <tr class="dt-head">
+
+                                                <th>#</th>
+                                                <th>Today Date</th>
+                                                <th>Time</th>
+                                                <th>Std Name </th>
+                                                <th> Number</th>
+                                                <th> Email</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="">
+                                                <td class="">1</td>
+                                                <td>12/29/1023</td>
+                                                <td>12:30</td>
+                                                <td class=""> Daniyal Adnan</td>
+                                                <td class=""> 03208242965</td>
+                                                <td class=""> abc@gmail.com</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td class="">2</td>
+                                                <td>12/29/1023</td>
+                                                <td>12:30</td>
+                                                <td class=""> Daniyal Adnan</td>
+                                                <td class=""> 03208242965</td>
+                                                <td class=""> abc@gmail.com</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td class="">3</td>
+                                                <td>12/29/1023</td>
+                                                <td>12:30</td>
+                                                <td class=""> Daniyal Adnan</td>
+                                                <td class=""> 03208242965</td>
+                                                <td class=""> abc@gmail.com</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="card  pb-4 px-lg-4 px-2 mt-3">
+                                <h5 class="card-header px-0 bg-white border-bottom-0  py-3 mb-2">All Appointments</h5>
+                                <div class="table-responsive">
+                                    <table id="inprogress" class="table  nowrap border-0 " style="width:100%">
+                                        <thead>
+                                            <tr class="dt-head">
+
+                                                <th>#</th>
+                                                <th>Today Date</th>
+                                                <th>Time</th>
+                                                <th>Std Name </th>
+                                                <th> Number</th>
+                                                <th> Email</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="">
+                                                <td class="">1</td>
+                                                <td>12/29/1023</td>
+                                                <td>12:30</td>
+                                                <td class=""> Daniyal Adnan</td>
+                                                <td class=""> 03208242965</td>
+                                                <td class=""> abc@gmail.com</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td class="">2</td>
+                                                <td>12/29/1023</td>
+                                                <td>12:30</td>
+                                                <td class=""> Daniyal Adnan</td>
+                                                <td class=""> 03208242965</td>
+                                                <td class=""> abc@gmail.com</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td class="">3</td>
+                                                <td>12/29/1023</td>
+                                                <td>12:30</td>
+                                                <td class=""> Daniyal Adnan</td>
+                                                <td class=""> 03208242965</td>
+                                                <td class=""> abc@gmail.com</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!--/ Striped Rows -->
+
+                        </div>
+
+
+
+                        <!-- Footer -->
+                        <footer class="content-footer footer bg-footer-theme">
+                            <div
+                                class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+                                <div class="mb-2 mb-md-0">
+                                    ©
+                                    <script>
+                                        document.write(new Date().getFullYear());
+                                    </script>
+                                    , Developed with by
+                                    <a href="https://techwizard.com" target="_blank"
+                                        class="footer-link fw-medium">Techwizard</a>
+                                </div>
+
+                            </div>
+                        </footer>
+
+                        <!-- / Footer -->
+
+                        <div class="content-backdrop fade"></div>
+                    </div>
+                    <!-- Content wrapper -->
+                </div>
+                <!-- / Layout page -->
             </div>
 
+            <!-- Overlay -->
+            <div class="layout-overlay layout-menu-toggle"></div>
+        </div>
+
+        <!-- build:js assets/vendor/js/core.js -->
 
 
-            <script src="../assets/vendor/libs/jquery/jquery.js"></script>
-            <script src="../assets/vendor/libs/popper/popper.js"></script>
-            <script src="../assets/vendor/js/bootstrap.js"></script>
-            <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
-            <script src="../assets/vendor/js/menu.js"></script>
 
-            <!-- endbuild -->
+        <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+        <script src="../assets/vendor/libs/popper/popper.js"></script>
+        <script src="../assets/vendor/js/bootstrap.js"></script>
+        <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+        <script src="../assets/vendor/js/menu.js"></script>
 
-            <!-- Vendors JS -->
+        <!-- endbuild -->
 
-            <!-- Main JS -->
-            <script src="../assets/js/main.js"></script>
+        <!-- Vendors JS -->
 
-            <!-- Page JS -->
+        <!-- Main JS -->
+        <script src="../assets/js/main.js"></script>
 
-            <!-- Place this tag in your head or just before your close body tag. -->
-            <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <!-- Page JS -->
 
-            <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-            <!-- <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+        <!-- Place this tag in your head or just before your close body tag. -->
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+        <!-- <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
         <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
         <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
         <script src="https://cdn.datatables.net/responsive/2.5.0/js/responsive.bootstrap5.min.js"></script> -->
-            <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+        <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
-            <script src="assets/Js/table.js"></script>
-            <script>
-                // new DataTable('#sm-table');
-                $(document).ready(function () {
+        <script src="assets/Js/table.js"></script>
+        <script>
+            // new DataTable('#sm-table');
+            $(document).ready(function () {
 
-                    new DataTable('#sm-table', {
-                        language: {
-                            searchPlaceholder: "Search records"
-                        },
-                        responsive: true,
-                        "paging": false,
-                        "info": false
-                    });
-
-                    // new DataTable('#inquiry');
-                    new DataTable('#inquiry', {
-                        language: {
-                            searchPlaceholder: "Search records"
-                        },
-                        responsive: true,
-                        "paging": false,
-                        "info": false
-                    });
-
-
-                    // new DataTable('#inprogress');
-                    new DataTable('#inprogress', {
-                        language: {
-                            searchPlaceholder: "Search records"
-                        },
-                        responsive: true,
-                        "paging": false,
-                        "info": false
-                    });
-
-                    // new DataTable('#inprogress');
-                    new DataTable('#paidstudent', {
-                        language: {
-                            searchPlaceholder: "Search records"
-                        },
-                        responsive: true,
-                        "paging": false,
-                        "info": false
-                    });
-
-                    // new DataTable('#inprogress');
-                    new DataTable('#t20', {
-                        language: {
-                            searchPlaceholder: "Search records"
-                        },
-                        responsive: true,
-                        "paging": false,
-                        "info": false
-                    });
-
-
-                    // new DataTable('#visaAccepted');
-                    new DataTable('#visaAccepted', {
-                        language: {
-                            searchPlaceholder: "Search records"
-                        },
-                        responsive: true,
-                        "paging": false,
-                        "info": false
-                    });
-
-                    // new DataTable('#visaAccepted');
-                    new DataTable('#visaRefused', {
-                        language: {
-                            searchPlaceholder: "Search records"
-                        },
-                        responsive: true,
-                        "paging": false,
-                        "info": false
-                    });
-                    // new DataTable('#close');
-                    new DataTable('#closed', {
-                        language: {
-                            searchPlaceholder: "Search records"
-                        },
-                        responsive: true,
-                        "paging": false,
-                        "info": false
-                    });
-
+                new DataTable('#sm-table', {
+                    language: {
+                        searchPlaceholder: "Search records"
+                    },
+                    responsive: true,
+                    "paging": false,
+                    "info": false
                 });
 
-            </script>
-
-            <script>
-                // function openCity(evt, cityName) {
-                //     var i, tabcontent, tablinks;
-                //     tabcontent = document.getElementsByClassName("tabcontent");
-                //     for (i = 0; i < tabcontent.length; i++) {
-                //         tabcontent[i].style.display = "none";
-                //     }
-                //     tablinks = document.getElementsByClassName("tablinks");
-                //     for (i = 0; i < tablinks.length; i++) {
-                //         tablinks[i].className = tablinks[i].className.replace(" active", "");
-                //     }
-                //     document.getElementById(cityName).style.display = "block";
-                //     evt.currentTarget.className += " active";
-                // }
-
-
-                // document.getElementById("defaultOpen").click();
-                $(document).ready(function () {
-                    // Click event for tab buttons
-                    $(".tablinks").click(function () {
-                        var tabName = $(this).data("tab");
-
-                        // Remove the "active" class from all tab buttons
-                        $(".tablinks").removeClass("active");
-
-                        // Hide all tab content
-                        $(".tabcontent").hide();
-
-                        // Show the selected tab content
-                        $("#" + tabName).show();
-
-                        // Add the "active" class to the clicked tab button
-                        $(this).addClass("active");
-                    });
-
-                    // Trigger the default tab to open
-                    $("#defaultOpen").click();
+                // new DataTable('#inquiry');
+                new DataTable('#inquiry', {
+                    language: {
+                        searchPlaceholder: "Search records"
+                    },
+                    responsive: true,
+                    "paging": false,
+                    "info": false
                 });
-                document.getElementById("defaultOpen").click();
-            </script>
 
-            <!-- add more commment -->
-            <script>
-                // jQuery document ready function
-                $(document).ready(function () {
-                    // Add click event handler to add-more-make-btn button
-                    $('.add-more-comment').on('click', function () {
-                        // Clone the template and append it to the add-more-make div
-                        var templateClone = $('#comment_template').html();
-                        $('.add-more-comment-div').append(templateClone);
-                    });
+
+                // new DataTable('#inprogress');
+                new DataTable('#inprogress', {
+                    language: {
+                        searchPlaceholder: "Search records"
+                    },
+                    responsive: true,
+                    "paging": false,
+                    "info": false
+                });
+
+                // new DataTable('#inprogress');
+                new DataTable('#paidstudent', {
+                    language: {
+                        searchPlaceholder: "Search records"
+                    },
+                    responsive: true,
+                    "paging": false,
+                    "info": false
+                });
+
+                // new DataTable('#inprogress');
+                new DataTable('#t20', {
+                    language: {
+                        searchPlaceholder: "Search records"
+                    },
+                    responsive: true,
+                    "paging": false,
+                    "info": false
+                });
+
+
+                // new DataTable('#visaAccepted');
+                new DataTable('#visaAccepted', {
+                    language: {
+                        searchPlaceholder: "Search records"
+                    },
+                    responsive: true,
+                    "paging": false,
+                    "info": false
+                });
+
+                // new DataTable('#visaAccepted');
+                new DataTable('#visaRefused', {
+                    language: {
+                        searchPlaceholder: "Search records"
+                    },
+                    responsive: true,
+                    "paging": false,
+                    "info": false
+                });
+                // new DataTable('#close');
+                new DataTable('#closed', {
+                    language: {
+                        searchPlaceholder: "Search records"
+                    },
+                    responsive: true,
+                    "paging": false,
+                    "info": false
+                });
+
+            });
+
+        </script>
+
+        <script>
+            // function openCity(evt, cityName) {
+            //     var i, tabcontent, tablinks;
+            //     tabcontent = document.getElementsByClassName("tabcontent");
+            //     for (i = 0; i < tabcontent.length; i++) {
+            //         tabcontent[i].style.display = "none";
+            //     }
+            //     tablinks = document.getElementsByClassName("tablinks");
+            //     for (i = 0; i < tablinks.length; i++) {
+            //         tablinks[i].className = tablinks[i].className.replace(" active", "");
+            //     }
+            //     document.getElementById(cityName).style.display = "block";
+            //     evt.currentTarget.className += " active";
+            // }
+
+
+            // document.getElementById("defaultOpen").click();
+            $(document).ready(function () {
+                // Click event for tab buttons
+                $(".tablinks").click(function () {
+                    var tabName = $(this).data("tab");
+
+                    // Remove the "active" class from all tab buttons
+                    $(".tablinks").removeClass("active");
+
+                    // Hide all tab content
+                    $(".tabcontent").hide();
+
+                    // Show the selected tab content
+                    $("#" + tabName).show();
+
+                    // Add the "active" class to the clicked tab button
+                    $(this).addClass("active");
+                });
+
+                // Trigger the default tab to open
+                $("#defaultOpen").click();
+            });
+            document.getElementById("defaultOpen").click();
+        </script>
+
+        <!-- add more commment -->
+        <script>
+            // jQuery document ready function
+            $(document).ready(function () {
+                // Add click event handler to add-more-make-btn button
+                $('.add-more-comment').on('click', function () {
+                    // Clone the template and append it to the add-more-make div
+                    var templateClone = $('#comment_template').html();
+                    $('.add-more-comment-div').append(templateClone);
+                });
+
+            });
+        </script>
+        <!-- add more uni -->
+        <script>
+            // jQuery document ready function
+            $(document).ready(function () {
+                // Add click event handler to add-more-make-btn button
+                $('.add-more-uni').on('click', function () {
+                    // Clone the template and append it to the add-more-make div
+                    var templateClone = $('#uni_template').html();
+                    $('.add-more-uni-div').append(templateClone);
+                });
+
+            });
+        </script>
+
+        <!-- add Uni view -->
+        <script>
+            // jQuery document ready function       
+            $(document).ready(function () {
+                // Add click event handler to add-more-make-btn button
+                $('.add-more-uni-view').on('click', function () {
+                    // Clone the template and append it to the add-more-make div
+                    var templateClone = $('#uni_view').html();
+
+                    var count = $('.add-more-uniview-row').find('.add-more-uni-row').length;
+                    templateClone = templateClone.replaceAll('action[]', `action[${count++}]`);
+                    templateClone = templateClone.replaceAll('deposit[]', `deposit[${count++}]`);
+                    templateClone = templateClone.replaceAll('medical[]', `medical[${count++}]`);
+                    $('.add-more-uniview-row').append(templateClone);
+
 
                 });
-            </script>
-            <!-- add more uni -->
-            <script>
-                // jQuery document ready function
-                $(document).ready(function () {
-                    // Add click event handler to add-more-make-btn button
-                    $('.add-more-uni').on('click', function () {
-                        // Clone the template and append it to the add-more-make div
-                        var templateClone = $('#uni_template').html();
-                        $('.add-more-uni-div').append(templateClone);
-                    });
-
-                });
-            </script>
-
-            <!-- add Uni view -->
-            <script>
-                // jQuery document ready function       
-                $(document).ready(function () {
-                    // Add click event handler to add-more-make-btn button
-                    $('.add-more-uni-view').on('click', function () {
-                        // Clone the template and append it to the add-more-make div
-                        var templateClone = $('#uni_view').html();
-
-                        var count = $('.add-more-uniview-row').find('.add-more-uni-row').length;
-                        templateClone = templateClone.replaceAll('action[]', `action[${count++}]`);
-                        templateClone = templateClone.replaceAll('deposit[]', `deposit[${count++}]`);
-                        templateClone = templateClone.replaceAll('medical[]', `medical[${count++}]`);
-                        $('.add-more-uniview-row').append(templateClone);
-
-
-                    });
-                    // Attach click event to .delete-uni
-                    $('.delete-uni').on('click', function () {
-                        // Remove the parent .add-more-uni-row
-                        $(this).closest('.add-more-uni-row').remove();
-                    });
-                });
-                // Attach click event to a common ancestor, in this case, document
-                $(document).on('click', '.delete-uni', function () {
+                // Attach click event to .delete-uni
+                $('.delete-uni').on('click', function () {
                     // Remove the parent .add-more-uni-row
                     $(this).closest('.add-more-uni-row').remove();
                 });
+            });
+            // Attach click event to a common ancestor, in this case, document
+            $(document).on('click', '.delete-uni', function () {
+                // Remove the parent .add-more-uni-row
+                $(this).closest('.add-more-uni-row').remove();
+            });
 
-            </script>
+        </script>
 
-            <script>
-                $("#edit").on("shown.bs.modal", function () {
-                    $('#select2').select2({
-                        dropdownParent: $('#edit .modal-content form .modal-body .container .row .col-lg-6')
-                    });
-                    // $.fn.modal.Constructor.prototype.enforceFocus = function() { };
-                })
+        <script>
+            $("#edit").on("shown.bs.modal", function () {
+                $('#select2').select2({
+                    dropdownParent: $('#edit .modal-content form .modal-body .container .row .col-lg-6')
+                });
+                // $.fn.modal.Constructor.prototype.enforceFocus = function() {};
+            })
 
-            </script>
+        </script>
 </body>
 
 </html>

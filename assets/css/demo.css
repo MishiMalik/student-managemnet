@@ -462,6 +462,7 @@ table.dataTable>tbody>tr{
   margin-top: -40px;
  
 }
+.add-more-uni-row2,
 .add-more-uni-row{
   background-color: #ece8e8;
   border: 1px solid #1C315E;
@@ -469,6 +470,7 @@ table.dataTable>tbody>tr{
   padding: 15px;
   margin-bottom: 20px;
 }
+.delete-uni2,
 .delete-uni{
   position: absolute;
   top: -5px;
@@ -538,6 +540,15 @@ td{
 }
 .table-responsive::-webkit-scrollbar-thumb {
   background-color: #1C315E;
+}
+.dashboard-btn{
+  padding: 20px;
+  box-shadow: 0 2px 6px 0 rgba(67, 89, 113, 0.12);
+  border-radius: 4px;
+}
+
+.dashboard-btn i{
+  font-size: 22px;
 }
 @media only screen and (max-width:1024px){
   .tab{
