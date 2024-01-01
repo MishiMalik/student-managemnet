@@ -7,44 +7,29 @@
     <meta charset="utf-8" />
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-
     <title>Student Management</title>
-
     <meta name="description" content="" />
-
     <!-- Favicon -->
     <!-- <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" /> -->
-
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet" />
-
     <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
-
     <!-- Core CSS -->
     <link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css" />
     <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
     <link rel="stylesheet" href="../assets/css/demo.css" />
-
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
-   <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/dt-1.13.6/datatables.min.css">
-  <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css"> -->
-    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.bootstrap5.min.css">-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/dt-1.13.6/datatables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"> 
-
-    <!-- Page CSS -->
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <!-- Helpers -->
     <script src="../assets/vendor/js/helpers.js"></script>
-    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
-    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="../assets/js/config.js"></script>
 </head>
 
@@ -104,7 +89,7 @@
                                 </a>
                             </li>
                             <li class="menu-item active ">
-                                <a href="sale-invoice.html" class="menu-link">
+                                <a href="-table-invoice.html" class="menu-link">
                                     <div data-i18n="Text Divider">Sale Invoice</div>
                                 </a>
                             </li>
@@ -133,7 +118,7 @@
                             </li>
                             <li class="menu-item ">
                                 <a href="user-access.html" class="menu-link">
-                                   <div data-i18n="Text Divider">Users Access Role</div>
+                                    <div data-i18n="Text Divider">Users Access Role</div>
                                 </a>
                             </li>
 
@@ -143,11 +128,7 @@
                 </ul>
             </aside>
             <!-- / Menu -->
-
-            <!-- Layout container -->
             <div class="layout-page">
-                <!-- Navbar -->
-
                 <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
                     id="layout-navbar">
                     <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
@@ -241,13 +222,7 @@
                     </div>
                 </nav>
 
-                <!-- / Navbar -->
-
-                <!-- Content wrapper -->
                 <div class="content-wrapper px-lg-3 px-0">
-                    <!-- Content -->
-
-
                     <div class="container-xxl flex-grow-1 container-p-y">
 
                         <div class="card  pb-4 px-lg-4 px-2">
@@ -256,49 +231,48 @@
                                 <button type="submit" class="btn btn-primary" data-bs-toggle="modal"
                                     data-bs-target="#add-invoice">Add Invoice</button>
                             </div>
+                            <div class="table-responsive">
+                                <table id="sale-table" class="table  nowrap border-0 " style="width:100%">
+                                    <thead>
 
-<div class="table-responsive">
-    
-    <table id="inprogress" class="table  nowrap border-0 " style="width:100%">
-        <thead>
+                                        <tr class="dt-head">
+                                            <th style=" text-align:center;">#</th>
 
-            <tr class="dt-head">
-                <th style=" text-align:center;">#</th>
+                                            <th style=" text-align:center; "> Invoice # </th>
+                                            <th style=" text-align:center; "> Session </th>
 
-                <th style=" text-align:center; "> Invoice # </th>
-                <th style=" text-align:center; "> Session </th>
-
-                <th style=" text-align:center; "> Date </th>
+                                            <th style=" text-align:center; "> Date </th>
 
 
 
-                <th style=" text-align:center; "> Actions </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="text-center">1</td>
+                                            <th style=" text-align:center; "> Actions </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center">1</td>
 
 
-                <td class="text-center"> 13</td>
+                                            <td class="text-center"> 13</td>
 
-                <td class="text-center"> SEPTEMBER 2021</td>
-                <td class="text-center"> 2021-11-12</td>
+                                            <td class="text-center"> SEPTEMBER 2021</td>
+                                            <td class="text-center"> 2021-11-12</td>
 
-                <td class="text-center">
-                    <button type="button" class="btn btn-primary btn-xs" data-bs-toggle="modal"
-                        data-bs-target="#invoice-detail">Details</button>
+                                            <td class="text-center">
+                                                <button type="button" class="btn btn-primary btn-xs"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#invoice-detail">Details</button>
 
-                    <button type="button" class="btn btn-primary btn-xs" data-bs-toggle="modal"
-                        data-bs-target="#invoice-edit">Edit</button>
-                </td>
-            </tr>
+                                                <button type="button" class="btn btn-primary btn-xs"
+                                                    data-bs-toggle="modal" data-bs-target="#invoice-edit">Edit</button>
+                                            </td>
+                                        </tr>
 
 
 
-        </tbody>
-    </table>
-</div>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
 
 
@@ -323,9 +297,7 @@
 
                         <div class="content-backdrop fade"></div>
                     </div>
-                    <!-- Content wrapper -->
                 </div>
-                <!-- / Layout page -->
             </div>
 
             <!-- Overlay -->
@@ -338,7 +310,7 @@
             <div class="modal-dialog modal-fullscreen modal-fullscreen2">
                 <div class="modal-content">
                     <div class="modal-header modal-header-style">
-                        <h5 class="modal-title mb-3 text-white" id="staticBackdropLabel">Sale Entry
+                        <h5 class="modal-title mb-3 text-white" id="staticBackdropLabel">-table Entry
                         </h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
@@ -597,7 +569,7 @@
             <div class="modal-dialog modal-fullscreen modal-fullscreen2">
                 <div class="modal-content">
                     <div class="modal-header modal-header-style">
-                        <h5 class="modal-title mb-3 text-white" id="staticBackdropLabel">Edit Sale Entry
+                        <h5 class="modal-title mb-3 text-white" id="staticBackdropLabel">Edit -table Entry
                         </h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
@@ -814,7 +786,13 @@
         <!-- endbuild -->
 
         <!-- Vendors JS -->
+        <!-- Vendors JS -->
 
+        <script src="../assets/js/main.js"></script>
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+        <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
         <!-- Main JS -->
         <script src="../assets/js/main.js"></script>
 
@@ -824,11 +802,7 @@
         <script async defer src="https://buttons.github.io/buttons.js"></script>
 
         <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-        <!-- <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
-        <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
-        <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
-        <script src="https://cdn.datatables.net/responsive/2.5.0/js/responsive.bootstrap5.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script> -->
+
 
         <script src="assets/Js/table.js"></script>
         <script>
@@ -836,7 +810,7 @@
             // new DataTable('#assign');
             $(document).ready(function () {
 
-                new DataTable('#assign', {
+                new DataTable('#sale-table', {
                     language: {
                         searchPlaceholder: "Search records"
                     },
@@ -845,143 +819,14 @@
                     "info": false
                 });
 
-                // new DataTable('#inquiry');
-                new DataTable('#inquiry', {
-                    language: {
-                        searchvalue: "Search records",
-                    },
-                    responsive: true,
-                    "paging": false,
-                    "info": false
-                });
-
-
-                // new DataTable('#inprogress');
-                new DataTable('#inprogress', {
-                    language: {
-                        searchPlaceholder: "Search records"
-                    },
-                    responsive: true,
-                    "paging": false,
-                    "info": false
-                });
-
-                // new DataTable('#inprogress');
-                new DataTable('#paidstudent', {
-                    language: {
-                        searchvalue: "Search records",
-                    },
-                    responsive: true,
-                    "paging": false,
-                    "info": false
-                });
-
-                // new DataTable('#inprogress');
-                new DataTable('#t20', {
-                    language: {
-                        searchvalue: "Search records",
-                    },
-                    responsive: true,
-                    "paging": false,
-                    "info": false
-                });
-
-
-                // new DataTable('#visaAccepted');
-                new DataTable('#visaAccepted', {
-                    language: {
-                        searchvalue: "Search records",
-                    },
-                    responsive: true,
-                    "paging": false,
-                    "info": false
-                });
-
-                // new DataTable('#visaAccepted');
-                new DataTable('#visaRefused', {
-                    language: {
-                        searchvalue: "Search records",
-                    },
-                    responsive: true,
-                    "paging": false,
-                    "info": false
-                });
-                // new DataTable('#close');
-                new DataTable('#closed', {
-                    language: {
-                        searchvalue: "Search records",
-                    },
-                    responsive: true,
-                    "paging": false,
-                    "info": false
-                });
 
             });
 
         </script>
 
-        <script>
-            // function openCity(evt, cityName) {
-            //     var i, tabcontent, tablinks;
-            //     tabcontent = document.getElementsByClassName("tabcontent");
-            //     for (i = 0; i < tabcontent.length; i++) {
-            //         tabcontent[i].style.display = "none";
-            //     }
-            //     tablinks = document.getElementsByClassName("tablinks");
-            //     for (i = 0; i < tablinks.length; i++) {
-            //         tablinks[i].className = tablinks[i].className.replace(" active", "");
-            //     }
-            //     document.getElementById(cityName).style.display = "block";
-            //     evt.currentTarget.className += " active";
-            // }
 
 
-            // document.getElementById("defaultOpen").click();
-            $(document).ready(function () {
-                // Click event for tab buttons
-                $(".tablinks").click(function () {
-                    var tabName = $(this).data("tab");
-
-                    // Remove the "active" class from all tab buttons
-                    $(".tablinks").removeClass("active");
-
-                    // Hide all tab content
-                    $(".tabcontent").hide();
-
-                    // Show the selected tab content
-                    $("#" + tabName).show();
-
-                    // Add the "active" class to the clicked tab button
-                    $(this).addClass("active");
-                });
-
-                // Trigger the default tab to open
-                $("#defaultOpen").click();
-            });
-            document.getElementById("defaultOpen").click();
-        </script>
-        <script>
-            $("#edit").on("shown.bs.modal", function () {
-
-                $('.js-example-basic-multiple').select2();
-                console.log("popup")
-            })
-
-        </script>
-        <!-- add more commment -->
-        <script>
-            // jQuery document ready function
-            $(document).ready(function () {
-                // Add click event handler to add-more-make-btn button
-                $('.add-more-comment').on('click', function () {
-                    // Clone the template and append it to the add-more-make div
-                    var templateClone = $('#comment_template').html();
-                    $('.add-more-comment-div').append(templateClone);
-                });
-
-            });
-        </script>
-        <!-- add more uni -->
+        <!-- add -table invoice -->
         <script>
             // jQuery document ready function
             $(document).ready(function () {
@@ -991,11 +836,7 @@
                     var templateClone = $('#std_template').html();
                     $('.add-more-std').append(templateClone);
                 });
-                // Attach click event to .delete-uni
-                // $('.delete-std').on('click', function () {
-                //                     // Remove the parent .add-more-uni-row
-                //                     $(this).closest('.add-more-std-row').remove();
-                //                 });
+
             });
             // Attach click event to a parent element (e.g., closest static container)
             $(document).on('click', '.delete-std', function () {
@@ -1006,31 +847,6 @@
 
         </script>
 
-        <!-- add Uni view -->
-        <script>
-            // jQuery document ready function       
-            $(document).ready(function () {
-                // Add click event handler to add-more-make-btn button
-                $('.add-more-uni-view').on('click', function () {
-                    // Clone the template and append it to the add-more-make div
-                    var templateClone = $('#uni_view').html();
-                    $('.add-more-uniview-row').append(templateClone);
-
-
-                });
-                // Attach click event to .delete-uni
-                $('.delete-uni').on('click', function () {
-                    // Remove the parent .add-more-uni-row
-                    $(this).closest('.add-more-uni-row').remove();
-                });
-            });
-            // Attach click event to a common ancestor, in this case, document
-            $(document).on('click', '.delete-uni', function () {
-                // Remove the parent .add-more-uni-row
-                $(this).closest('.add-more-uni-row').remove();
-            });
-
-        </script>
 </body>
 
 </html>

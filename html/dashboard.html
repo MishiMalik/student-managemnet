@@ -33,18 +33,10 @@
     <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
     <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/dt-1.13.6/datatables.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css"> -->
-    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.bootstrap5.min.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-
-    <!-- Page CSS -->
-
     <!-- Helpers -->
     <script src="../assets/vendor/js/helpers.js"></script>
-    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
-    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="../assets/js/config.js"></script>
 </head>
 
@@ -157,7 +149,6 @@
                     </div>
 
                     <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
-                        <!-- Search -->
                         <div class="navbar-nav align-items-center">
                             <div class="nav-item d-flex align-items-center">
                                 <i class="bx bx-search fs-4 lh-0"></i>
@@ -165,17 +156,7 @@
                                     value="Search..." aria-label="Search..." />
                             </div>
                         </div>
-                        <!-- /Search -->
-
                         <ul class="navbar-nav flex-row align-items-center ms-auto">
-                            <!-- Place this tag where you want the button to render. -->
-                            <!-- <li class="nav-item lh-1 me-3">
-                <a class="github-button" href="https://github.com/themeselection/sneat-html-admin-template-free"
-                  data-icon="octicon-star" data-size="large" data-show-count="true"
-                  aria-label="Star themeselection/sneat-html-admin-template-free on GitHub">Star</a>
-              </li> -->
-
-                            <!-- User -->
                             <li class="nav-item navbar-dropdown dropdown-user dropdown">
                                 <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);"
                                     data-bs-toggle="dropdown">
@@ -204,30 +185,7 @@
                                     <li>
                                         <div class="dropdown-divider"></div>
                                     </li>
-                                    <!-- <li>
-                    <a class="dropdown-item" href="#">
-                      <i class="bx bx-user me-2"></i>
-                      <span class="align-middle">My Profile</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      <i class="bx bx-cog me-2"></i>
-                      <span class="align-middle">Settings</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      <span class="d-flex align-items-center align-middle">
-                        <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
-                        <span class="flex-grow-1 align-middle ms-1">Billing</span>
-                        <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
-                      </span>
-                    </a>
-                  </li> -->
-                                    <!-- <li>
-                    <div class="dropdown-divider"></div>
-                  </li> -->
+
                                     <li>
                                         <a class="dropdown-item" href="javascript:void(0);">
                                             <i class="bx bx-power-off me-2"></i>
@@ -236,7 +194,6 @@
                                     </li>
                                 </ul>
                             </li>
-                            <!--/ User -->
                         </ul>
                     </div>
                 </nav>
@@ -368,7 +325,7 @@
                                 <h5 class="card-header px-0 bg-white border-bottom-0  py-3 mb-2">New Leads</h5>
 
                                 <div class="table-responsive">
-                                    <table id="sm-table" class="table  nowrap border-0 " style="width:100%">
+                                    <table id="new-lead" class="table  nowrap border-0 " style="width:100%">
                                         <thead>
                                             <tr class="dt-head">
 
@@ -466,8 +423,6 @@
                         </div>
 
                         <div id="Appointments" class="tabcontent">
-
-                            <!-- Striped Rows -->
                             <div class="card  pb-4 px-lg-4 px-2">
                                 <h5 class="card-header px-0 bg-white border-bottom-0  py-3 mb-2">Today Appointments</h5>
                                 <div class="table-responsive">
@@ -516,7 +471,7 @@
                             <div class="card  pb-4 px-lg-4 px-2 mt-3">
                                 <h5 class="card-header px-0 bg-white border-bottom-0  py-3 mb-2">All Appointments</h5>
                                 <div class="table-responsive">
-                                    <table id="inprogress" class="table  nowrap border-0 " style="width:100%">
+                                    <table id="appointments" class="table  nowrap border-0 " style="width:100%">
                                         <thead>
                                             <tr class="dt-head">
 
@@ -558,11 +513,7 @@
                                     </table>
                                 </div>
                             </div>
-                            <!--/ Striped Rows -->
-
                         </div>
-
-
 
                         <!-- Footer -->
                         <footer class="content-footer footer bg-footer-theme">
@@ -580,57 +531,37 @@
 
                             </div>
                         </footer>
-
                         <!-- / Footer -->
 
                         <div class="content-backdrop fade"></div>
                     </div>
-                    <!-- Content wrapper -->
                 </div>
-                <!-- / Layout page -->
             </div>
 
             <!-- Overlay -->
             <div class="layout-overlay layout-menu-toggle"></div>
         </div>
-
-        <!-- build:js assets/vendor/js/core.js -->
-
-
-
         <script src="../assets/vendor/libs/jquery/jquery.js"></script>
         <script src="../assets/vendor/libs/popper/popper.js"></script>
         <script src="../assets/vendor/js/bootstrap.js"></script>
         <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
         <script src="../assets/vendor/js/menu.js"></script>
-
-        <!-- endbuild -->
-
-        <!-- Vendors JS -->
-
         <!-- Main JS -->
         <script src="../assets/js/main.js"></script>
-
         <!-- Page JS -->
-
         <!-- Place this tag in your head or just before your close body tag. -->
         <script async defer src="https://buttons.github.io/buttons.js"></script>
-
         <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-        <!-- <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
-        <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
-        <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
-        <script src="https://cdn.datatables.net/responsive/2.5.0/js/responsive.bootstrap5.min.js"></script> -->
         <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
         <script src="assets/Js/table.js"></script>
         <script>
-            // new DataTable('#sm-table');
+            // new DataTable('#new-lead');
             $(document).ready(function () {
 
-                new DataTable('#sm-table', {
+                new DataTable('#new-lead', {
                     language: {
                         searchPlaceholder: "Search records"
                     },
@@ -639,8 +570,8 @@
                     "info": false
                 });
 
-                // new DataTable('#inquiry');
-                new DataTable('#inquiry', {
+                // new DataTable('#appointments');
+                new DataTable('#appointments', {
                     language: {
                         searchPlaceholder: "Search records"
                     },
@@ -649,87 +580,12 @@
                     "info": false
                 });
 
-
-                // new DataTable('#inprogress');
-                new DataTable('#inprogress', {
-                    language: {
-                        searchPlaceholder: "Search records"
-                    },
-                    responsive: true,
-                    "paging": false,
-                    "info": false
-                });
-
-                // new DataTable('#inprogress');
-                new DataTable('#paidstudent', {
-                    language: {
-                        searchPlaceholder: "Search records"
-                    },
-                    responsive: true,
-                    "paging": false,
-                    "info": false
-                });
-
-                // new DataTable('#inprogress');
-                new DataTable('#t20', {
-                    language: {
-                        searchPlaceholder: "Search records"
-                    },
-                    responsive: true,
-                    "paging": false,
-                    "info": false
-                });
-
-
-                // new DataTable('#visaAccepted');
-                new DataTable('#visaAccepted', {
-                    language: {
-                        searchPlaceholder: "Search records"
-                    },
-                    responsive: true,
-                    "paging": false,
-                    "info": false
-                });
-
-                // new DataTable('#visaAccepted');
-                new DataTable('#visaRefused', {
-                    language: {
-                        searchPlaceholder: "Search records"
-                    },
-                    responsive: true,
-                    "paging": false,
-                    "info": false
-                });
-                // new DataTable('#close');
-                new DataTable('#closed', {
-                    language: {
-                        searchPlaceholder: "Search records"
-                    },
-                    responsive: true,
-                    "paging": false,
-                    "info": false
-                });
 
             });
 
         </script>
 
         <script>
-            // function openCity(evt, cityName) {
-            //     var i, tabcontent, tablinks;
-            //     tabcontent = document.getElementsByClassName("tabcontent");
-            //     for (i = 0; i < tabcontent.length; i++) {
-            //         tabcontent[i].style.display = "none";
-            //     }
-            //     tablinks = document.getElementsByClassName("tablinks");
-            //     for (i = 0; i < tablinks.length; i++) {
-            //         tablinks[i].className = tablinks[i].className.replace(" active", "");
-            //     }
-            //     document.getElementById(cityName).style.display = "block";
-            //     evt.currentTarget.className += " active";
-            // }
-
-
             // document.getElementById("defaultOpen").click();
             $(document).ready(function () {
                 // Click event for tab buttons
@@ -755,73 +611,6 @@
             document.getElementById("defaultOpen").click();
         </script>
 
-        <!-- add more commment -->
-        <script>
-            // jQuery document ready function
-            $(document).ready(function () {
-                // Add click event handler to add-more-make-btn button
-                $('.add-more-comment').on('click', function () {
-                    // Clone the template and append it to the add-more-make div
-                    var templateClone = $('#comment_template').html();
-                    $('.add-more-comment-div').append(templateClone);
-                });
-
-            });
-        </script>
-        <!-- add more uni -->
-        <script>
-            // jQuery document ready function
-            $(document).ready(function () {
-                // Add click event handler to add-more-make-btn button
-                $('.add-more-uni').on('click', function () {
-                    // Clone the template and append it to the add-more-make div
-                    var templateClone = $('#uni_template').html();
-                    $('.add-more-uni-div').append(templateClone);
-                });
-
-            });
-        </script>
-
-        <!-- add Uni view -->
-        <script>
-            // jQuery document ready function       
-            $(document).ready(function () {
-                // Add click event handler to add-more-make-btn button
-                $('.add-more-uni-view').on('click', function () {
-                    // Clone the template and append it to the add-more-make div
-                    var templateClone = $('#uni_view').html();
-
-                    var count = $('.add-more-uniview-row').find('.add-more-uni-row').length;
-                    templateClone = templateClone.replaceAll('action[]', `action[${count++}]`);
-                    templateClone = templateClone.replaceAll('deposit[]', `deposit[${count++}]`);
-                    templateClone = templateClone.replaceAll('medical[]', `medical[${count++}]`);
-                    $('.add-more-uniview-row').append(templateClone);
-
-
-                });
-                // Attach click event to .delete-uni
-                $('.delete-uni').on('click', function () {
-                    // Remove the parent .add-more-uni-row
-                    $(this).closest('.add-more-uni-row').remove();
-                });
-            });
-            // Attach click event to a common ancestor, in this case, document
-            $(document).on('click', '.delete-uni', function () {
-                // Remove the parent .add-more-uni-row
-                $(this).closest('.add-more-uni-row').remove();
-            });
-
-        </script>
-
-        <script>
-            $("#edit").on("shown.bs.modal", function () {
-                $('#select2').select2({
-                    dropdownParent: $('#edit .modal-content form .modal-body .container .row .col-lg-6')
-                });
-                // $.fn.modal.Constructor.prototype.enforceFocus = function() {};
-            })
-
-        </script>
 </body>
 
 </html>
