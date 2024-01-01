@@ -550,6 +550,58 @@ td{
 .dashboard-btn i{
   font-size: 22px;
 }
+
+.print-invoice {
+  padding: 30px;
+}
+.print-invoice-detail{
+  padding:60px 40px;
+  border: 1px solid gray;
+}
+.print-invoice-detail h3{
+  font-size: 25px;
+  font-weight: 500;
+}  
+.print-invoice-detail h4{
+  font-size: 20px;
+  font-weight: 600;
+}  
+.print-invoice-detail p{
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 0px ;
+  padding-bottom: 0px;
+} 
+.print-invoice-detail h2{
+  font-size: 18px;
+  font-weight: 600;
+} 
+.print-invoice-detail input{
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid gray;
+} 
+/* ===================================================login */
+.login-card{
+  background-color: white;
+  padding: 30px;
+  border-radius: 6px;
+  min-width: 400px;
+}
+.login-card h2{
+  font-size: 24px;
+  font-weight: 700;
+  color: #222367 !important;
+}
+.login-card p{
+  font-size: 14px;
+  font-weight: 500;
+}
+.login-card label{
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
 @media only screen and (max-width:1024px){
   .tab{
     overflow-x: auto;
@@ -566,6 +618,7 @@ td{
   #assign-C_filter{
     width: 100% !important;
   }
+
 }
 @media only screen and (max-width:768px){
   .btn-group2{
@@ -603,5 +656,18 @@ td{
   }
   div.dataTables_wrapper div.dataTables_filter input{
     margin-left: 0px !important;
+  }
+  .login-content{
+    width: 100%;
+    align-items: flex-start !important;
+    background-color: white !important;
+  }
+  .login-content form{
+    width: 100%;
+    align-items: flex-start !important;
+  }
+  .login-card{
+    width: 100%;
+    min-width: 100%;
   }
 }
