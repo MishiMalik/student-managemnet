@@ -58,7 +58,8 @@
             box-shadow: none !important;
 
         }
-        .dataTables_length{
+
+        .dataTables_length {
             display: none !important;
         }
     </style>
@@ -313,864 +314,902 @@
                         </div>
 
                         <div id="all-booking" class="tabcontent">
-                        <!-- Striped Rows -->
-                        <div class=" bg-transparent">
-                            <div
-                                class="d-flex justify-content-between align-items-md-center align-items-start flex-md-row flex-column pt-2">
-                                <h5 class="card-header px-2 pb-3">All Bookings</h5>
+                            <!-- Striped Rows -->
+                            <div class=" bg-transparent">
+                                <div
+                                    class="d-flex justify-content-between align-items-md-center align-items-start flex-md-row flex-column pt-2">
+                                    <h5 class="card-header px-2 pb-3">All Bookings</h5>
 
-                            </div>
-                            <div class=" datatable-responsive mt-4 pt-1">
-                                <table id="example" class="display" style="width:100%">
-                                    <thead>
-                                        <tr class="d-none">
-                                            <th></th>
+                                </div>
+                                <div class=" datatable-responsive mt-4 pt-1">
+                                    <table id="example" class="display" style="width:100%">
+                                        <thead>
+                                            <tr class="d-none">
+                                                <th></th>
 
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="">
-                                            <td>
-                                                <div class="card py-3 vehical-card" style="overflow: hidden;">
-                                                    <div class="container-fluid">
-                                                        <div class="row ">
-                                                            <div class="col-lg-12 ">
-                                                                <div
-                                                                    class="d-flex justify-content-between align-items-center">
-                                                                    <h3 class="mb-0 pb-0 ">Vehical Name</h3>
-                                                                    <div class="vehical-status ongoing">Ongoing</div>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="">
+                                                <td>
+                                                    <div class="card py-3 vehical-card" style="overflow: hidden;">
+                                                        <div class="container-fluid">
+                                                            <div class="row ">
+                                                                <div class="col-lg-12 ">
+                                                                    <div
+                                                                        class="d-flex justify-content-between align-items-center">
+                                                                        <h3 class="mb-0 pb-0 ">Vehical Name</h3>
+                                                                        <div class="vehical-status ongoing">Ongoing
+                                                                        </div>
+                                                                    </div>
+                                                                    <hr class="my-3">
                                                                 </div>
-                                                                <hr class="my-3">
-                                                            </div>
-                                                            <div class="col-lg-3">
-                                                                <h4>Date & Time</h4>
-                                                                <div>
-                                                                    <span class="vehical-label">Date</span>
-                                                                    <h5 class="mb-0 pb-0">03/1/2024</h5>
-                                                                </div>
-                                                                <div class="mt-2">
-                                                                    <span class="vehical-label">Time</span>
-                                                                    <h5 class="mb-0 pb-0">12:30 pm</h5>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-4 mt-lg-0 mt-3">
-                                                                <h4>Vehical Information</h4>
-                                                                <div class="d-flex align-items-center mb-1">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 50px;">Year:</span>
-                                                                    <p class="mb-0 pb-0 ms-2">2024</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center mb-1">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 50px;">Make:</span>
-                                                                    <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center mb-1">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 50px;">Modal:</span>
-                                                                    <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center mb-1">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 50px;">Engine:</span>
-                                                                    <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.</p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-3 mt-lg-0 mt-3">
-                                                                <h4>Services</h4>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"> <i
-                                                                            class="bi-check-circle text-success"></i>
-                                                                    </span>
-                                                                    <p class="mb-0 pb-0 ms-2">Engine Oil/Filter </p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"><i
-                                                                            class="bi-check-circle text-success"></i></span>
-                                                                    <p class="mb-0 pb-0 ms-2">Air Filter</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"><i
-                                                                            class="bi-check-circle text-success"></i></span>
-                                                                    <p class="mb-0 pb-0 ms-2">Transmission Oil </p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"><i
-                                                                            class="bi-check-circle text-success"></i></span>
-                                                                    <p class="mb-0 pb-0 ms-2">Tire Rotation</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"><i
-                                                                            class="bi-check-circle text-success"></i></span>
-                                                                    <p class="mb-0 pb-0 ms-2">Tire Charge over</p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-2 mt-lg-0 mt-3 ">
-                                                                <h4>Actions</h4>
-                                                                <div class=" ">
-                                                                    <button
-                                                                        class="mt-4 bth btn-primary rounded-2  px-2 py-1"
-                                                                        data-bs-toggle="modal"
-                                                                        data-bs-target="#info-modal">Add Info</button>
-                                                                </div>
-                                                            </div>
-
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-
-                                        <tr class="">
-                                            <td>
-                                                <div class="card py-3 vehical-card" style="overflow: hidden;">
-                                                    <div class="container-fluid">
-                                                        <div class="row ">
-                                                            <div class="col-lg-12 ">
-                                                                <div
-                                                                    class="d-flex justify-content-between align-items-center">
-                                                                    <h3 class="mb-0 pb-0 ">Vehical Name</h3>
-                                                                    <div class="vehical-status ongoing">Ongoing</div>
-                                                                </div>
-                                                                <hr class="my-3">
-                                                            </div>
-                                                            <div class="col-lg-3">
-                                                                <h4>Date & Time</h4>
-                                                                <div>
-                                                                    <span class="vehical-label">Date</span>
-                                                                    <h5 class="mb-0 pb-0">03/1/2024</h5>
-                                                                </div>
-                                                                <div class="mt-2">
-                                                                    <span class="vehical-label">Time</span>
-                                                                    <h5 class="mb-0 pb-0">12:30 pm</h5>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-4 mt-lg-0 mt-3">
-                                                                <h4>Vehical Information</h4>
-                                                                <div class="d-flex align-items-center mb-1">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 50px;">Year:</span>
-                                                                    <p class="mb-0 pb-0 ms-2">2024</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center mb-1">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 50px;">Make:</span>
-                                                                    <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center mb-1">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 50px;">Modal:</span>
-                                                                    <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center mb-1">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 50px;">Engine:</span>
-                                                                    <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.</p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-3 mt-lg-0 mt-3">
-                                                                <h4>Services</h4>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"> <i
-                                                                            class="bi-check-circle text-success"></i>
-                                                                    </span>
-                                                                    <p class="mb-0 pb-0 ms-2">Engine Oil/Filter </p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"><i
-                                                                            class="bi-check-circle text-success"></i></span>
-                                                                    <p class="mb-0 pb-0 ms-2">Air Filter</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"><i
-                                                                            class="bi-check-circle text-success"></i></span>
-                                                                    <p class="mb-0 pb-0 ms-2">Transmission Oil </p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"><i
-                                                                            class="bi-check-circle text-success"></i></span>
-                                                                    <p class="mb-0 pb-0 ms-2">Tire Rotation</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"><i
-                                                                            class="bi-check-circle text-success"></i></span>
-                                                                    <p class="mb-0 pb-0 ms-2">Tire Charge over</p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-2 mt-lg-0 mt-3 ">
-                                                                <h4>Actions</h4>
-                                                                <div class=" ">
-                                                                    <button
-                                                                        class="mt-4 bth btn-primary rounded-2  px-2 py-1"
-                                                                        data-bs-toggle="modal"
-                                                                        data-bs-target="#info-modal">Add Info</button>
-                                                                </div>
-                                                            </div>
-
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="">
-                                            <td>
-                                                <div class="card py-3 vehical-card" style="overflow: hidden;">
-                                                    <div class="container-fluid">
-                                                        <div class="row ">
-                                                            <div class="col-lg-12 ">
-                                                                <div
-                                                                    class="d-flex justify-content-between align-items-center">
-                                                                    <h3 class="mb-0 pb-0 ">Vehical Name</h3>
-                                                                    <div class="vehical-status ongoing">Ongoing</div>
-                                                                </div>
-                                                                <hr class="my-3">
-                                                            </div>
-                                                            <div class="col-lg-3">
-                                                                <h4>Date & Time</h4>
-                                                                <div>
-                                                                    <span class="vehical-label">Date</span>
-                                                                    <h5 class="mb-0 pb-0">03/1/2024</h5>
-                                                                </div>
-                                                                <div class="mt-2">
-                                                                    <span class="vehical-label">Time</span>
-                                                                    <h5 class="mb-0 pb-0">12:30 pm</h5>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-4 mt-lg-0 mt-3">
-                                                                <h4>Vehical Information</h4>
-                                                                <div class="d-flex align-items-center mb-1">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 50px;">Year:</span>
-                                                                    <p class="mb-0 pb-0 ms-2">2024</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center mb-1">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 50px;">Make:</span>
-                                                                    <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center mb-1">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 50px;">Modal:</span>
-                                                                    <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center mb-1">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 50px;">Engine:</span>
-                                                                    <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.</p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-3 mt-lg-0 mt-3">
-                                                                <h4>Services</h4>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"> <i
-                                                                            class="bi-check-circle text-success"></i>
-                                                                    </span>
-                                                                    <p class="mb-0 pb-0 ms-2">Engine Oil/Filter </p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"><i
-                                                                            class="bi-check-circle text-success"></i></span>
-                                                                    <p class="mb-0 pb-0 ms-2">Air Filter</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"><i
-                                                                            class="bi-check-circle text-success"></i></span>
-                                                                    <p class="mb-0 pb-0 ms-2">Transmission Oil </p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"><i
-                                                                            class="bi-check-circle text-success"></i></span>
-                                                                    <p class="mb-0 pb-0 ms-2">Tire Rotation</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"><i
-                                                                            class="bi-check-circle text-success"></i></span>
-                                                                    <p class="mb-0 pb-0 ms-2">Tire Charge over</p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-2 mt-lg-0 mt-3 ">
-                                                                <h4>Actions</h4>
-                                                                <div class=" ">
-                                                                    <button
-                                                                        class="mt-4 bth btn-primary rounded-2  px-2 py-1"
-                                                                        data-bs-toggle="modal"
-                                                                        data-bs-target="#info-modal">Add Info</button>
-                                                                </div>
-                                                            </div>
-
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="">
-                                            <td>
-                                                <div class="card py-3 vehical-card" style="overflow: hidden;">
-                                                    <div class="container-fluid">
-                                                        <div class="row ">
-                                                            <div class="col-lg-12 ">
-                                                                <div
-                                                                    class="d-flex justify-content-between align-items-center">
-                                                                    <h3 class="mb-0 pb-0 ">Vehical Name</h3>
-                                                                    <div class="vehical-status completed">Completed
+                                                                <div class="col-lg-3">
+                                                                    <h4>Date & Time</h4>
+                                                                    <div>
+                                                                        <span class="vehical-label">Date</span>
+                                                                        <h5 class="mb-0 pb-0">03/1/2024</h5>
+                                                                    </div>
+                                                                    <div class="mt-2">
+                                                                        <span class="vehical-label">Time</span>
+                                                                        <h5 class="mb-0 pb-0">12:30 pm</h5>
                                                                     </div>
                                                                 </div>
-                                                                <hr class="my-3">
-                                                            </div>
-                                                            <div class="col-lg-3">
-                                                                <h4>Date & Time</h4>
-                                                                <div>
-                                                                    <span class="vehical-label">Date</span>
-                                                                    <h5 class="mb-0 pb-0">03/1/2024</h5>
-                                                                </div>
-                                                                <div class="mt-2">
-                                                                    <span class="vehical-label">Time</span>
-                                                                    <h5 class="mb-0 pb-0">12:30 pm</h5>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-4 mt-lg-0 mt-3">
-                                                                <h4>Vehical Information</h4>
-                                                                <div class="d-flex align-items-center mb-1">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 50px;">Year:</span>
-                                                                    <p class="mb-0 pb-0 ms-2">2024</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center mb-1">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 50px;">Make:</span>
-                                                                    <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center mb-1">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 50px;">Modal:</span>
-                                                                    <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center mb-1">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 50px;">Engine:</span>
-                                                                    <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.</p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-3 mt-lg-0 mt-3">
-                                                                <h4>Services</h4>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"> <i
-                                                                            class="bi-check-circle text-success"></i>
-                                                                    </span>
-                                                                    <p class="mb-0 pb-0 ms-2">Engine Oil/Filter </p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"><i
-                                                                            class="bi-check-circle text-success"></i></span>
-                                                                    <p class="mb-0 pb-0 ms-2">Air Filter</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"><i
-                                                                            class="bi-check-circle text-success"></i></span>
-                                                                    <p class="mb-0 pb-0 ms-2">Transmission Oil </p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"><i
-                                                                            class="bi-check-circle text-success"></i></span>
-                                                                    <p class="mb-0 pb-0 ms-2">Tire Rotation</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"><i
-                                                                            class="bi-check-circle text-success"></i></span>
-                                                                    <p class="mb-0 pb-0 ms-2">Tire Charge over</p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-2 mt-lg-0 mt-3 ">
-                                                                <h4>Actions</h4>
-                                                                <div class=" ">
-                                                                    <button
-                                                                        class="mt-4 bth btn-primary rounded-2  px-2 py-1"
-                                                                        data-bs-toggle="modal"
-                                                                        data-bs-target="#info-modal">Add Info</button>
-                                                                </div>
-                                                            </div>
-
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-
-                                    </tbody>
-
-                                </table>
-                            </div>
-                        </div>
-                        <!--/ Striped Rows -->
-                    </div>
-
-
-                    <div id="ongoing-b" class="tabcontent">
-                        <!-- Striped Rows -->
-                        <div class=" bg-transparent">
-                            <div
-                                class="d-flex justify-content-between align-items-md-center align-items-start flex-md-row flex-column pt-2">
-                                <h5 class="card-header px-2 pb-2">Ongoing Bookings</h5>
-
-                            </div>
-                            <div class=" datatable-responsive ">
-                                <table id="ongoing" class="display" style="width:100%">
-                                    <thead>
-                                        <tr class="d-none">
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="">
-                                            <td>
-                                                <div class="card py-3 vehical-card" style="overflow: hidden;">
-                                                    <div class="container-fluid">
-                                                        <div class="row ">
-                                                            <div class="col-lg-12 ">
-                                                                <div
-                                                                    class="d-flex justify-content-between align-items-center">
-                                                                    <h3 class="mb-0 pb-0 ">Vehical Name</h3>
-                                                                    <div class="vehical-status ongoing">Ongoing</div>
-                                                                </div>
-                                                                <hr class="my-3">
-                                                            </div>
-                                                            <div class="col-lg-3">
-                                                                <h4>Date & Time</h4>
-                                                                <div>
-                                                                    <span class="vehical-label">Date</span>
-                                                                    <h5 class="mb-0 pb-0">03/1/2024</h5>
-                                                                </div>
-                                                                <div class="mt-2">
-                                                                    <span class="vehical-label">Time</span>
-                                                                    <h5 class="mb-0 pb-0">12:30 pm</h5>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-4 mt-lg-0 mt-3">
-                                                                <h4>Vehical Information</h4>
-                                                                <div class="d-flex align-items-center mb-1">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 50px;">Year:</span>
-                                                                    <p class="mb-0 pb-0 ms-2">2024</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center mb-1">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 50px;">Make:</span>
-                                                                    <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center mb-1">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 50px;">Modal:</span>
-                                                                    <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center mb-1">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 50px;">Engine:</span>
-                                                                    <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.</p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-3 mt-lg-0 mt-3">
-                                                                <h4>Services</h4>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"> <i
-                                                                            class="bi-check-circle text-success"></i>
-                                                                    </span>
-                                                                    <p class="mb-0 pb-0 ms-2">Engine Oil/Filter </p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"><i
-                                                                            class="bi-check-circle text-success"></i></span>
-                                                                    <p class="mb-0 pb-0 ms-2">Air Filter</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"><i
-                                                                            class="bi-check-circle text-success"></i></span>
-                                                                    <p class="mb-0 pb-0 ms-2">Transmission Oil </p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"><i
-                                                                            class="bi-check-circle text-success"></i></span>
-                                                                    <p class="mb-0 pb-0 ms-2">Tire Rotation</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"><i
-                                                                            class="bi-check-circle text-success"></i></span>
-                                                                    <p class="mb-0 pb-0 ms-2">Tire Charge over</p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-2 mt-lg-0 mt-3 ">
-                                                                <h4>Actions</h4>
-                                                                <div class=" ">
-                                                                    <button
-                                                                        class="mt-4 bth btn-primary rounded-2  px-2 py-1"
-                                                                        data-bs-toggle="modal"
-                                                                        data-bs-target="#info-modal">Add Info</button>
-                                                                </div>
-                                                            </div>
-
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-
-                                        <tr class="">
-                                            <td>
-                                                <div class="card py-3 vehical-card" style="overflow: hidden;">
-                                                    <div class="container-fluid">
-                                                        <div class="row ">
-                                                            <div class="col-lg-12 ">
-                                                                <div
-                                                                    class="d-flex justify-content-between align-items-center">
-                                                                    <h3 class="mb-0 pb-0 ">Vehical Name</h3>
-                                                                    <div class="vehical-status ongoing">Ongoing</div>
-                                                                </div>
-                                                                <hr class="my-3">
-                                                            </div>
-                                                            <div class="col-lg-3">
-                                                                <h4>Date & Time</h4>
-                                                                <div>
-                                                                    <span class="vehical-label">Date</span>
-                                                                    <h5 class="mb-0 pb-0">03/1/2024</h5>
-                                                                </div>
-                                                                <div class="mt-2">
-                                                                    <span class="vehical-label">Time</span>
-                                                                    <h5 class="mb-0 pb-0">12:30 pm</h5>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-4 mt-lg-0 mt-3">
-                                                                <h4>Vehical Information</h4>
-                                                                <div class="d-flex align-items-center mb-1">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 50px;">Year:</span>
-                                                                    <p class="mb-0 pb-0 ms-2">2024</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center mb-1">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 50px;">Make:</span>
-                                                                    <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center mb-1">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 50px;">Modal:</span>
-                                                                    <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center mb-1">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 50px;">Engine:</span>
-                                                                    <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.</p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-3 mt-lg-0 mt-3">
-                                                                <h4>Services</h4>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"> <i
-                                                                            class="bi-check-circle text-success"></i>
-                                                                    </span>
-                                                                    <p class="mb-0 pb-0 ms-2">Engine Oil/Filter </p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"><i
-                                                                            class="bi-check-circle text-success"></i></span>
-                                                                    <p class="mb-0 pb-0 ms-2">Air Filter</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"><i
-                                                                            class="bi-check-circle text-success"></i></span>
-                                                                    <p class="mb-0 pb-0 ms-2">Transmission Oil </p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"><i
-                                                                            class="bi-check-circle text-success"></i></span>
-                                                                    <p class="mb-0 pb-0 ms-2">Tire Rotation</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"><i
-                                                                            class="bi-check-circle text-success"></i></span>
-                                                                    <p class="mb-0 pb-0 ms-2">Tire Charge over</p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-2 mt-lg-0 mt-3 ">
-                                                                <h4>Actions</h4>
-                                                                <div class=" ">
-                                                                    <button
-                                                                        class="mt-4 bth btn-primary rounded-2  px-2 py-1"
-                                                                        data-bs-toggle="modal"
-                                                                        data-bs-target="#info-modal">Add Info</button>
-                                                                </div>
-                                                            </div>
-
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="">
-                                            <td>
-                                                <div class="card py-3 vehical-card" style="overflow: hidden;">
-                                                    <div class="container-fluid">
-                                                        <div class="row ">
-                                                            <div class="col-lg-12 ">
-                                                                <div
-                                                                    class="d-flex justify-content-between align-items-center">
-                                                                    <h3 class="mb-0 pb-0 ">Vehical Name</h3>
-                                                                    <div class="vehical-status ongoing">Ongoing</div>
-                                                                </div>
-                                                                <hr class="my-3">
-                                                            </div>
-                                                            <div class="col-lg-3">
-                                                                <h4>Date & Time</h4>
-                                                                <div>
-                                                                    <span class="vehical-label">Date</span>
-                                                                    <h5 class="mb-0 pb-0">03/1/2024</h5>
-                                                                </div>
-                                                                <div class="mt-2">
-                                                                    <span class="vehical-label">Time</span>
-                                                                    <h5 class="mb-0 pb-0">12:30 pm</h5>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-4 mt-lg-0 mt-3">
-                                                                <h4>Vehical Information</h4>
-                                                                <div class="d-flex align-items-center mb-1">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 50px;">Year:</span>
-                                                                    <p class="mb-0 pb-0 ms-2">2024</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center mb-1">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 50px;">Make:</span>
-                                                                    <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center mb-1">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 50px;">Modal:</span>
-                                                                    <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center mb-1">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 50px;">Engine:</span>
-                                                                    <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.</p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-3 mt-lg-0 mt-3">
-                                                                <h4>Services</h4>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"> <i
-                                                                            class="bi-check-circle text-success"></i>
-                                                                    </span>
-                                                                    <p class="mb-0 pb-0 ms-2">Engine Oil/Filter </p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"><i
-                                                                            class="bi-check-circle text-success"></i></span>
-                                                                    <p class="mb-0 pb-0 ms-2">Air Filter</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"><i
-                                                                            class="bi-check-circle text-success"></i></span>
-                                                                    <p class="mb-0 pb-0 ms-2">Transmission Oil </p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"><i
-                                                                            class="bi-check-circle text-success"></i></span>
-                                                                    <p class="mb-0 pb-0 ms-2">Tire Rotation</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"><i
-                                                                            class="bi-check-circle text-success"></i></span>
-                                                                    <p class="mb-0 pb-0 ms-2">Tire Charge over</p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-2 mt-lg-0 mt-3 ">
-                                                                <h4>Actions</h4>
-                                                                <div class=" ">
-                                                                    <button
-                                                                        class="mt-4 bth btn-primary rounded-2  px-2 py-1"
-                                                                        data-bs-toggle="modal"
-                                                                        data-bs-target="#info-modal">Add Info</button>
-                                                                </div>
-                                                            </div>
-
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                      
-
-                                    </tbody>
-
-                                </table>
-                            </div>
-                        </div>
-                        <!--/ Striped Rows -->
-                    </div>
-
-                    
-                    <div id="completed-b" class="tabcontent">
-                        <!-- Striped Rows -->
-                        <div class=" bg-transparent">
-                            <div
-                                class="d-flex justify-content-between align-items-md-center align-items-start flex-md-row flex-column pt-2">
-                                <h5 class="card-header px-2 pb-2">Completed Bookings</h5>
-
-                            </div>
-                            <div class=" datatable-responsive  ">
-                                <table id="completed" class="display" style="width:100%">
-                                    <thead>
-                                        <tr class="d-none">
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                       
-                                        <tr class="">
-                                            <td>
-                                                <div class="card py-3 vehical-card" style="overflow: hidden;">
-                                                    <div class="container-fluid">
-                                                        <div class="row ">
-                                                            <div class="col-lg-12 ">
-                                                                <div
-                                                                    class="d-flex justify-content-between align-items-center">
-                                                                    <h3 class="mb-0 pb-0 ">Vehical Name</h3>
-                                                                    <div class="vehical-status completed">Completed
+                                                                <div class="col-lg-4 mt-lg-0 mt-3">
+                                                                    <h4>Vehical Information</h4>
+                                                                    <div class="d-flex align-items-center mb-1">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 50px;">Year:</span>
+                                                                        <p class="mb-0 pb-0 ms-2">2024</p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center mb-1">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 50px;">Make:</span>
+                                                                        <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center mb-1">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 50px;">Modal:</span>
+                                                                        <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center mb-1">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 50px;">Engine:</span>
+                                                                        <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.
+                                                                        </p>
                                                                     </div>
                                                                 </div>
-                                                                <hr class="my-3">
-                                                            </div>
-                                                            <div class="col-lg-3">
-                                                                <h4>Date & Time</h4>
-                                                                <div>
-                                                                    <span class="vehical-label">Date</span>
-                                                                    <h5 class="mb-0 pb-0">03/1/2024</h5>
+                                                                <div class="col-lg-3 mt-lg-0 mt-3">
+                                                                    <h4>Services</h4>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"> <i
+                                                                                class="bi-check-circle text-success"></i>
+                                                                        </span>
+                                                                        <p class="mb-0 pb-0 ms-2">Engine Oil/Filter </p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"><i
+                                                                                class="bi-check-circle text-success"></i></span>
+                                                                        <p class="mb-0 pb-0 ms-2">Air Filter</p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"><i
+                                                                                class="bi-check-circle text-success"></i></span>
+                                                                        <p class="mb-0 pb-0 ms-2">Transmission Oil </p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"><i
+                                                                                class="bi-check-circle text-success"></i></span>
+                                                                        <p class="mb-0 pb-0 ms-2">Tire Rotation</p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"><i
+                                                                                class="bi-check-circle text-success"></i></span>
+                                                                        <p class="mb-0 pb-0 ms-2">Tire Charge over</p>
+                                                                    </div>
                                                                 </div>
-                                                                <div class="mt-2">
-                                                                    <span class="vehical-label">Time</span>
-                                                                    <h5 class="mb-0 pb-0">12:30 pm</h5>
+                                                                <div class="col-lg-2 mt-lg-0 mt-3 ">
+                                                                    <h4>Actions</h4>
+                                                                    <div class=" ">
+                                                                        <button
+                                                                            class="mt-4 bth btn-primary rounded-2  px-2 py-1"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#info-modal">Add
+                                                                            Info</button>
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="col-lg-4 mt-lg-0 mt-3">
-                                                                <h4>Vehical Information</h4>
-                                                                <div class="d-flex align-items-center mb-1">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 50px;">Year:</span>
-                                                                    <p class="mb-0 pb-0 ms-2">2024</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center mb-1">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 50px;">Make:</span>
-                                                                    <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center mb-1">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 50px;">Modal:</span>
-                                                                    <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center mb-1">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 50px;">Engine:</span>
-                                                                    <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.</p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-3 mt-lg-0 mt-3">
-                                                                <h4>Services</h4>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"> <i
-                                                                            class="bi-check-circle text-success"></i>
-                                                                    </span>
-                                                                    <p class="mb-0 pb-0 ms-2">Engine Oil/Filter </p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"><i
-                                                                            class="bi-check-circle text-success"></i></span>
-                                                                    <p class="mb-0 pb-0 ms-2">Air Filter</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"><i
-                                                                            class="bi-check-circle text-success"></i></span>
-                                                                    <p class="mb-0 pb-0 ms-2">Transmission Oil </p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"><i
-                                                                            class="bi-check-circle text-success"></i></span>
-                                                                    <p class="mb-0 pb-0 ms-2">Tire Rotation</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="vehical-label"
-                                                                        style="min-width: 20px;"><i
-                                                                            class="bi-check-circle text-success"></i></span>
-                                                                    <p class="mb-0 pb-0 ms-2">Tire Charge over</p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-2 mt-lg-0 mt-3 ">
-                                                                <h4>Actions</h4>
-                                                                <div class=" ">
-                                                                    <button
-                                                                        class="mt-4 bth btn-primary rounded-2  px-2 py-1"
-                                                                        data-bs-toggle="modal"
-                                                                        data-bs-target="#info-modal">Add Info</button>
-                                                                </div>
-                                                            </div>
 
 
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </td>
-                                        </tr>
+                                                </td>
+                                            </tr>
 
-                                    </tbody>
+                                            <tr class="">
+                                                <td>
+                                                    <div class="card py-3 vehical-card" style="overflow: hidden;">
+                                                        <div class="container-fluid">
+                                                            <div class="row ">
+                                                                <div class="col-lg-12 ">
+                                                                    <div
+                                                                        class="d-flex justify-content-between align-items-center">
+                                                                        <h3 class="mb-0 pb-0 ">Vehical Name</h3>
+                                                                        <div class="vehical-status ongoing">Ongoing
+                                                                        </div>
+                                                                    </div>
+                                                                    <hr class="my-3">
+                                                                </div>
+                                                                <div class="col-lg-3">
+                                                                    <h4>Date & Time</h4>
+                                                                    <div>
+                                                                        <span class="vehical-label">Date</span>
+                                                                        <h5 class="mb-0 pb-0">03/1/2024</h5>
+                                                                    </div>
+                                                                    <div class="mt-2">
+                                                                        <span class="vehical-label">Time</span>
+                                                                        <h5 class="mb-0 pb-0">12:30 pm</h5>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-4 mt-lg-0 mt-3">
+                                                                    <h4>Vehical Information</h4>
+                                                                    <div class="d-flex align-items-center mb-1">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 50px;">Year:</span>
+                                                                        <p class="mb-0 pb-0 ms-2">2024</p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center mb-1">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 50px;">Make:</span>
+                                                                        <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center mb-1">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 50px;">Modal:</span>
+                                                                        <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center mb-1">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 50px;">Engine:</span>
+                                                                        <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-3 mt-lg-0 mt-3">
+                                                                    <h4>Services</h4>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"> <i
+                                                                                class="bi-check-circle text-success"></i>
+                                                                        </span>
+                                                                        <p class="mb-0 pb-0 ms-2">Engine Oil/Filter </p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"><i
+                                                                                class="bi-check-circle text-success"></i></span>
+                                                                        <p class="mb-0 pb-0 ms-2">Air Filter</p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"><i
+                                                                                class="bi-check-circle text-success"></i></span>
+                                                                        <p class="mb-0 pb-0 ms-2">Transmission Oil </p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"><i
+                                                                                class="bi-check-circle text-success"></i></span>
+                                                                        <p class="mb-0 pb-0 ms-2">Tire Rotation</p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"><i
+                                                                                class="bi-check-circle text-success"></i></span>
+                                                                        <p class="mb-0 pb-0 ms-2">Tire Charge over</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-2 mt-lg-0 mt-3 ">
+                                                                    <h4>Actions</h4>
+                                                                    <div class=" ">
+                                                                        <button
+                                                                            class="mt-4 bth btn-primary rounded-2  px-2 py-1"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#info-modal">Add
+                                                                            Info</button>
+                                                                    </div>
+                                                                </div>
 
-                                </table>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="">
+                                                <td>
+                                                    <div class="card py-3 vehical-card" style="overflow: hidden;">
+                                                        <div class="container-fluid">
+                                                            <div class="row ">
+                                                                <div class="col-lg-12 ">
+                                                                    <div
+                                                                        class="d-flex justify-content-between align-items-center">
+                                                                        <h3 class="mb-0 pb-0 ">Vehical Name</h3>
+                                                                        <div class="vehical-status ongoing">Ongoing
+                                                                        </div>
+                                                                    </div>
+                                                                    <hr class="my-3">
+                                                                </div>
+                                                                <div class="col-lg-3">
+                                                                    <h4>Date & Time</h4>
+                                                                    <div>
+                                                                        <span class="vehical-label">Date</span>
+                                                                        <h5 class="mb-0 pb-0">03/1/2024</h5>
+                                                                    </div>
+                                                                    <div class="mt-2">
+                                                                        <span class="vehical-label">Time</span>
+                                                                        <h5 class="mb-0 pb-0">12:30 pm</h5>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-4 mt-lg-0 mt-3">
+                                                                    <h4>Vehical Information</h4>
+                                                                    <div class="d-flex align-items-center mb-1">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 50px;">Year:</span>
+                                                                        <p class="mb-0 pb-0 ms-2">2024</p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center mb-1">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 50px;">Make:</span>
+                                                                        <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center mb-1">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 50px;">Modal:</span>
+                                                                        <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center mb-1">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 50px;">Engine:</span>
+                                                                        <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-3 mt-lg-0 mt-3">
+                                                                    <h4>Services</h4>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"> <i
+                                                                                class="bi-check-circle text-success"></i>
+                                                                        </span>
+                                                                        <p class="mb-0 pb-0 ms-2">Engine Oil/Filter </p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"><i
+                                                                                class="bi-check-circle text-success"></i></span>
+                                                                        <p class="mb-0 pb-0 ms-2">Air Filter</p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"><i
+                                                                                class="bi-check-circle text-success"></i></span>
+                                                                        <p class="mb-0 pb-0 ms-2">Transmission Oil </p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"><i
+                                                                                class="bi-check-circle text-success"></i></span>
+                                                                        <p class="mb-0 pb-0 ms-2">Tire Rotation</p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"><i
+                                                                                class="bi-check-circle text-success"></i></span>
+                                                                        <p class="mb-0 pb-0 ms-2">Tire Charge over</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-2 mt-lg-0 mt-3 ">
+                                                                    <h4>Actions</h4>
+                                                                    <div class=" ">
+                                                                        <button
+                                                                            class="mt-4 bth btn-primary rounded-2  px-2 py-1"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#info-modal">Add
+                                                                            Info</button>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="">
+                                                <td>
+                                                    <div class="card py-3 vehical-card" style="overflow: hidden;">
+                                                        <div class="container-fluid">
+                                                            <div class="row ">
+                                                                <div class="col-lg-12 ">
+                                                                    <div
+                                                                        class="d-flex justify-content-between align-items-center">
+                                                                        <h3 class="mb-0 pb-0 ">Vehical Name</h3>
+                                                                        <div class="vehical-status completed">Completed
+                                                                        </div>
+                                                                    </div>
+                                                                    <hr class="my-3">
+                                                                </div>
+                                                                <div class="col-lg-3">
+                                                                    <h4>Date & Time</h4>
+                                                                    <div>
+                                                                        <span class="vehical-label">Date</span>
+                                                                        <h5 class="mb-0 pb-0">03/1/2024</h5>
+                                                                    </div>
+                                                                    <div class="mt-2">
+                                                                        <span class="vehical-label">Time</span>
+                                                                        <h5 class="mb-0 pb-0">12:30 pm</h5>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-4 mt-lg-0 mt-3">
+                                                                    <h4>Vehical Information</h4>
+                                                                    <div class="d-flex align-items-center mb-1">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 50px;">Year:</span>
+                                                                        <p class="mb-0 pb-0 ms-2">2024</p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center mb-1">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 50px;">Make:</span>
+                                                                        <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center mb-1">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 50px;">Modal:</span>
+                                                                        <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center mb-1">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 50px;">Engine:</span>
+                                                                        <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-3 mt-lg-0 mt-3">
+                                                                    <h4>Services</h4>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"> <i
+                                                                                class="bi-check-circle text-success"></i>
+                                                                        </span>
+                                                                        <p class="mb-0 pb-0 ms-2">Engine Oil/Filter </p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"><i
+                                                                                class="bi-check-circle text-success"></i></span>
+                                                                        <p class="mb-0 pb-0 ms-2">Air Filter</p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"><i
+                                                                                class="bi-check-circle text-success"></i></span>
+                                                                        <p class="mb-0 pb-0 ms-2">Transmission Oil </p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"><i
+                                                                                class="bi-check-circle text-success"></i></span>
+                                                                        <p class="mb-0 pb-0 ms-2">Tire Rotation</p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"><i
+                                                                                class="bi-check-circle text-success"></i></span>
+                                                                        <p class="mb-0 pb-0 ms-2">Tire Charge over</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-2 mt-lg-0 mt-3 ">
+                                                                    <h4>Actions</h4>
+                                                                    <div class=" ">
+                                                                        <button
+                                                                            class="mt-4 bth btn-primary rounded-2  px-2 py-1"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#info-modal">Add
+                                                                            Info</button>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+
+                                    </table>
+                                </div>
                             </div>
+                            <!--/ Striped Rows -->
                         </div>
-                        <!--/ Striped Rows -->
-                    </div>
+
+
+                        <div id="ongoing-b" class="tabcontent">
+                            <!-- Striped Rows -->
+                            <div class=" bg-transparent">
+                                <div
+                                    class="d-flex justify-content-between align-items-md-center align-items-start flex-md-row flex-column pt-2">
+                                    <h5 class="card-header px-2 pb-2">Ongoing Bookings</h5>
+
+                                </div>
+                                <div class=" datatable-responsive ">
+                                    <table id="ongoing" class="display" style="width:100%">
+                                        <thead>
+                                            <tr class="d-none">
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="">
+                                                <td>
+                                                    <div class="card py-3 vehical-card" style="overflow: hidden;">
+                                                        <div class="container-fluid">
+                                                            <div class="row ">
+                                                                <div class="col-lg-12 ">
+                                                                    <div
+                                                                        class="d-flex justify-content-between align-items-center">
+                                                                        <h3 class="mb-0 pb-0 ">Vehical Name</h3>
+                                                                        <div class="vehical-status ongoing">Ongoing
+                                                                        </div>
+                                                                    </div>
+                                                                    <hr class="my-3">
+                                                                </div>
+                                                                <div class="col-lg-3">
+                                                                    <h4>Date & Time</h4>
+                                                                    <div>
+                                                                        <span class="vehical-label">Date</span>
+                                                                        <h5 class="mb-0 pb-0">03/1/2024</h5>
+                                                                    </div>
+                                                                    <div class="mt-2">
+                                                                        <span class="vehical-label">Time</span>
+                                                                        <h5 class="mb-0 pb-0">12:30 pm</h5>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-4 mt-lg-0 mt-3">
+                                                                    <h4>Vehical Information</h4>
+                                                                    <div class="d-flex align-items-center mb-1">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 50px;">Year:</span>
+                                                                        <p class="mb-0 pb-0 ms-2">2024</p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center mb-1">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 50px;">Make:</span>
+                                                                        <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center mb-1">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 50px;">Modal:</span>
+                                                                        <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center mb-1">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 50px;">Engine:</span>
+                                                                        <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-3 mt-lg-0 mt-3">
+                                                                    <h4>Services</h4>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"> <i
+                                                                                class="bi-check-circle text-success"></i>
+                                                                        </span>
+                                                                        <p class="mb-0 pb-0 ms-2">Engine Oil/Filter </p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"><i
+                                                                                class="bi-check-circle text-success"></i></span>
+                                                                        <p class="mb-0 pb-0 ms-2">Air Filter</p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"><i
+                                                                                class="bi-check-circle text-success"></i></span>
+                                                                        <p class="mb-0 pb-0 ms-2">Transmission Oil </p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"><i
+                                                                                class="bi-check-circle text-success"></i></span>
+                                                                        <p class="mb-0 pb-0 ms-2">Tire Rotation</p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"><i
+                                                                                class="bi-check-circle text-success"></i></span>
+                                                                        <p class="mb-0 pb-0 ms-2">Tire Charge over</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-2 mt-lg-0 mt-3 ">
+                                                                    <h4>Actions</h4>
+                                                                    <div class=" ">
+                                                                        <button
+                                                                            class="mt-4 bth btn-primary rounded-2  px-2 py-1"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#info-modal">Add
+                                                                            Info</button>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="">
+                                                <td>
+                                                    <div class="card py-3 vehical-card" style="overflow: hidden;">
+                                                        <div class="container-fluid">
+                                                            <div class="row ">
+                                                                <div class="col-lg-12 ">
+                                                                    <div
+                                                                        class="d-flex justify-content-between align-items-center">
+                                                                        <h3 class="mb-0 pb-0 ">Vehical Name</h3>
+                                                                        <div class="vehical-status ongoing">Ongoing
+                                                                        </div>
+                                                                    </div>
+                                                                    <hr class="my-3">
+                                                                </div>
+                                                                <div class="col-lg-3">
+                                                                    <h4>Date & Time</h4>
+                                                                    <div>
+                                                                        <span class="vehical-label">Date</span>
+                                                                        <h5 class="mb-0 pb-0">03/1/2024</h5>
+                                                                    </div>
+                                                                    <div class="mt-2">
+                                                                        <span class="vehical-label">Time</span>
+                                                                        <h5 class="mb-0 pb-0">12:30 pm</h5>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-4 mt-lg-0 mt-3">
+                                                                    <h4>Vehical Information</h4>
+                                                                    <div class="d-flex align-items-center mb-1">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 50px;">Year:</span>
+                                                                        <p class="mb-0 pb-0 ms-2">2024</p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center mb-1">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 50px;">Make:</span>
+                                                                        <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center mb-1">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 50px;">Modal:</span>
+                                                                        <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center mb-1">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 50px;">Engine:</span>
+                                                                        <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-3 mt-lg-0 mt-3">
+                                                                    <h4>Services</h4>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"> <i
+                                                                                class="bi-check-circle text-success"></i>
+                                                                        </span>
+                                                                        <p class="mb-0 pb-0 ms-2">Engine Oil/Filter </p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"><i
+                                                                                class="bi-check-circle text-success"></i></span>
+                                                                        <p class="mb-0 pb-0 ms-2">Air Filter</p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"><i
+                                                                                class="bi-check-circle text-success"></i></span>
+                                                                        <p class="mb-0 pb-0 ms-2">Transmission Oil </p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"><i
+                                                                                class="bi-check-circle text-success"></i></span>
+                                                                        <p class="mb-0 pb-0 ms-2">Tire Rotation</p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"><i
+                                                                                class="bi-check-circle text-success"></i></span>
+                                                                        <p class="mb-0 pb-0 ms-2">Tire Charge over</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-2 mt-lg-0 mt-3 ">
+                                                                    <h4>Actions</h4>
+                                                                    <div class=" ">
+                                                                        <button
+                                                                            class="mt-4 bth btn-primary rounded-2  px-2 py-1"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#info-modal">Add
+                                                                            Info</button>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="">
+                                                <td>
+                                                    <div class="card py-3 vehical-card" style="overflow: hidden;">
+                                                        <div class="container-fluid">
+                                                            <div class="row ">
+                                                                <div class="col-lg-12 ">
+                                                                    <div
+                                                                        class="d-flex justify-content-between align-items-center">
+                                                                        <h3 class="mb-0 pb-0 ">Vehical Name</h3>
+                                                                        <div class="vehical-status ongoing">Ongoing
+                                                                        </div>
+                                                                    </div>
+                                                                    <hr class="my-3">
+                                                                </div>
+                                                                <div class="col-lg-3">
+                                                                    <h4>Date & Time</h4>
+                                                                    <div>
+                                                                        <span class="vehical-label">Date</span>
+                                                                        <h5 class="mb-0 pb-0">03/1/2024</h5>
+                                                                    </div>
+                                                                    <div class="mt-2">
+                                                                        <span class="vehical-label">Time</span>
+                                                                        <h5 class="mb-0 pb-0">12:30 pm</h5>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-4 mt-lg-0 mt-3">
+                                                                    <h4>Vehical Information</h4>
+                                                                    <div class="d-flex align-items-center mb-1">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 50px;">Year:</span>
+                                                                        <p class="mb-0 pb-0 ms-2">2024</p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center mb-1">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 50px;">Make:</span>
+                                                                        <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center mb-1">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 50px;">Modal:</span>
+                                                                        <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center mb-1">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 50px;">Engine:</span>
+                                                                        <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-3 mt-lg-0 mt-3">
+                                                                    <h4>Services</h4>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"> <i
+                                                                                class="bi-check-circle text-success"></i>
+                                                                        </span>
+                                                                        <p class="mb-0 pb-0 ms-2">Engine Oil/Filter </p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"><i
+                                                                                class="bi-check-circle text-success"></i></span>
+                                                                        <p class="mb-0 pb-0 ms-2">Air Filter</p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"><i
+                                                                                class="bi-check-circle text-success"></i></span>
+                                                                        <p class="mb-0 pb-0 ms-2">Transmission Oil </p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"><i
+                                                                                class="bi-check-circle text-success"></i></span>
+                                                                        <p class="mb-0 pb-0 ms-2">Tire Rotation</p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"><i
+                                                                                class="bi-check-circle text-success"></i></span>
+                                                                        <p class="mb-0 pb-0 ms-2">Tire Charge over</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-2 mt-lg-0 mt-3 ">
+                                                                    <h4>Actions</h4>
+                                                                    <div class=" ">
+                                                                        <button
+                                                                            class="mt-4 bth btn-primary rounded-2  px-2 py-1"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#info-modal">Add
+                                                                            Info</button>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+                                        </tbody>
+
+                                    </table>
+                                </div>
+                            </div>
+                            <!--/ Striped Rows -->
+                        </div>
+
+
+                        <div id="completed-b" class="tabcontent">
+                            <!-- Striped Rows -->
+                            <div class=" bg-transparent">
+                                <div
+                                    class="d-flex justify-content-between align-items-md-center align-items-start flex-md-row flex-column pt-2">
+                                    <h5 class="card-header px-2 pb-2">Completed Bookings</h5>
+
+                                </div>
+                                <div class=" datatable-responsive  ">
+                                    <table id="completed" class="display" style="width:100%">
+                                        <thead>
+                                            <tr class="d-none">
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            <tr class="">
+                                                <td>
+                                                    <div class="card py-3 vehical-card" style="overflow: hidden;">
+                                                        <div class="container-fluid">
+                                                            <div class="row ">
+                                                                <div class="col-lg-12 ">
+                                                                    <div
+                                                                        class="d-flex justify-content-between align-items-center">
+                                                                        <h3 class="mb-0 pb-0 ">Vehical Name</h3>
+                                                                        <div class="vehical-status completed">Completed
+                                                                        </div>
+                                                                    </div>
+                                                                    <hr class="my-3">
+                                                                </div>
+                                                                <div class="col-lg-3">
+                                                                    <h4>Date & Time</h4>
+                                                                    <div>
+                                                                        <span class="vehical-label">Date</span>
+                                                                        <h5 class="mb-0 pb-0">03/1/2024</h5>
+                                                                    </div>
+                                                                    <div class="mt-2">
+                                                                        <span class="vehical-label">Time</span>
+                                                                        <h5 class="mb-0 pb-0">12:30 pm</h5>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-4 mt-lg-0 mt-3">
+                                                                    <h4>Vehical Information</h4>
+                                                                    <div class="d-flex align-items-center mb-1">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 50px;">Year:</span>
+                                                                        <p class="mb-0 pb-0 ms-2">2024</p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center mb-1">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 50px;">Make:</span>
+                                                                        <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center mb-1">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 50px;">Modal:</span>
+                                                                        <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center mb-1">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 50px;">Engine:</span>
+                                                                        <p class="mb-0 pb-0 ms-2">Lorem, ipsum dolor.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-3 mt-lg-0 mt-3">
+                                                                    <h4>Services</h4>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"> <i
+                                                                                class="bi-check-circle text-success"></i>
+                                                                        </span>
+                                                                        <p class="mb-0 pb-0 ms-2">Engine Oil/Filter </p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"><i
+                                                                                class="bi-check-circle text-success"></i></span>
+                                                                        <p class="mb-0 pb-0 ms-2">Air Filter</p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"><i
+                                                                                class="bi-check-circle text-success"></i></span>
+                                                                        <p class="mb-0 pb-0 ms-2">Transmission Oil </p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"><i
+                                                                                class="bi-check-circle text-success"></i></span>
+                                                                        <p class="mb-0 pb-0 ms-2">Tire Rotation</p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span class="vehical-label"
+                                                                            style="min-width: 20px;"><i
+                                                                                class="bi-check-circle text-success"></i></span>
+                                                                        <p class="mb-0 pb-0 ms-2">Tire Charge over</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-2 mt-lg-0 mt-3 ">
+                                                                    <h4>Actions</h4>
+                                                                    <div class=" ">
+                                                                        <button
+                                                                            class="mt-4 bth btn-primary rounded-2  px-2 py-1"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#info-modal">Add
+                                                                            Info</button>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+
+                                    </table>
+                                </div>
+                            </div>
+                            <!--/ Striped Rows -->
+                        </div>
 
                         <!-- Footer -->
                         <footer class="content-footer footer bg-footer-theme">
@@ -1362,8 +1401,8 @@
 
                 });
 
-                 // new DataTable('#example');
-                 $(document).ready(function () {
+                // new DataTable('#example');
+                $(document).ready(function () {
                     $('#ongoing').DataTable({
                         "paging": true,
                         "info": false,
@@ -1373,8 +1412,8 @@
 
                 });
 
-                 // new DataTable('#example');
-                 $(document).ready(function () {
+                // new DataTable('#example');
+                $(document).ready(function () {
                     $('#completed').DataTable({
                         "paging": true,
                         "info": false,
@@ -1384,26 +1423,26 @@
 
                 });
             </script>
-              <script>
+            <script>
                 // document.getElementById("defaultOpen").click();
                 $(document).ready(function () {
                     // Click event for tab buttons
                     $(".tablinks").click(function () {
                         var tabName = $(this).data("tab");
-    
+
                         // Remove the "active" class from all tab buttons
                         $(".tablinks").removeClass("active");
-    
+
                         // Hide all tab content
                         $(".tabcontent").hide();
-    
+
                         // Show the selected tab content
                         $("#" + tabName).show();
-    
+
                         // Add the "active" class to the clicked tab button
                         $(this).addClass("active");
                     });
-    
+
                     // Trigger the default tab to open
                     $("#defaultOpen").click();
                 });
