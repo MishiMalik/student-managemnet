@@ -41,8 +41,8 @@
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 
-    <!-- Page CSS -->
-
+    <!-- New icons link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Helpers -->
     <script src="../assets/vendor/js/helpers.js"></script>
     <script src="../assets/js/config.js"></script>
@@ -272,19 +272,27 @@
                         <div class="card mb-4">
                             <h5 class="card-header">Leave Date</h5>
                             <div class="card-body" >
-                                <form class="row">
-                                    <div class="mb-3 col-lg-6">
-                                      <!-- <label class="form-label" for="basic-default-fullname">Name</label> -->
-                                      <input type="date" class="form-control" placeholder="Enter Date">
+                                <form class="row ">                                 
+                               
+
+                                    <div class="row add-more-leave-div">
+                                        <div class="mb-3 col-lg-6">
+                                            <label class="form-label text-danger" for="" >Leave <span class="leave-number"></span></label>
+                                            <input type="date" class="form-control" placeholder="Enter Date">
+                                          </div>
                                     </div>
+                                    
+                                 
+                                  <div class="row">
                                     <div class="col-lg-6 ms-auto ">
-                                    <div class="d-flex justify-content-end">
-                                        <button type="button" class="btn btn-warning me-2">Add More</button>
-                                        <button type="button" class="btn btn-primary ">Save</button>
-                                    </div>                                      
-                                     
-                                    </div>
-                                  </form>
+                                        <div class="d-flex justify-content-end">
+                                            <button type="button" class="btn btn-warning me-2 add-more-leave">Add More</button>
+                                            <button type="button" class="btn btn-primary ">Save</button>
+                                        </div>                                      
+                                         
+                                        </div>
+                                  </div>
+                                </form>
                             </div>
                         </div>
 
@@ -293,9 +301,13 @@
                             <h5 class="card-header">Select Time</h5>
                             <div class="card-body" >
                                 <form >
-                                   <div class="row mb-2">
+                                <div class="add-more-time-div mb-2">
+                                   <div class="row  p-0">
+                                    <div class="col-lg-12">
+                                        <label for="" class="text-danger form-label">Number <span class="time-number"></span></label>
+                                    </div>
                                     <div class="mb-3 col-lg-6">
-                                        <label class="form-label" for="basic-default-fullname">Start Time</label>
+                                        <label class="form-label" for="basic-default-fullname">Start Time </label>
                                         <input type="time" class="form-control" placeholder="Enter Date">
                                       </div>
                                       <div class="mb-3 col-lg-6">
@@ -303,9 +315,10 @@
                                           <input type="time" class="form-control" placeholder="Enter Date">
                                       </div>
                                    </div>
+                                </div>
                                     <div class="col-lg-6 ms-auto ">
                                     <div class="d-flex justify-content-end">
-                                        <button type="button" class="btn btn-warning me-2">Add More</button>
+                                        <button type="button" class="btn btn-warning me-2 add-more-time">Add More</button>
                                         <button type="button" class="btn btn-primary ">Save</button>
                                     </div>                                      
                                      
@@ -345,8 +358,30 @@
             <!-- Overlay -->
             <div class="layout-overlay layout-menu-toggle"></div>
         </div>
-      
-
+             <script type="text/template" id="leave_template">
+                <div class="mb-3 col-lg-6 leave-div" style="position: relative;">
+                    <label class="form-label text-danger" for="" >Leave <span class="leave-number"></span></label>
+                    <input type="date" class="form-control" placeholder="Enter Date">
+                    <button class="delete-leave"><i class="bi bi-trash-fill"></i></button>
+                </div>
+            </script>
+    
+              <script type="text/template" id="time_template">
+               <div class="row time-div">
+                <div class="col-lg-12" style="position: relative;">
+                    <label for="" class="text-danger form-label">Number <span class="time-number"></span></label>
+                    <button class="delete-time"><i class="bi bi-trash-fill"></i></button>
+                </div>
+                 <div class="mb-3 col-lg-6">
+                    <label class="form-label" for="basic-default-fullname">Start Time</label>
+                    <input type="time" class="form-control" placeholder="Enter Date">
+                 </div>
+                 <div class="mb-3 col-lg-6">
+                     <label class="form-label" for="basic-default-fullname">End Time</label>
+                      <input type="time" class="form-control" placeholder="Enter Date">
+                 </div>
+                </div>
+              </script>
         <script src="../assets/vendor/libs/jquery/jquery.js"></script>
         <script src="../assets/vendor/libs/popper/popper.js"></script>
         <script src="../assets/vendor/js/bootstrap.js"></script>
@@ -368,8 +403,54 @@
 
         <!-- Place this tag in your head or just before your close body tag. -->
         <script async defer src="https://buttons.github.io/buttons.js"></script>
+ <!-- add more leave -->
+ <script>
+    $(document).ready(function () {
 
+        $('.add-more-leave').on('click', function () {
+            var templateClone = $('#leave_template').html();
+            $('.add-more-leave-div').append(templateClone);
+            updateLeaveNumbers();
+        });
 
+        $('.add-more-leave-div').on('click', '.delete-leave', function () {
+            $(this).closest('.leave-div').remove();
+            updateLeaveNumbers();
+        });
+
+        function updateLeaveNumbers() {
+            var leaveLabels = $('.add-more-leave-div').find('.form-label.text-danger');
+            leaveLabels.each(function (index) {
+                $(this).find('.leave-number').text(index + 1);
+            });
+        }
+        updateLeaveNumbers();
+    });
+</script>
+<!-- add more time -->
+<script>
+    $(document).ready(function () {
+
+        $('.add-more-time').on('click', function () {
+            var templateClone = $('#time_template').html();
+            $('.add-more-time-div').append(templateClone);
+            updateTimeNumbers();
+        });
+
+        $('.add-more-time-div').on('click', '.delete-time', function () {
+            $(this).closest('.time-div').remove();
+            updateTimeNumbers();
+        });
+
+        function updateTimeNumbers() {
+            var timeLabels = $('.add-more-time-div').find('.form-label.text-danger');
+            timeLabels.each(function (index) {
+                $(this).find('.time-number').text(index + 1);
+            });
+        }
+        updateTimeNumbers();
+    });
+</script>
 </body>
 
 </html>
