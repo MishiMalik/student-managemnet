@@ -255,9 +255,9 @@
 
                         <div class="tab mb-3">
                             <div class="tab-scroll">
-                                <button class="tablinks" data-tab="SD" id="defaultOpen">Student
+                                <button class="tablinks" data-tab="SD" >Student
                                     Data</button>
-                                <button class="tablinks" data-tab="Appointments">Appointments</button>
+                                <button class="tablinks" data-tab="Appointments" id="defaultOpen">Appointments</button>
                             </div>
 
                         </div>
@@ -469,15 +469,12 @@
                         <div id="Appointments" class="tabcontent">
                             <div class="card  pb-4 px-lg-4 px-2">
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <h5 class="card-header px-0 bg-white border-bottom-0  py-3 mb-2">Today Appointments</h5>
-                                    <div class="d-flex align-items-center">
-                                         <button class="btn btn-primary btn-xs">Waste On</button>
-                                         <button class="btn btn-primary btn-xs ms-2">Transfer to Data</button>
-                                    </div>
+                                    <h5 class="card-header px-0 bg-white border-bottom-0  py-3 mb-2 mt-1">Today Appointments</h5>
+                                   
                                 </div>
                                
                                 <div class="table-responsive">
-                                    <table id="inquiry" class="table  nowrap border-0 " style="width:100%">
+                                    <table id="today-appointment" class="table  nowrap border-0 " style="width:100%">
                                         <thead>
                                             <tr class="dt-head">
 
@@ -487,7 +484,7 @@
                                                 <th>Std Name </th>
                                                 <th> Number</th>
                                                 <th> Email</th>
-
+                                                 <th>Actions</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -498,6 +495,12 @@
                                                 <td class=""> Daniyal Adnan</td>
                                                 <td class=""> 03208242965</td>
                                                 <td class=""> abc@gmail.com</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <button class="btn btn-primary btn-xs">Waste On</button>
+                                                        <button class="btn btn-primary btn-xs ms-2">Transfer to Data</button>
+                                                   </div>
+                                                </td>
                                             </tr>
                                             <tr class="">
                                                 <td class="">2</td>
@@ -506,6 +509,12 @@
                                                 <td class=""> Daniyal Adnan</td>
                                                 <td class=""> 03208242965</td>
                                                 <td class=""> abc@gmail.com</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <button class="btn btn-primary btn-xs">Waste On</button>
+                                                        <button class="btn btn-primary btn-xs ms-2">Transfer to Data</button>
+                                                   </div>
+                                                </td>
                                             </tr>
                                             <tr class="">
                                                 <td class="">3</td>
@@ -514,13 +523,33 @@
                                                 <td class=""> Daniyal Adnan</td>
                                                 <td class=""> 03208242965</td>
                                                 <td class=""> abc@gmail.com</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <button class="btn btn-primary btn-xs">Waste On</button>
+                                                        <button class="btn btn-primary btn-xs ms-2">Transfer to Data</button>
+                                                   </div>
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
                             <div class="card  pb-4 px-lg-4 px-2 mt-3">
-                                <h5 class="card-header px-0 bg-white border-bottom-0  py-3 mb-2">All Appointments</h5>
+                                <div class="d-flex flex-md-row flex-column justify-content-between align-items-start py-3 mt-2">
+                                    <h5 class="card-header px-0 bg-white border-bottom-0 py-0   mb-md-2 mb-3">All Appointments</h5>
+                                     <div class=" w-auto mb-2 d-flex align-items-center">
+                                        <select
+                                            class="form-select form-select-md w-100" style="min-width: 160px;">
+                                            <option selected>Select Date</option>
+                                            <option value="">12/5/20224</option>
+                                            <option value="">11/5/2024</option>
+                                            <option value="">10/5/2024</option>
+                                        </select>
+                                        <button class="btn btn-primary ms-3">Search</button>
+                                     </div>
+                                     
+                                </div>
+                               
                                 <div class="table-responsive">
                                     <table id="appointments" class="table  nowrap border-0 " style="width:100%">
                                         <thead>
@@ -532,7 +561,7 @@
                                                 <th>Std Name </th>
                                                 <th> Number</th>
                                                 <th> Email</th>
-
+  <th>Actions</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -543,6 +572,12 @@
                                                 <td class=""> Daniyal Adnan</td>
                                                 <td class=""> 03208242965</td>
                                                 <td class=""> abc@gmail.com</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <button class="btn btn-primary btn-xs">Waste On</button>
+                                                        <button class="btn btn-primary btn-xs ms-2">Transfer to Data</button>
+                                                   </div>
+                                                </td>
                                             </tr>
                                             <tr class="">
                                                 <td class="">2</td>
@@ -551,6 +586,12 @@
                                                 <td class=""> Daniyal Adnan</td>
                                                 <td class=""> 03208242965</td>
                                                 <td class=""> abc@gmail.com</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <button class="btn btn-primary btn-xs">Waste On</button>
+                                                        <button class="btn btn-primary btn-xs ms-2">Transfer to Data</button>
+                                                   </div>
+                                                </td>
                                             </tr>
                                             <tr class="">
                                                 <td class="">3</td>
@@ -559,6 +600,12 @@
                                                 <td class=""> Daniyal Adnan</td>
                                                 <td class=""> 03208242965</td>
                                                 <td class=""> abc@gmail.com</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <button class="btn btn-primary btn-xs">Waste On</button>
+                                                        <button class="btn btn-primary btn-xs ms-2">Transfer to Data</button>
+                                                   </div>
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -612,7 +659,7 @@
             // new DataTable('#new-lead');
             $(document).ready(function () {
 
-                new DataTable('#new-lead', {
+                new DataTable('#today-appointment', {
                     language: {
                         searchPlaceholder: "Search records"
                     },
