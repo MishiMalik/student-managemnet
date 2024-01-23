@@ -693,3 +693,53 @@ td{
   border: none;
   color: red;
 }
+
+.toolpit-btn{
+  position: relative;
+  width: 70px;
+  height: 22px;
+}
+
+.toolpit-div{
+  position: absolute;
+  width: 150px;
+  bottom: 29px;
+  left: -40px;
+  background-color: #1C315E;
+  padding: 7px;
+  border-radius: 6px !important;
+  z-index: 100 !important;
+  display: none;
+}
+.toolpit-text{
+  position: relative;
+}
+.toolpit-text h3{
+ font-size: 14px;
+ font-weight: 500;
+ color: white;
+ margin: 0px !important;
+ margin-bottom: 7px;
+}
+.toolpit-text p{
+ font-size: 12px;
+ font-weight: 500;
+ color: white;
+ margin-bottom: 0px;
+ text-wrap: wrap;
+}
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  
+  border-top: 13px solid #1C315E;
+  position: absolute;
+  bottom: -20px;
+  left: 55px;
+}
+
+.toolpit-btn:hover .toolpit-div{
+  display: block;
+}
