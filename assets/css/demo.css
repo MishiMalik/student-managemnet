@@ -644,34 +644,7 @@ td{
   
 }
 }
-@media only screen and (max-width:560px){
-  .modal-fullscreen{
-    width: 100vw;
-  }
-  .dtr-details li{
-    display: flex;
-    flex-direction: column;
-  }
-  table.dataTable.nowrap th, table.dataTable.nowrap td{
-    padding: 12px 6px;
-  }
-  div.dataTables_wrapper div.dataTables_filter input{
-    margin-left: 0px !important;
-  }
-  .login-content{
-    width: 100%;
-    align-items: flex-start !important;
-    background-color: white !important;
-  }
-  .login-content form{
-    width: 100%;
-    align-items: flex-start !important;
-  }
-  .login-card{
-    width: 100%;
-    min-width: 100%;
-  }
-}
+
 
 
 
@@ -742,4 +715,74 @@ td{
 
 .toolpit-btn:hover .toolpit-div{
   display: block;
+}
+.event-details{
+  color: #1C315E !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.event-time{
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 7px;
+}
+.fc-toolbar-title{
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  margin-bottom: 15px !important;
+}
+.table-responsive{
+  width: 100%;
+  overflow-x: auto;
+}
+.dashboard-table-lg{
+  min-width: 700px;
+}
+.fc-dayGridMonth-button{
+  display: none !important;
+}
+.fc-button-primary{
+  border-radius: 4px !important;
+  margin-left: 7px !important;
+}
+@media only screen and (max-width:560px){
+  .modal-fullscreen{
+    width: 100vw;
+  }
+  .dtr-details li{
+    display: flex;
+    flex-direction: column;
+  }
+  table.dataTable.nowrap th, table.dataTable.nowrap td{
+    padding: 12px 6px;
+  }
+  div.dataTables_wrapper div.dataTables_filter input{
+    margin-left: 0px !important;
+  }
+  .login-content{
+    width: 100%;
+    align-items: flex-start !important;
+    background-color: white !important;
+  }
+  .login-content form{
+    width: 100%;
+    align-items: flex-start !important;
+  }
+  .login-card{
+    width: 100%;
+    min-width: 100%;
+  }
+  .event-time{
+    font-size: 12px !important;
+    font-weight: 500;
+    margin-bottom: 7px;
+  }
+  .fc-toolbar-title{
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    margin-bottom: 15px !important;
+  }
 }

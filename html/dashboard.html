@@ -3,6 +3,9 @@
 <html lang="en" class="light-style layout-menu-fixed layout-compact" dir="ltr" data-theme="theme-default"
     data-assets-path="../assets/" data-template="vertical-menu-template-free">
 
+<script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
+
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport"
@@ -77,10 +80,10 @@
                                 </a>
                             </li>
                             <li class="menu-item ">
-                              <a href="booking.html" class="menu-link">
-                                  <div data-i18n="Text Divider">Booking Management</div>
-                              </a>
-                          </li>
+                                <a href="booking.html" class="menu-link">
+                                    <div data-i18n="Text Divider">Booking Management</div>
+                                </a>
+                            </li>
 
                             <li class="menu-item ">
                                 <a href="listing_counselor.html" class="menu-link">
@@ -177,6 +180,22 @@
                         </ul>
                     </li>
 
+                    <!-- expense -->
+                    <li class="menu-item ">
+                        <a href="expense.html" class="menu-link ">
+                            <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                            <div data-i18n="Dashboards">Expense</div>
+                        </a>
+                    </li>
+
+                     <!-- Report -->
+                     <li class="menu-item ">
+                        <a href="report.html" class="menu-link ">
+                            <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                            <div data-i18n="Dashboards">Expense</div>
+                        </a>
+                    </li>
+
                 </ul>
             </aside>
             <!-- / Menu -->
@@ -257,7 +276,7 @@
                             <div class="tab-scroll">
                                 <button class="tablinks" data-tab="SD" id="defaultOpen">Student
                                     Data</button>
-                                <button class="tablinks" data-tab="Appointments" >Appointments</button>
+                                <button class="tablinks" data-tab="Appointments">Appointments</button>
                             </div>
 
                         </div>
@@ -335,7 +354,7 @@
                                         style=" color:white !important; background-color: #ffc107 !important">
                                         <div>
                                             <a href="" class="text-white">
-                                                Cas/T20 
+                                                Cas/T20
                                             </a>
                                         </div>
                                         <div><i class="bi bi-arrow-right-circle-fill ms-3"></i></div>
@@ -469,11 +488,18 @@
                         <div id="Appointments" class="tabcontent">
                             <div class="card  pb-4 px-lg-4 px-2">
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <h5 class="card-header px-0 bg-white border-bottom-0  py-3 mb-2 mt-1">Today Appointments</h5>
-                                   
+                                    <h5 class="card-header px-0 bg-white border-bottom-0  py-3 mb-2 mt-1">Today
+                                        Appointments</h5>
+
                                 </div>
-                               
-                                <div class="table-responsive">
+
+                                <div class="blushed-card">
+                                    <div class="table-responsive">
+                                        <div id='calendar' class="dashboard-table-lg"></div>
+                                    </div>
+
+                                </div>
+                                <!-- <div class="table-responsive">
                                     <table id="today-appointment" class="table  nowrap border-0 " style="width:100%">
                                         <thead>
                                             <tr class="dt-head">
@@ -484,7 +510,7 @@
                                                 <th>Std Name </th>
                                                 <th> Number</th>
                                                 <th> Email</th>
-                                                 <th>Actions</th>
+                                                <th>Actions</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -498,8 +524,9 @@
                                                 <td>
                                                     <div class="d-flex align-items-center">
                                                         <button class="btn btn-primary btn-xs">Waste On</button>
-                                                        <button class="btn btn-primary btn-xs ms-2">Transfer to Data</button>
-                                                   </div>
+                                                        <button class="btn btn-primary btn-xs ms-2">Transfer to
+                                                            Data</button>
+                                                    </div>
                                                 </td>
                                             </tr>
                                             <tr class="">
@@ -512,8 +539,9 @@
                                                 <td>
                                                     <div class="d-flex align-items-center">
                                                         <button class="btn btn-primary btn-xs">Waste On</button>
-                                                        <button class="btn btn-primary btn-xs ms-2">Transfer to Data</button>
-                                                   </div>
+                                                        <button class="btn btn-primary btn-xs ms-2">Transfer to
+                                                            Data</button>
+                                                    </div>
                                                 </td>
                                             </tr>
                                             <tr class="">
@@ -526,30 +554,32 @@
                                                 <td>
                                                     <div class="d-flex align-items-center">
                                                         <button class="btn btn-primary btn-xs">Waste On</button>
-                                                        <button class="btn btn-primary btn-xs ms-2">Transfer to Data</button>
-                                                   </div>
+                                                        <button class="btn btn-primary btn-xs ms-2">Transfer to
+                                                            Data</button>
+                                                    </div>
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>
-                                </div>
+                                </div> -->
                             </div>
-                            <div class="card  pb-4 px-lg-4 px-2 mt-3">
-                                <div class="d-flex flex-md-row flex-column justify-content-between align-items-start py-3 mt-2">
-                                    <h5 class="card-header px-0 bg-white border-bottom-0 py-0   mb-md-2 mb-3">All Appointments</h5>
-                                     <div class=" w-auto mb-2 d-flex align-items-center">
-                                        <select
-                                            class="form-select form-select-md w-100" style="min-width: 160px;">
+                            <!-- <div class="card  pb-4 px-lg-4 px-2 mt-3">
+                                <div
+                                    class="d-flex flex-md-row flex-column justify-content-between align-items-start py-3 mt-2">
+                                    <h5 class="card-header px-0 bg-white border-bottom-0 py-0   mb-md-2 mb-3">All
+                                        Appointments</h5>
+                                    <div class=" w-auto mb-2 d-flex align-items-center">
+                                        <select class="form-select form-select-md w-100" style="min-width: 160px;">
                                             <option selected>Select Date</option>
                                             <option value="">12/5/20224</option>
                                             <option value="">11/5/2024</option>
                                             <option value="">10/5/2024</option>
                                         </select>
                                         <button class="btn btn-primary ms-3">Search</button>
-                                     </div>
-                                     
+                                    </div>
+
                                 </div>
-                               
+
                                 <div class="table-responsive">
                                     <table id="appointments" class="table  nowrap border-0 " style="width:100%">
                                         <thead>
@@ -561,7 +591,7 @@
                                                 <th>Std Name </th>
                                                 <th> Number</th>
                                                 <th> Email</th>
-  <th>Actions</th>
+                                                <th>Actions</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -575,8 +605,9 @@
                                                 <td>
                                                     <div class="d-flex align-items-center">
                                                         <button class="btn btn-primary btn-xs">Waste On</button>
-                                                        <button class="btn btn-primary btn-xs ms-2">Transfer to Data</button>
-                                                   </div>
+                                                        <button class="btn btn-primary btn-xs ms-2">Transfer to
+                                                            Data</button>
+                                                    </div>
                                                 </td>
                                             </tr>
                                             <tr class="">
@@ -589,8 +620,9 @@
                                                 <td>
                                                     <div class="d-flex align-items-center">
                                                         <button class="btn btn-primary btn-xs">Waste On</button>
-                                                        <button class="btn btn-primary btn-xs ms-2">Transfer to Data</button>
-                                                   </div>
+                                                        <button class="btn btn-primary btn-xs ms-2">Transfer to
+                                                            Data</button>
+                                                    </div>
                                                 </td>
                                             </tr>
                                             <tr class="">
@@ -603,14 +635,15 @@
                                                 <td>
                                                     <div class="d-flex align-items-center">
                                                         <button class="btn btn-primary btn-xs">Waste On</button>
-                                                        <button class="btn btn-primary btn-xs ms-2">Transfer to Data</button>
-                                                   </div>
+                                                        <button class="btn btn-primary btn-xs ms-2">Transfer to
+                                                            Data</button>
+                                                    </div>
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
 
                         <!-- Footer -->
@@ -655,6 +688,7 @@
         <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
         <script src="assets/Js/table.js"></script>
+        <script src="/assets/js/calendar-full.js"></script>
         <script>
             // new DataTable('#new-lead');
             $(document).ready(function () {
