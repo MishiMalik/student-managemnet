@@ -750,9 +750,9 @@ td{
 }
 .expens-total {
   border: 1px solid #d9dee3;
-  border-radius: 6px;
+  border-radius:0 0 6px 6px;
   padding: 15px;
-  border-top: 5px solid #222367;
+  border-top: 7px solid #222367;
 }
 .expens-total h1{
    font-size: 16px;
