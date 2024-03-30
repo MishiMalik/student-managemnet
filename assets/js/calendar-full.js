@@ -1,3 +1,4 @@
+// $(document).ready(function () {
 document.addEventListener("DOMContentLoaded", function () {
     var calendarEl = document.getElementById("calendar");
     var calendar = new FullCalendar.Calendar(calendarEl, {
@@ -151,6 +152,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     calendar.render();
   });
+// })
   // $('body').on('click','.event-title',function(){
   //  $(this).closest.$('.calendar-overlay').css('display','flex');
   // })

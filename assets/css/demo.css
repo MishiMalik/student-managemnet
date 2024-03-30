@@ -801,3 +801,87 @@ td{
     margin-bottom: 15px !important;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dropdown2 {
+  position: relative;
+  font-size: 14px;
+  color: #333;
+}
+.dropdown2 .dropdown-list {
+  padding: 12px;
+  background: #fff;
+  position: absolute;
+  top: 30px;
+  left: 2px;
+  right: 2px;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.15);
+  transform-origin: 50% 0;
+  transform: scale(1, 0);
+  transition: transform 0.15s ease-in-out 0.15s;
+  max-height: 66vh;
+  overflow-y: scroll;
+}
+.dropdown2 .dropdown-option {
+  display: block;
+  padding: 8px 12px;
+  opacity: 0;
+  transition: opacity 0.15s ease-in-out;
+}
+.dropdown2 .dropdown-label {
+  display: block;
+  height: 42px;
+  background: #fff;
+  border: 1px solid #d9dee3;
+  padding: 0.4375rem 1.875rem 0.4375rem 0.875rem;
+  line-height: 2;
+  cursor: pointer;
+  border-radius: 0.375rem;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: #697a8d;
+}
+.dropdown2 .dropdown-label:before {
+  content: '▼';
+  float: right;
+}
+.dropdown2.on .dropdown-list {
+  transform: scale(1, 1);
+  transition-delay: 0s;
+}
+.dropdown2.on .dropdown-list .dropdown-option {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+.dropdown2.on .dropdown-label:before {
+  content: '▲';
+}
+.dropdown2 [type="checkbox"] {
+  position: relative;
+  top: -1px;
+  margin-right: 4px;
+}
